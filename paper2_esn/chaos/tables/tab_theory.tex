@@ -1,0 +1,25 @@
+\begin{table*}
+\caption{Checks of the theory and of the numerical pipeline. The benchmark consists of hard-tanh networks whose fixed
+points are enumerated over all $3^N$ linear regions. Copies are model equilibria within $1\%$ of the half-width of the
+region $Q$ (half of its largest edge) from a true equilibrium. For the test in the unstable subspace the reference is the ball test of the full protocol;
+the last row counts the $27$ networks in which $32$ random directions missed a self-excited attractor.}
+\label{tab:theory}
+\begin{ruledtabular}
+\begin{tabular}{llll}
+Result & Check & Data & Count \\
+\hline
+Thm.~\ref{thm:degree} & Index sum $1$ & hard-tanh benchmark, exact sets & 754/754 \\
+ &  & tanh echo state networks & 997/1004 (7 with even $K$) \\
+ &  & one-layer / two-layer perceptrons & 3358/3360 / 3279/3360 \\
+ &  & residual networks (theorem not applicable) & 1571/3360 \\
+Cor.~\ref{cor:counts} & $U\ge(K-1)/2$ & all models with index sum $1$ & no violation \\
+ & Incomplete set flagged & Newton sets of the benchmark & 40/43; 0 false of 711 \\
+Prop.~\ref{prop:forced} & Copy has index $\iota_j$ & copies within $1\%$ ($0.1\%$) & 440/474 (334/340) \\
+ & Chua~I ($s=-1$): copies of all three & echo state networks; mlp; mlp2; res & 0/96; 0/480; 0/480; 23/480 \\
+ & Li--Sprott ($s=0$): $K\ge1$ & echo state networks & 32/32 \\
+ & Li--Sprott: reproduced, self-excited & training attractor; unseen torus & 29/29; 0/4 \\
+Prop.~\ref{prop:manifold} & Test in $E^u$ & self-excited attractors, benchmark & 884/913 \\
+ &  & 32 / 256 / 2048 directions, hard cases & 48 / 60 / 70 of 77 \\
+\end{tabular}
+\end{ruledtabular}
+\end{table*}

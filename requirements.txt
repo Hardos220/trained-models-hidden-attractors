@@ -1,0 +1,13 @@
+# Python 3.11 or later (the results in the article were produced with Python 3.14).
+# Analysis (paper2_esn/reproduce.py):
+numpy>=1.26
+scipy>=1.12
+matplotlib>=3.8
+pandas>=2.0
+statsmodels>=0.14
+# Training and labeling of the models (paper2_esn/gpu/stage_*.py, paper2_esn/experiments):
+numba>=0.60
+scikit-learn>=1.4
+torch>=2.4   # CUDA build for the GPU stages; the models were trained in float64
+# optional: NG-RC and uniform sampling on the GPU through CuPy
+# cupy-cuda12x>=13

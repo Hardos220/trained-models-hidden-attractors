@@ -1,0 +1,2932 @@
+{
+ "meta": {
+  "script": "paper2_esn/gpu/paper_esn_law.py",
+  "root": "local/esn-gpu",
+  "generated": "2026-11-11 18:40",
+  "excluded_dirs": [
+   "N_old_cpu_bug"
+  ],
+  "bins": [
+   "0",
+   "1",
+   "2",
+   "3-4",
+   "5-8",
+   "9-16",
+   ">=17"
+  ],
+  "ci": "Wilson score 95%",
+  "runtime_s": 1.3,
+  "skipped_files": {
+   "node_results/N/*_N150_* (pre-fix CPU, superseded by A100)": 90
+  }
+ },
+ "reference_theory_index": {
+  "C_n_models": 669,
+  "C_U0": "23/23",
+  "C_U1_4": "32-45%",
+  "C_U5_8": "14%",
+  "C_U_ge9": "1 of 106",
+  "C_loss_only_spurious": "81%",
+  "lite_full": "24/24 agree; 18 not_excited -> hidden_stat",
+  "N_rows": 345,
+  "N_bins": [
+   1.0,
+   0.5,
+   0.56,
+   0.33,
+   0.19,
+   0.06,
+   0.04
+  ],
+  "N_logU": "-3.26 +- 0.44 (p = 6e-29)",
+  "N_logN": "+0.09 +- 0.20",
+  "N_geom": {
+   "chua_I": [
+    0.79,
+    0.76
+   ],
+   "le1": [
+    0.85,
+    0.87
+   ],
+   "se3": [
+    0.79,
+    0.8
+   ],
+   "se11": [
+    0.84,
+    0.94
+   ],
+   "wangchen2": [
+    0.0,
+    0.083
+   ],
+   "wangchen2_a0.03": [
+    0.0,
+    0.41
+   ]
+  },
+  "R_logU": "-3.25 +- 0.65 (z = -5.0), 170 rows",
+  "R_LR": "chi2 = 10.0, df 4, p = 0.04",
+  "R_dens0.02": "+1.52 +- 0.59",
+  "R_in1": "+1.73 +- 0.69"
+ },
+ "stage_C_full_protocol": {
+  "description": "ESN models of stage C (sets H1, HE1, H0; rho 0.6/0.9/1.2; N 300-1000) whose closest attractor reproduces a true hidden attractor (delta_att < 0.2, d_H < 0.2, same kind); one row per model (best-matching hidden attractor); hidden = label hidden_stat; pooled over the six regimes se3, se11, wangchen2, wangchen2_a0.03, chua_I, chua_II; LE1 (attractor hidden only in the weak sense) is excluded and reported separately under le1_separate",
+  "regimes": [
+   "chua_I",
+   "chua_II",
+   "se11",
+   "se3",
+   "wangchen2",
+   "wangchen2_a0.03"
+  ],
+  "n_models_files": 1138,
+  "n_duplicate_files_ignored": 21,
+  "n_models_reproduced": 581,
+  "labels": {
+   "hidden_stat": 169,
+   "self_excited": 402,
+   "excited_r": 10
+  },
+  "by_set": {
+   "H1": 282,
+   "HE1": 274,
+   "H0": 25
+  },
+  "by_N": {
+   "300": 419,
+   "500": 12,
+   "700": 12,
+   "1000": 138
+  },
+  "bins": [
+   {
+    "U_bin": "0",
+    "U_lo": 0,
+    "U_hi": 0,
+    "n": 23,
+    "k": 23,
+    "share": 1.0,
+    "ci95_lo": 0.8568833815495731,
+    "ci95_hi": 1.0,
+    "U_mean_in_bin": 0.0
+   },
+   {
+    "U_bin": "1",
+    "U_lo": 1,
+    "U_hi": 1,
+    "n": 56,
+    "k": 16,
+    "share": 0.2857142857142857,
+    "ci95_lo": 0.18418775143858906,
+    "ci95_hi": 0.4147525071551667,
+    "U_mean_in_bin": 1.0
+   },
+   {
+    "U_bin": "2",
+    "U_lo": 2,
+    "U_hi": 2,
+    "n": 126,
+    "k": 66,
+    "share": 0.5238095238095238,
+    "ci95_lo": 0.4371972120523062,
+    "ci95_hi": 0.6090129896390177,
+    "U_mean_in_bin": 2.0
+   },
+   {
+    "U_bin": "3-4",
+    "U_lo": 3,
+    "U_hi": 4,
+    "n": 143,
+    "k": 50,
+    "share": 0.34965034965034963,
+    "ci95_lo": 0.27635498479832554,
+    "ci95_hi": 0.4308121848461367,
+    "U_mean_in_bin": 3.3986013986013988
+   },
+   {
+    "U_bin": "5-8",
+    "U_lo": 5,
+    "U_hi": 8,
+    "n": 139,
+    "k": 13,
+    "share": 0.09352517985611511,
+    "ci95_lo": 0.05547239293226588,
+    "ci95_hi": 0.153440755022583,
+    "U_mean_in_bin": 5.928057553956834
+   },
+   {
+    "U_bin": "9-16",
+    "U_lo": 9,
+    "U_hi": 16,
+    "n": 43,
+    "k": 0,
+    "share": 0.0,
+    "ci95_lo": 0.0,
+    "ci95_hi": 0.08200980322579117,
+    "U_mean_in_bin": 11.023255813953488
+   },
+   {
+    "U_bin": ">=17",
+    "U_lo": 17,
+    "U_hi": null,
+    "n": 51,
+    "k": 1,
+    "share": 0.0196078431372549,
+    "ci95_lo": 0.0034696926410608536,
+    "ci95_hi": 0.10304568726144975,
+    "U_mean_in_bin": 28.862745098039216
+   }
+  ],
+  "bin_U_1_4": {
+   "U_bin": "1-4",
+   "U_lo": 1,
+   "U_hi": 4,
+   "n": 325,
+   "k": 132,
+   "share": 0.40615384615384614,
+   "ci95_lo": 0.35415806595524507,
+   "ci95_hi": 0.46034220959163724,
+   "U_mean_in_bin": 2.443076923076923
+  },
+  "bin_U_ge9": {
+   "U_bin": ">=9",
+   "U_lo": 9,
+   "U_hi": null,
+   "n": 94,
+   "k": 1,
+   "share": 0.010638297872340425,
+   "ci95_lo": 0.0018803957480879353,
+   "ci95_hi": 0.05782291296278563,
+   "U_mean_in_bin": 20.70212765957447
+  },
+  "hidden_share_U1_to_U3_4_bins_range": [
+   0.2857142857142857,
+   0.5238095238095238
+  ],
+  "loss_origin": {
+   "copy_tol": 0.01,
+   "n_losses": 412,
+   "only_spurious": 383,
+   "only_true": 8,
+   "both": 21,
+   "no_from_record": 0,
+   "share_only_spurious": 0.9296116504854369,
+   "note": "loss = reproduced hidden attractor labelled self_excited or excited_r (undetermined excluded); 'true' equilibrium (copy) = model equilibrium with dist_true_eq < 0.01, i.e. within 1% of the half-width L = max(box_hi - box_lo)/2 of the region Q from a true one"
+  },
+  "by_U_in": {
+   "description": "same rows; U_in = unstable equilibria whose physical image W_out r* (stored as x in the stage C record) lies in Q = [box_lo, box_hi]; U_out = U - U_in",
+   "n_unstable_without_x": 0,
+   "U_in_mean": 4.812392426850258,
+   "U_mean": 6.134251290877797,
+   "share_rows_U_in_eq_U": 0.6161790017211703,
+   "bins": [
+    {
+     "U_bin": "0",
+     "U_lo": 0,
+     "U_hi": 0,
+     "n": 54,
+     "k": 52,
+     "share": 0.9629629629629629,
+     "ci95_lo": 0.8746482308272452,
+     "ci95_hi": 0.9897836320515545,
+     "U_mean_in_bin": 0.0
+    },
+    {
+     "U_bin": "1",
+     "U_lo": 1,
+     "U_hi": 1,
+     "n": 93,
+     "k": 38,
+     "share": 0.40860215053763443,
+     "ci95_lo": 0.31425494945885146,
+     "ci95_hi": 0.5102004004809282,
+     "U_mean_in_bin": 1.0
+    },
+    {
+     "U_bin": "2",
+     "U_lo": 2,
+     "U_hi": 2,
+     "n": 122,
+     "k": 43,
+     "share": 0.3524590163934426,
+     "ci95_lo": 0.27337265753669693,
+     "ci95_hi": 0.4405531000207167,
+     "U_mean_in_bin": 2.0
+    },
+    {
+     "U_bin": "3-4",
+     "U_lo": 3,
+     "U_hi": 4,
+     "n": 130,
+     "k": 32,
+     "share": 0.24615384615384617,
+     "ci95_lo": 0.18009792380442396,
+     "ci95_hi": 0.32678133034044127,
+     "U_mean_in_bin": 3.4076923076923076
+    },
+    {
+     "U_bin": "5-8",
+     "U_lo": 5,
+     "U_hi": 8,
+     "n": 98,
+     "k": 3,
+     "share": 0.030612244897959183,
+     "ci95_lo": 0.010464891082493703,
+     "ci95_hi": 0.0861702016847983,
+     "U_mean_in_bin": 5.918367346938775
+    },
+    {
+     "U_bin": "9-16",
+     "U_lo": 9,
+     "U_hi": 16,
+     "n": 47,
+     "k": 0,
+     "share": 0.0,
+     "ci95_lo": 0.0,
+     "ci95_hi": 0.07555760416399632,
+     "U_mean_in_bin": 11.680851063829786
+    },
+    {
+     "U_bin": ">=17",
+     "U_lo": 17,
+     "U_hi": null,
+     "n": 37,
+     "k": 1,
+     "share": 0.02702702702702703,
+     "ci95_lo": 0.004786974451940429,
+     "ci95_hi": 0.13824069863730518,
+     "U_mean_in_bin": 23.972972972972972
+    }
+   ],
+   "bins_U_out_given_U_in_0": [
+    {
+     "U_bin": "0",
+     "U_lo": 0,
+     "U_hi": 0,
+     "n": 23,
+     "k": 23,
+     "share": 1.0,
+     "ci95_lo": 0.8568833815495731,
+     "ci95_hi": 1.0,
+     "U_mean_in_bin": 0.0
+    },
+    {
+     "U_bin": "1",
+     "U_lo": 1,
+     "U_hi": 1,
+     "n": 1,
+     "k": 1,
+     "share": 1.0,
+     "ci95_lo": 0.20654931437723745,
+     "ci95_hi": 1.0,
+     "U_mean_in_bin": 1.0
+    },
+    {
+     "U_bin": "2",
+     "U_lo": 2,
+     "U_hi": 2,
+     "n": 21,
+     "k": 21,
+     "share": 1.0,
+     "ci95_lo": 0.8453609810751531,
+     "ci95_hi": 1.0,
+     "U_mean_in_bin": 2.0
+    },
+    {
+     "U_bin": "3-4",
+     "U_lo": 3,
+     "U_hi": 4,
+     "n": 8,
+     "k": 6,
+     "share": 0.75,
+     "ci95_lo": 0.40927543031016883,
+     "ci95_hi": 0.9285207872478909,
+     "U_mean_in_bin": 3.625
+    },
+    {
+     "U_bin": "5-8",
+     "U_lo": 5,
+     "U_hi": 8,
+     "n": 1,
+     "k": 1,
+     "share": 1.0,
+     "ci95_lo": 0.20654931437723745,
+     "ci95_hi": 1.0,
+     "U_mean_in_bin": 5.0
+    },
+    {
+     "U_bin": "9-16",
+     "U_lo": 9,
+     "U_hi": 16,
+     "n": 0,
+     "k": 0,
+     "share": null,
+     "ci95_lo": null,
+     "ci95_hi": null,
+     "U_mean_in_bin": null
+    },
+    {
+     "U_bin": ">=17",
+     "U_lo": 17,
+     "U_hi": null,
+     "n": 0,
+     "k": 0,
+     "share": null,
+     "ci95_lo": null,
+     "ci95_hi": null,
+     "U_mean_in_bin": null
+    }
+   ],
+   "logit": {
+    "model": "logit P(hidden_stat) ~ term(s) + [set H1] + [set H0] + log N + [rho 0.6] + [rho 1.2] + regime fixed effects (no intercept; ridge 1e-6); same rows",
+    "log1p_U": {
+     "coef": {
+      "coef": -4.248719460698656,
+      "se": 0.4216896925857938,
+      "z": -10.075464341197392,
+      "p_wald": 7.092498264864752e-24
+     },
+     "loglik": -179.3648042524647,
+     "LR": {
+      "chi2": 227.1288864057325,
+      "df": 1,
+      "p": 2.5205850123033083e-51
+     }
+    },
+    "log1p_U_in": {
+     "coef": {
+      "coef": -3.542083308444801,
+      "se": 0.3470792385160773,
+      "z": -10.205402442361086,
+      "p_wald": 1.875420449548905e-24
+     },
+     "loglik": -183.05267015951236,
+     "LR": {
+      "chi2": 219.75315459163716,
+      "df": 1,
+      "p": 1.0238280013588884e-49
+     },
+     "other": {
+      "log1p_U_in": {
+       "coef": -3.542083308444801,
+       "se": 0.3470792385160773,
+       "z": -10.205402442361086,
+       "p_wald": 1.875420449548905e-24
+      },
+      "set_H1": {
+       "coef": 0.10814732866683349,
+       "se": 0.2755889025725938,
+       "z": 0.3924226543858966,
+       "p_wald": 0.6947459499317798
+      },
+      "set_H0": {
+       "coef": 0.1273270446239237,
+       "se": 0.8554949554302268,
+       "z": 0.14883436052511984,
+       "p_wald": 0.88168433681395
+      },
+      "log_N": {
+       "coef": 0.5725496169702295,
+       "se": 0.2866071221537411,
+       "z": 1.9976810508676188,
+       "p_wald": 0.04575124985535407
+      },
+      "rho_0.6": {
+       "coef": 0.2720234699502935,
+       "se": 0.2679036934959425,
+       "z": 1.0153778262650692,
+       "p_wald": 0.3099257587307347
+      },
+      "rho_1.2": {
+       "coef": 0.0644858063330071,
+       "se": 0.954241908116096,
+       "z": 0.06757804890409567,
+       "p_wald": 0.9461215298817541
+      }
+     }
+    },
+    "log1p_U_in_and_log1p_U_out": {
+     "coef": {
+      "log1p_U_in": {
+       "coef": -3.4888446688543273,
+       "se": 0.3482967278022115,
+       "z": -10.016874665660223,
+       "p_wald": 1.2850224486848747e-23
+      },
+      "log1p_U_out": {
+       "coef": -1.9337455862880732,
+       "se": 0.8078214713265998,
+       "z": -2.393778396497047,
+       "p_wald": 0.016675820654005212
+      }
+     },
+     "LR_U_out_beyond_U_in": {
+      "chi2": 6.629727196662941,
+      "df": 1,
+      "p": 0.010029062303595154
+     }
+    },
+    "log1p_U_in_rows_U_in_ge_1": {
+     "n": 527,
+     "coef": {
+      "coef": -2.9625991970590553,
+      "se": 0.38387629201985923,
+      "z": -7.717588344595633,
+      "p_wald": 1.18551356871002e-14
+     }
+    }
+   }
+  },
+  "loss_origin_copy_threshold_sensitivity": {
+   "0.005": {
+    "copy_tol": 0.005,
+    "n_losses": 412,
+    "only_spurious": 390,
+    "only_true": 5,
+    "both": 17,
+    "no_from_record": 0,
+    "share_only_spurious": 0.9466019417475728
+   },
+   "0.01": {
+    "copy_tol": 0.01,
+    "n_losses": 412,
+    "only_spurious": 383,
+    "only_true": 8,
+    "both": 21,
+    "no_from_record": 0,
+    "share_only_spurious": 0.9296116504854369
+   },
+   "0.02": {
+    "copy_tol": 0.02,
+    "n_losses": 412,
+    "only_spurious": 356,
+    "only_true": 13,
+    "both": 43,
+    "no_from_record": 0,
+    "share_only_spurious": 0.8640776699029126
+   }
+  },
+  "by_regime": {
+   "chua_I": {
+    "n": 70,
+    "hidden": 9,
+    "U_mean": 8.471428571428572,
+    "U_in_mean": 5.185714285714286
+   },
+   "chua_II": {
+    "n": 49,
+    "hidden": 7,
+    "U_mean": 7.061224489795919,
+    "U_in_mean": 6.918367346938775
+   },
+   "le1": {
+    "n": 136,
+    "hidden": 43,
+    "U_mean": 5.948529411764706,
+    "U_in_mean": 5.897058823529412
+   },
+   "se11": {
+    "n": 126,
+    "hidden": 60,
+    "U_mean": 5.587301587301587,
+    "U_in_mean": 5.373015873015873
+   },
+   "se3": {
+    "n": 141,
+    "hidden": 71,
+    "U_mean": 3.99290780141844,
+    "U_in_mean": 1.872340425531915
+   },
+   "wangchen2": {
+    "n": 49,
+    "hidden": 3,
+    "U_mean": 7.755102040816326,
+    "U_in_mean": 6.714285714285714
+   },
+   "wangchen2_a0.03": {
+    "n": 146,
+    "hidden": 19,
+    "U_mean": 6.698630136986301,
+    "U_in_mean": 5.6438356164383565
+   }
+  },
+  "U1_vs_U2": {
+   "by_regime": {
+    "chua_I": {
+     "1": [
+      4,
+      6
+     ],
+     "2": [
+      3,
+      17
+     ]
+    },
+    "chua_II": {
+     "1": [
+      3,
+      8
+     ],
+     "2": [
+      0,
+      11
+     ]
+    },
+    "se11": {
+     "1": [
+      5,
+      5
+     ],
+     "2": [
+      29,
+      34
+     ]
+    },
+    "se3": {
+     "1": [
+      1,
+      1
+     ],
+     "2": [
+      33,
+      35
+     ]
+    },
+    "wangchen2": {
+     "1": [
+      0,
+      6
+     ],
+     "2": [
+      0,
+      7
+     ]
+    },
+    "wangchen2_a0.03": {
+     "1": [
+      3,
+      30
+     ],
+     "2": [
+      1,
+      22
+     ]
+    }
+   },
+   "U2_standardized_to_U1_regime_mix": 0.13625040925461093,
+   "mantel_haenszel_U2_vs_U1_by_regime": {
+    "n_strata": 6,
+    "OR": 0.12831137079230018,
+    "ci95": [
+     0.02795818120538623,
+     0.5888726363726168
+    ],
+    "CMH_chi2": 7.4238644081605685,
+    "CMH_p": 0.006436443263908924
+   }
+  },
+  "ensemble_all_regimes": {
+   "n_models_reproduced": 717,
+   "labels": {
+    "hidden_stat": 212,
+    "self_excited": 487,
+    "excited_r": 18
+   }
+  },
+  "le1_separate": {
+   "n_models_reproduced": 136,
+   "labels": {
+    "self_excited": 85,
+    "hidden_stat": 43,
+    "excited_r": 8
+   },
+   "by_set": {
+    "H0": 1,
+    "H1": 70,
+    "HE1": 65
+   },
+   "by_N": {
+    "300": 109,
+    "1000": 27
+   },
+   "bins": [
+    {
+     "U_bin": "0",
+     "U_lo": 0,
+     "U_hi": 0,
+     "n": 1,
+     "k": 1,
+     "share": 1.0,
+     "ci95_lo": 0.20654931437723745,
+     "ci95_hi": 1.0,
+     "U_mean_in_bin": 0.0
+    },
+    {
+     "U_bin": "1",
+     "U_lo": 1,
+     "U_hi": 1,
+     "n": 9,
+     "k": 7,
+     "share": 0.7777777777777778,
+     "ci95_lo": 0.45258896910698887,
+     "ci95_hi": 0.9367748928821533,
+     "U_mean_in_bin": 1.0
+    },
+    {
+     "U_bin": "2",
+     "U_lo": 2,
+     "U_hi": 2,
+     "n": 12,
+     "k": 3,
+     "share": 0.25,
+     "ci95_lo": 0.08894166839405471,
+     "ci95_hi": 0.5323053349335657,
+     "U_mean_in_bin": 2.0
+    },
+    {
+     "U_bin": "3-4",
+     "U_lo": 3,
+     "U_hi": 4,
+     "n": 39,
+     "k": 18,
+     "share": 0.46153846153846156,
+     "ci95_lo": 0.31566885606727846,
+     "ci95_hi": 0.6143055172948425,
+     "U_mean_in_bin": 3.5384615384615383
+    },
+    {
+     "U_bin": "5-8",
+     "U_lo": 5,
+     "U_hi": 8,
+     "n": 55,
+     "k": 14,
+     "share": 0.2545454545454545,
+     "ci95_lo": 0.15812114773072913,
+     "ci95_hi": 0.38301871281765865,
+     "U_mean_in_bin": 6.0
+    },
+    {
+     "U_bin": "9-16",
+     "U_lo": 9,
+     "U_hi": 16,
+     "n": 12,
+     "k": 0,
+     "share": 0.0,
+     "ci95_lo": 2.7755575615628914e-17,
+     "ci95_hi": 0.24249400665524085,
+     "U_mean_in_bin": 12.75
+    },
+    {
+     "U_bin": ">=17",
+     "U_lo": 17,
+     "U_hi": null,
+     "n": 8,
+     "k": 0,
+     "share": 0.0,
+     "ci95_lo": 0.0,
+     "ci95_hi": 0.32440756488388023,
+     "U_mean_in_bin": 19.375
+    }
+   ],
+   "bin_U_1_4": {
+    "U_bin": "1-4",
+    "U_lo": 1,
+    "U_hi": 4,
+    "n": 60,
+    "k": 28,
+    "share": 0.4666666666666667,
+    "ci95_lo": 0.34627906041438494,
+    "ci95_hi": 0.5910657297284211,
+    "U_mean_in_bin": 2.85
+   },
+   "bin_U_ge9": {
+    "U_bin": ">=9",
+    "U_lo": 9,
+    "U_hi": null,
+    "n": 20,
+    "k": 0,
+    "share": 0.0,
+    "ci95_lo": 0.0,
+    "ci95_hi": 0.16112515805281938,
+    "U_mean_in_bin": 15.4
+   },
+   "hidden_share_U1_to_U3_4_bins_range": [
+    0.25,
+    0.7777777777777778
+   ],
+   "loss_origin": {
+    "copy_tol": 0.01,
+    "n_losses": 93,
+    "only_spurious": 26,
+    "only_true": 20,
+    "both": 47,
+    "no_from_record": 0,
+    "share_only_spurious": 0.27956989247311825
+   },
+   "by_U_in": [
+    {
+     "U_bin": "0",
+     "U_lo": 0,
+     "U_hi": 0,
+     "n": 1,
+     "k": 1,
+     "share": 1.0,
+     "ci95_lo": 0.20654931437723745,
+     "ci95_hi": 1.0,
+     "U_mean_in_bin": 0.0
+    },
+    {
+     "U_bin": "1",
+     "U_lo": 1,
+     "U_hi": 1,
+     "n": 9,
+     "k": 7,
+     "share": 0.7777777777777778,
+     "ci95_lo": 0.45258896910698887,
+     "ci95_hi": 0.9367748928821533,
+     "U_mean_in_bin": 1.0
+    },
+    {
+     "U_bin": "2",
+     "U_lo": 2,
+     "U_hi": 2,
+     "n": 12,
+     "k": 3,
+     "share": 0.25,
+     "ci95_lo": 0.08894166839405471,
+     "ci95_hi": 0.5323053349335657,
+     "U_mean_in_bin": 2.0
+    },
+    {
+     "U_bin": "3-4",
+     "U_lo": 3,
+     "U_hi": 4,
+     "n": 40,
+     "k": 19,
+     "share": 0.475,
+     "ci95_lo": 0.329354701126789,
+     "ci95_hi": 0.6250263789330753,
+     "U_mean_in_bin": 3.55
+    },
+    {
+     "U_bin": "5-8",
+     "U_lo": 5,
+     "U_hi": 8,
+     "n": 54,
+     "k": 13,
+     "share": 0.24074074074074073,
+     "ci95_lo": 0.14644291495284428,
+     "ci95_hi": 0.36947524183502795,
+     "U_mean_in_bin": 6.0
+    },
+    {
+     "U_bin": "9-16",
+     "U_lo": 9,
+     "U_hi": 16,
+     "n": 12,
+     "k": 0,
+     "share": 0.0,
+     "ci95_lo": 2.7755575615628914e-17,
+     "ci95_hi": 0.24249400665524085,
+     "U_mean_in_bin": 12.5
+    },
+    {
+     "U_bin": ">=17",
+     "U_lo": 17,
+     "U_hi": null,
+     "n": 8,
+     "k": 0,
+     "share": 0.0,
+     "ci95_lo": 0.0,
+     "ci95_hi": 0.32440756488388023,
+     "U_mean_in_bin": 19.125
+    }
+   ],
+   "note": "LE1: 'true' (copy) = model equilibrium within 0.01 L of the line x = y = 0; the true attractor is itself reached from a segment of the unstable half-line"
+  }
+ },
+ "N_sweep": {
+  "description": "stage N, lite protocol: closed-loop ESN, rho 0.9, eta 1e-7 and 1e-4, input scale 0.5, density 0.05, sets HE1 (7 regimes) and H1 (se3, se11); rows = (model, true hidden attractor); law sample = reproduced and index sum 1; pooled over the six regimes se3, se11, wangchen2, wangchen2_a0.03, chua_I, chua_II; LE1 (attractor hidden only in the weak sense) is excluded and reported separately under le1_separate",
+  "n_models": 620,
+  "n_rows": 776,
+  "n_rows_reproduced": 381,
+  "n_rows_reproduced_index_sum_ne_1": 0,
+  "n_models_index_sum_ne_1": 0,
+  "n_rows_law": 381,
+  "n_not_excited_law": 113,
+  "regimes": [
+   "chua_I",
+   "chua_II",
+   "se11",
+   "se3",
+   "wangchen2",
+   "wangchen2_a0.03"
+  ],
+  "sets": [
+   "H1",
+   "HE1"
+  ],
+  "N_values": [
+   50,
+   100,
+   150,
+   200,
+   300,
+   500,
+   700,
+   1000,
+   1400,
+   2000
+  ],
+  "ensemble_all_regimes": {
+   "n_models": 700,
+   "n_rows": 856,
+   "n_rows_reproduced": 439,
+   "n_rows_law": 439,
+   "n_not_excited_law": 132,
+   "n_models_index_sum_ne_1": 0
+  },
+  "le1_separate": {
+   "n_models": 80,
+   "n_rows": 80,
+   "n_rows_law": 58,
+   "n_not_excited_law": 19,
+   "bins": [
+    {
+     "U_bin": "0",
+     "U_lo": 0,
+     "U_hi": 0,
+     "n": 0,
+     "k": 0,
+     "share": null,
+     "ci95_lo": null,
+     "ci95_hi": null,
+     "U_mean_in_bin": null
+    },
+    {
+     "U_bin": "1",
+     "U_lo": 1,
+     "U_hi": 1,
+     "n": 0,
+     "k": 0,
+     "share": null,
+     "ci95_lo": null,
+     "ci95_hi": null,
+     "U_mean_in_bin": null
+    },
+    {
+     "U_bin": "2",
+     "U_lo": 2,
+     "U_hi": 2,
+     "n": 0,
+     "k": 0,
+     "share": null,
+     "ci95_lo": null,
+     "ci95_hi": null,
+     "U_mean_in_bin": null
+    },
+    {
+     "U_bin": "3-4",
+     "U_lo": 3,
+     "U_hi": 4,
+     "n": 6,
+     "k": 6,
+     "share": 1.0,
+     "ci95_lo": 0.6096657120978346,
+     "ci95_hi": 1.0,
+     "U_mean_in_bin": 3.8333333333333335
+    },
+    {
+     "U_bin": "5-8",
+     "U_lo": 5,
+     "U_hi": 8,
+     "n": 31,
+     "k": 11,
+     "share": 0.3548387096774194,
+     "ci95_lo": 0.21116659093865403,
+     "ci95_hi": 0.5305204593563113,
+     "U_mean_in_bin": 6.193548387096774
+    },
+    {
+     "U_bin": "9-16",
+     "U_lo": 9,
+     "U_hi": 16,
+     "n": 14,
+     "k": 2,
+     "share": 0.14285714285714285,
+     "ci95_lo": 0.040093921271464966,
+     "ci95_hi": 0.39941379496970353,
+     "U_mean_in_bin": 10.714285714285714
+    },
+    {
+     "U_bin": ">=17",
+     "U_lo": 17,
+     "U_hi": null,
+     "n": 7,
+     "k": 0,
+     "share": 0.0,
+     "ci95_lo": 5.551115123125783e-17,
+     "ci95_hi": 0.35433043506668743,
+     "U_mean_in_bin": 30.571428571428573
+    }
+   ],
+   "logit": {
+    "n_rows": 58,
+    "coef": {
+     "const": {
+      "coef": 15.697677928202454,
+      "se": 5.754806605813672,
+      "z": 2.7277507314223564,
+      "p_wald": 0.006376777495548299
+     },
+     "log1p_U": {
+      "coef": -6.174403484830816,
+      "se": 1.9735050081401424,
+      "z": -3.128648500694537,
+      "p_wald": 0.0017561224709507944
+     },
+     "log_N": {
+      "coef": -0.6691849278128129,
+      "se": 0.4604939428781528,
+      "z": -1.4531894244478258,
+      "p_wald": 0.14617116764427143
+     }
+    }
+   }
+  },
+  "sensitivity_with_le1": {
+   "n_rows_law": 439,
+   "bins": [
+    {
+     "U_bin": "0",
+     "U_lo": 0,
+     "U_hi": 0,
+     "n": 17,
+     "k": 17,
+     "share": 1.0,
+     "ci95_lo": 0.8156818649911483,
+     "ci95_hi": 1.0,
+     "U_mean_in_bin": 0.0
+    },
+    {
+     "U_bin": "1",
+     "U_lo": 1,
+     "U_hi": 1,
+     "n": 49,
+     "k": 18,
+     "share": 0.3673469387755102,
+     "ci95_lo": 0.24665172968683138,
+     "ci95_hi": 0.5073293243920758,
+     "U_mean_in_bin": 1.0
+    },
+    {
+     "U_bin": "2",
+     "U_lo": 2,
+     "U_hi": 2,
+     "n": 79,
+     "k": 39,
+     "share": 0.4936708860759494,
+     "ci95_lo": 0.38630272176150804,
+     "ci95_hi": 0.6016260277530987,
+     "U_mean_in_bin": 2.0
+    },
+    {
+     "U_bin": "3-4",
+     "U_lo": 3,
+     "U_hi": 4,
+     "n": 103,
+     "k": 33,
+     "share": 0.32038834951456313,
+     "ci95_lo": 0.2381305113411421,
+     "ci95_hi": 0.4155619746244889,
+     "U_mean_in_bin": 3.504854368932039
+    },
+    {
+     "U_bin": "5-8",
+     "U_lo": 5,
+     "U_hi": 8,
+     "n": 104,
+     "k": 21,
+     "share": 0.20192307692307693,
+     "ci95_lo": 0.13603525270294686,
+     "ci95_hi": 0.2890467085575533,
+     "U_mean_in_bin": 6.038461538461538
+    },
+    {
+     "U_bin": "9-16",
+     "U_lo": 9,
+     "U_hi": 16,
+     "n": 39,
+     "k": 2,
+     "share": 0.05128205128205128,
+     "ci95_lo": 0.014177955415274113,
+     "ci95_hi": 0.16885640047613612,
+     "U_mean_in_bin": 11.564102564102564
+    },
+    {
+     "U_bin": ">=17",
+     "U_lo": 17,
+     "U_hi": null,
+     "n": 48,
+     "k": 2,
+     "share": 0.041666666666666664,
+     "ci95_lo": 0.011501893489386586,
+     "ci95_hi": 0.13975655870455445,
+     "U_mean_in_bin": 36.6875
+    }
+   ],
+   "log1p_U": {
+    "coef": -3.2551460030567574,
+    "se": 0.3991952208803341,
+    "z": -8.154270975184208,
+    "p_wald": 3.5129243447985346e-16
+   },
+   "log_N": {
+    "coef": -0.09518204920129475,
+    "se": 0.16397785349628713,
+    "z": -0.5804567334664489,
+    "p_wald": 0.5616066558709096
+   },
+   "set_H1": {
+    "coef": -0.7172187081953398,
+    "se": 0.3932166268244537,
+    "z": -1.8239785890730724,
+    "p_wald": 0.06815530922153648
+   },
+   "LR_log1p_U": {
+    "chi2": 141.97807367430715,
+    "df": 1,
+    "p": 9.832764610166342e-33
+   },
+   "LR_log_N_beyond_U": {
+    "chi2": 0.338222110977938,
+    "df": 1,
+    "p": 0.5608572552144595
+   },
+   "note": "seven regimes, as before 2026-11-11 (for comparison only)"
+  },
+  "U1_vs_U2": {
+   "pooled_U1": {
+    "U_bin": "1",
+    "U_lo": 1,
+    "U_hi": 1,
+    "n": 49,
+    "k": 18,
+    "share": 0.3673469387755102,
+    "ci95_lo": 0.24665172968683138,
+    "ci95_hi": 0.5073293243920758,
+    "U_mean_in_bin": 1.0
+   },
+   "pooled_U2": {
+    "U_bin": "2",
+    "U_lo": 2,
+    "U_hi": 2,
+    "n": 79,
+    "k": 39,
+    "share": 0.4936708860759494,
+    "ci95_lo": 0.38630272176150804,
+    "ci95_hi": 0.6016260277530987,
+    "U_mean_in_bin": 2.0
+   },
+   "by_regime_U1": {
+    "chua_I": {
+     "n": 6,
+     "k": 5,
+     "share": 0.8333333333333334
+    },
+    "chua_II": {
+     "n": 1,
+     "k": 1,
+     "share": 1.0
+    },
+    "le1": {
+     "n": 0,
+     "k": 0,
+     "share": null
+    },
+    "se11": {
+     "n": 11,
+     "k": 11,
+     "share": 1.0
+    },
+    "se3": {
+     "n": 1,
+     "k": 1,
+     "share": 1.0
+    },
+    "wangchen2": {
+     "n": 7,
+     "k": 0,
+     "share": 0.0
+    },
+    "wangchen2_a0.03": {
+     "n": 23,
+     "k": 0,
+     "share": 0.0
+    }
+   },
+   "by_regime_U2": {
+    "chua_I": {
+     "n": 22,
+     "k": 5,
+     "share": 0.22727272727272727
+    },
+    "chua_II": {
+     "n": 6,
+     "k": 3,
+     "share": 0.5
+    },
+    "le1": {
+     "n": 0,
+     "k": 0,
+     "share": null
+    },
+    "se11": {
+     "n": 18,
+     "k": 15,
+     "share": 0.8333333333333334
+    },
+    "se3": {
+     "n": 17,
+     "k": 16,
+     "share": 0.9411764705882353
+    },
+    "wangchen2": {
+     "n": 6,
+     "k": 0,
+     "share": 0.0
+    },
+    "wangchen2_a0.03": {
+     "n": 10,
+     "k": 0,
+     "share": 0.0
+    }
+   },
+   "by_regime_set_U1_U2": {
+    "chua_I/HE1": {
+     "1": [
+      5,
+      6
+     ],
+     "2": [
+      5,
+      22
+     ]
+    },
+    "chua_II/HE1": {
+     "1": [
+      1,
+      1
+     ],
+     "2": [
+      3,
+      6
+     ]
+    },
+    "se11/H1": {
+     "1": [
+      1,
+      1
+     ],
+     "2": [
+      8,
+      10
+     ]
+    },
+    "se11/HE1": {
+     "1": [
+      10,
+      10
+     ],
+     "2": [
+      7,
+      8
+     ]
+    },
+    "se3/H1": {
+     "1": [
+      0,
+      0
+     ],
+     "2": [
+      1,
+      1
+     ]
+    },
+    "se3/HE1": {
+     "1": [
+      1,
+      1
+     ],
+     "2": [
+      15,
+      16
+     ]
+    },
+    "wangchen2/HE1": {
+     "1": [
+      0,
+      7
+     ],
+     "2": [
+      0,
+      6
+     ]
+    },
+    "wangchen2_a0.03/HE1": {
+     "1": [
+      0,
+      23
+     ],
+     "2": [
+      0,
+      10
+     ]
+    }
+   },
+   "U2_standardized_to_U1_regime_mix": 0.24431590818145443,
+   "mantel_haenszel_U2_vs_U1_by_regime": {
+    "n_strata": 6,
+    "OR": 0.03833837656805429,
+    "ci95": [
+     0.0031092337147037917,
+     0.47273098542672976
+    ],
+    "CMH_chi2": 7.628406844852975,
+    "CMH_p": 0.005745603299577796
+   },
+   "mantel_haenszel_U2_vs_U1_by_regime_set": {
+    "n_strata": 7,
+    "OR": 0.04191342375143821,
+    "ci95": [
+     0.0035490415856088958,
+     0.49498859007205154
+    ],
+    "CMH_chi2": 7.055764437308983,
+    "CMH_p": 0.007901058595150083
+   },
+   "logit_U2_vs_U1": {
+    "coef_U2": [
+     -2.8974214762943586,
+     1.1613904481056114
+    ],
+    "z": -2.4947867282880223,
+    "model": "rows with U in {1, 2}: not_excited ~ [U = 2] + [set H1] + log N + regime fixed effects"
+   },
+   "regime_adjusted_bins": {
+    "model": "not_excited ~ U-bin dummies (vs U = 0) + [set H1] + log N + regime fixed effects (ridge 1e-3); share = mean prediction over all rows with the bin set",
+    "bins": [
+     {
+      "U_bin": "0",
+      "adjusted_share": 0.9931230018713209,
+      "coef_vs_U0": null
+     },
+     {
+      "U_bin": "1",
+      "adjusted_share": 0.6006979716273934,
+      "coef_vs_U0": [
+       -7.2603374296508525,
+       2.7231251319582204
+      ]
+     },
+     {
+      "U_bin": "2",
+      "adjusted_share": 0.4541771109436292,
+      "coef_vs_U0": [
+       -8.556810935396763,
+       2.774924353608698
+      ]
+     },
+     {
+      "U_bin": "3-4",
+      "adjusted_share": 0.25009844124197533,
+      "coef_vs_U0": [
+       -9.97096882642479,
+       2.7822579761269135
+      ]
+     },
+     {
+      "U_bin": "5-8",
+      "adjusted_share": 0.1157209732184919,
+      "coef_vs_U0": [
+       -11.10473190422757,
+       2.799254639485433
+      ]
+     },
+     {
+      "U_bin": "9-16",
+      "adjusted_share": 0.0012444113096811101,
+      "coef_vs_U0": [
+       -15.884843693147074,
+       6.267526233415465
+      ]
+     },
+     {
+      "U_bin": ">=17",
+      "adjusted_share": 0.05489616889855739,
+      "coef_vs_U0": [
+       -11.987699243103407,
+       2.8822571584054026
+      ]
+     }
+    ]
+   },
+   "note": "six regimes (pooled rows); by_regime tables include LE1 for reference"
+  },
+  "by_U_in": {
+   "why_not_exact": "stage_n.py removes the coordinates x of the equilibria before writing the record (info.pop('x')); only dist_true_eq (to the nearest true equilibrium, in units of L = half of the largest edge of Q) and nearest_true_eq are stored, which bound U_in but do not fix it",
+   "n_rows_law": 381,
+   "n_rows_U_in_determined": 225,
+   "share_rows_determined": 0.5905511811023622,
+   "U_mean": 7.425196850393701,
+   "U_in_lo_mean": 5.301837270341207,
+   "U_in_hi_mean": 6.923884514435696,
+   "bins_U_in_lower_bound": [
+    {
+     "U_bin": "0",
+     "U_lo": 0,
+     "U_hi": 0,
+     "n": 38,
+     "k": 36,
+     "share": 0.9473684210526315,
+     "ci95_lo": 0.8271453786822962,
+     "ci95_hi": 0.9854457918527075,
+     "U_mean_in_bin": 0.0
+    },
+    {
+     "U_bin": "1",
+     "U_lo": 1,
+     "U_hi": 1,
+     "n": 76,
+     "k": 25,
+     "share": 0.32894736842105265,
+     "ci95_lo": 0.23379273635816047,
+     "ci95_hi": 0.44056191116412347,
+     "U_mean_in_bin": 1.0
+    },
+    {
+     "U_bin": "2",
+     "U_lo": 2,
+     "U_hi": 2,
+     "n": 70,
+     "k": 24,
+     "share": 0.34285714285714286,
+     "ci95_lo": 0.2424598880226688,
+     "ci95_hi": 0.4596045030205579,
+     "U_mean_in_bin": 2.0
+    },
+    {
+     "U_bin": "3-4",
+     "U_lo": 3,
+     "U_hi": 4,
+     "n": 100,
+     "k": 21,
+     "share": 0.21,
+     "ci95_lo": 0.141656540619153,
+     "ci95_hi": 0.29979968834089865,
+     "U_mean_in_bin": 3.46
+    },
+    {
+     "U_bin": "5-8",
+     "U_lo": 5,
+     "U_hi": 8,
+     "n": 43,
+     "k": 5,
+     "share": 0.11627906976744186,
+     "ci95_lo": 0.05070427739804166,
+     "ci95_hi": 0.24479161810082128,
+     "U_mean_in_bin": 5.906976744186046
+    },
+    {
+     "U_bin": "9-16",
+     "U_lo": 9,
+     "U_hi": 16,
+     "n": 22,
+     "k": 2,
+     "share": 0.09090909090909091,
+     "ci95_lo": 0.025295428990995267,
+     "ci95_hi": 0.27814946841605814,
+     "U_mean_in_bin": 12.227272727272727
+    },
+    {
+     "U_bin": ">=17",
+     "U_lo": 17,
+     "U_hi": null,
+     "n": 32,
+     "k": 0,
+     "share": 0.0,
+     "ci95_lo": 0.0,
+     "ci95_hi": 0.1071791982550706,
+     "U_mean_in_bin": 29.21875
+    }
+   ],
+   "bins_U_in_upper_bound": [
+    {
+     "U_bin": "0",
+     "U_lo": 0,
+     "U_hi": 0,
+     "n": 17,
+     "k": 17,
+     "share": 1.0,
+     "ci95_lo": 0.8156818649911483,
+     "ci95_hi": 1.0,
+     "U_mean_in_bin": 0.0
+    },
+    {
+     "U_bin": "1",
+     "U_lo": 1,
+     "U_hi": 1,
+     "n": 49,
+     "k": 18,
+     "share": 0.3673469387755102,
+     "ci95_lo": 0.24665172968683138,
+     "ci95_hi": 0.5073293243920758,
+     "U_mean_in_bin": 1.0
+    },
+    {
+     "U_bin": "2",
+     "U_lo": 2,
+     "U_hi": 2,
+     "n": 82,
+     "k": 41,
+     "share": 0.5,
+     "ci95_lo": 0.3942282839199199,
+     "ci95_hi": 0.6057717160800802,
+     "U_mean_in_bin": 2.0
+    },
+    {
+     "U_bin": "3-4",
+     "U_lo": 3,
+     "U_hi": 4,
+     "n": 98,
+     "k": 26,
+     "share": 0.2653061224489796,
+     "ci95_lo": 0.18795724173122724,
+     "ci95_hi": 0.3603603046524187,
+     "U_mean_in_bin": 3.520408163265306
+    },
+    {
+     "U_bin": "5-8",
+     "U_lo": 5,
+     "U_hi": 8,
+     "n": 71,
+     "k": 9,
+     "share": 0.1267605633802817,
+     "ci95_lo": 0.06814527589564845,
+     "ci95_hi": 0.22369108278653732,
+     "U_mean_in_bin": 5.915492957746479
+    },
+    {
+     "U_bin": "9-16",
+     "U_lo": 9,
+     "U_hi": 16,
+     "n": 23,
+     "k": 0,
+     "share": 0.0,
+     "ci95_lo": 0.0,
+     "ci95_hi": 0.14311661845042686,
+     "U_mean_in_bin": 12.08695652173913
+    },
+    {
+     "U_bin": ">=17",
+     "U_lo": 17,
+     "U_hi": null,
+     "n": 41,
+     "k": 2,
+     "share": 0.04878048780487805,
+     "ci95_lo": 0.013480945365169042,
+     "ci95_hi": 0.16138978870370846,
+     "U_mean_in_bin": 33.707317073170735
+    }
+   ],
+   "bins_U_in_determined_rows_only": [
+    {
+     "U_bin": "0",
+     "U_lo": 0,
+     "U_hi": 0,
+     "n": 17,
+     "k": 17,
+     "share": 1.0,
+     "ci95_lo": 0.8156818649911483,
+     "ci95_hi": 1.0,
+     "U_mean_in_bin": 0.0
+    },
+    {
+     "U_bin": "1",
+     "U_lo": 1,
+     "U_hi": 1,
+     "n": 48,
+     "k": 17,
+     "share": 0.3541666666666667,
+     "ci95_lo": 0.23433644125604858,
+     "ci95_hi": 0.4956094298965691,
+     "U_mean_in_bin": 1.0
+    },
+    {
+     "U_bin": "2",
+     "U_lo": 2,
+     "U_hi": 2,
+     "n": 55,
+     "k": 22,
+     "share": 0.4,
+     "ci95_lo": 0.2811849723246312,
+     "ci95_hi": 0.5318720078987862,
+     "U_mean_in_bin": 2.0
+    },
+    {
+     "U_bin": "3-4",
+     "U_lo": 3,
+     "U_hi": 4,
+     "n": 63,
+     "k": 17,
+     "share": 0.2698412698412698,
+     "ci95_lo": 0.17583844412315988,
+     "ci95_hi": 0.39029909219551784,
+     "U_mean_in_bin": 3.492063492063492
+    },
+    {
+     "U_bin": "5-8",
+     "U_lo": 5,
+     "U_hi": 8,
+     "n": 29,
+     "k": 4,
+     "share": 0.13793103448275862,
+     "ci95_lo": 0.05497439964111964,
+     "ci95_hi": 0.30558993720352023,
+     "U_mean_in_bin": 5.931034482758621
+    },
+    {
+     "U_bin": "9-16",
+     "U_lo": 9,
+     "U_hi": 16,
+     "n": 11,
+     "k": 0,
+     "share": 0.0,
+     "ci95_lo": 0.0,
+     "ci95_hi": 0.2588329669680317,
+     "U_mean_in_bin": 11.909090909090908
+    },
+    {
+     "U_bin": ">=17",
+     "U_lo": 17,
+     "U_hi": null,
+     "n": 2,
+     "k": 0,
+     "share": 0.0,
+     "ci95_lo": 0.0,
+     "ci95_hi": 0.6576197724933469,
+     "U_mean_in_bin": 19.5
+    }
+   ],
+   "logit_log1p_U_in_lower_bound": {
+    "coef": -2.7044195758754785,
+    "se": 0.3384814928004843,
+    "z": -7.989859514917647,
+    "p_wald": 1.350926090341146e-15
+   },
+   "logit_log1p_U_in_upper_bound": {
+    "coef": -3.1804093695846873,
+    "se": 0.412994613455069,
+    "z": -7.700849517086242,
+    "p_wald": 1.3516459207313106e-14
+   },
+   "logit_log1p_U_in_determined_rows": {
+    "coef": -4.172796673714454,
+    "se": 0.6621705559581382,
+    "z": -6.3016946860111585,
+    "p_wald": 2.94408673485142e-10
+   },
+   "logit_log1p_U_same_determined_rows": {
+    "coef": -4.087626818719117,
+    "se": 0.6496540382465054,
+    "z": -6.292005556914746,
+    "p_wald": 3.1339026200680206e-10
+   },
+   "stage_C_twins": {
+    "rows": 116,
+    "matching": {
+     "used": 166
+    },
+    "bounds_hold": 116,
+    "bins_U_in_exact": [
+     {
+      "U_bin": "0",
+      "U_lo": 0,
+      "U_hi": 0,
+      "n": 16,
+      "k": 16,
+      "share": 1.0,
+      "ci95_lo": 0.8063923194655637,
+      "ci95_hi": 1.0,
+      "U_mean_in_bin": 0.0
+     },
+     {
+      "U_bin": "1",
+      "U_lo": 1,
+      "U_hi": 1,
+      "n": 20,
+      "k": 9,
+      "share": 0.45,
+      "ci95_lo": 0.2581978582556243,
+      "ci95_hi": 0.6579146575496577,
+      "U_mean_in_bin": 1.0
+     },
+     {
+      "U_bin": "2",
+      "U_lo": 2,
+      "U_hi": 2,
+      "n": 25,
+      "k": 13,
+      "share": 0.52,
+      "ci95_lo": 0.3349851695035678,
+      "ci95_hi": 0.6996871404588704,
+      "U_mean_in_bin": 2.0
+     },
+     {
+      "U_bin": "3-4",
+      "U_lo": 3,
+      "U_hi": 4,
+      "n": 29,
+      "k": 5,
+      "share": 0.1724137931034483,
+      "ci95_lo": 0.07597857252891227,
+      "ci95_hi": 0.34548439890195237,
+      "U_mean_in_bin": 3.4827586206896552
+     },
+     {
+      "U_bin": "5-8",
+      "U_lo": 5,
+      "U_hi": 8,
+      "n": 13,
+      "k": 2,
+      "share": 0.15384615384615385,
+      "ci95_lo": 0.043258178358081184,
+      "ci95_hi": 0.4223463101948254,
+      "U_mean_in_bin": 5.538461538461538
+     },
+     {
+      "U_bin": "9-16",
+      "U_lo": 9,
+      "U_hi": 16,
+      "n": 7,
+      "k": 0,
+      "share": 0.0,
+      "ci95_lo": 5.551115123125783e-17,
+      "ci95_hi": 0.35433043506668743,
+      "U_mean_in_bin": 12.571428571428571
+     },
+     {
+      "U_bin": ">=17",
+      "U_lo": 17,
+      "U_hi": null,
+      "n": 6,
+      "k": 0,
+      "share": 0.0,
+      "ci95_lo": 2.7755575615628914e-17,
+      "ci95_hi": 0.3903342879021653,
+      "U_mean_in_bin": 23.5
+     }
+    ],
+    "logit_log1p_U_in_exact": {
+     "coef": -4.070381994688422,
+     "se": 0.8557387460839262,
+     "z": -4.75657087319641,
+     "p_wald": 1.9690912826966243e-06
+    },
+    "logit_log1p_U_same_rows": {
+     "coef": -5.255431441810939,
+     "se": 1.1252977343716737,
+     "z": -4.67025861804066,
+     "p_wald": 3.0082077481553e-06
+    },
+    "note": "sweep models (rho 0.9, N 300-1000) whose stage C twin has the same training error and the same U; U_in from the stage C coordinates"
+   }
+  },
+  "models_by_source": {
+   "gpuq-results": 414,
+   "node_results": 286
+  },
+  "overlap_with_robustness": {
+   "robustness_models": 200,
+   "robustness_suffixed_in_dens": 160,
+   "robustness_base_setting": 40,
+   "suffixed_models_in_sweep": 0,
+   "base_models_also_in_sweep": 40,
+   "base_models_in_sweep_via_A100_file": 24,
+   "base_models_in_sweep_only_via_CPU_file": 16,
+   "note": "suffixed runs (_in<x>, _dens<x>) are NOT in the N sweep; the 40 base-setting runs (input 0.5, density 0.05, N 300) have plain names: those with an A100 twin are de-duplicated (A100 file kept), the rest (seeds 3-4) enter the sweep as extra N = 300 models"
+  },
+  "duplicate_model_checks": {
+   "n_pairs": 24,
+   "U_equal": 24,
+   "K_equal": 24,
+   "all_target_labels_equal": 23,
+   "targets": 30,
+   "targets_equal": 29,
+   "pairs_by_sources": {
+    "gpuq-results vs node_results": 24
+   },
+   "N_values": [
+    300
+   ]
+  },
+  "bins": [
+   {
+    "U_bin": "0",
+    "U_lo": 0,
+    "U_hi": 0,
+    "n": 17,
+    "k": 17,
+    "share": 1.0,
+    "ci95_lo": 0.8156818649911483,
+    "ci95_hi": 1.0,
+    "U_mean_in_bin": 0.0
+   },
+   {
+    "U_bin": "1",
+    "U_lo": 1,
+    "U_hi": 1,
+    "n": 49,
+    "k": 18,
+    "share": 0.3673469387755102,
+    "ci95_lo": 0.24665172968683138,
+    "ci95_hi": 0.5073293243920758,
+    "U_mean_in_bin": 1.0
+   },
+   {
+    "U_bin": "2",
+    "U_lo": 2,
+    "U_hi": 2,
+    "n": 79,
+    "k": 39,
+    "share": 0.4936708860759494,
+    "ci95_lo": 0.38630272176150804,
+    "ci95_hi": 0.6016260277530987,
+    "U_mean_in_bin": 2.0
+   },
+   {
+    "U_bin": "3-4",
+    "U_lo": 3,
+    "U_hi": 4,
+    "n": 97,
+    "k": 27,
+    "share": 0.27835051546391754,
+    "ci95_lo": 0.19891172811416313,
+    "ci95_hi": 0.37467635259321574,
+    "U_mean_in_bin": 3.484536082474227
+   },
+   {
+    "U_bin": "5-8",
+    "U_lo": 5,
+    "U_hi": 8,
+    "n": 73,
+    "k": 10,
+    "share": 0.136986301369863,
+    "ci95_lo": 0.0761438960939413,
+    "ci95_hi": 0.23412427406569902,
+    "U_mean_in_bin": 5.972602739726027
+   },
+   {
+    "U_bin": "9-16",
+    "U_lo": 9,
+    "U_hi": 16,
+    "n": 25,
+    "k": 0,
+    "share": 0.0,
+    "ci95_lo": 1.3877787807814457e-17,
+    "ci95_hi": 0.13319225093904846,
+    "U_mean_in_bin": 12.04
+   },
+   {
+    "U_bin": ">=17",
+    "U_lo": 17,
+    "U_hi": null,
+    "n": 41,
+    "k": 2,
+    "share": 0.04878048780487805,
+    "ci95_lo": 0.013480945365169042,
+    "ci95_hi": 0.16138978870370846,
+    "U_mean_in_bin": 37.73170731707317
+   }
+  ],
+  "logit": {
+   "n_rows": 381,
+   "n_not_excited": 113,
+   "coef": {
+    "log1p_U": {
+     "coef": -3.079605978330335,
+     "se": 0.40285997844629007,
+     "z": -7.644358196630626,
+     "p_wald": 2.0999008527661374e-14
+    },
+    "set_H1": {
+     "coef": -0.7307178478034505,
+     "se": 0.3893331172901893,
+     "z": -1.8768448286376065,
+     "p_wald": 0.0605393643354729
+    },
+    "log_N": {
+     "coef": -0.030784327213547867,
+     "se": 0.1793896303946475,
+     "z": -0.17160594592800046,
+     "p_wald": 0.8637473326294687
+    },
+    "regime_chua_I": {
+     "coef": 2.931221468348223,
+     "se": 1.1790874659571233,
+     "z": 2.4860085048642313,
+     "p_wald": 0.012918487821963668
+    },
+    "regime_chua_II": {
+     "coef": 3.7925086050523196,
+     "se": 1.438188714467604,
+     "z": 2.637003452259914,
+     "p_wald": 0.008364198035699738
+    },
+    "regime_se11": {
+     "coef": 5.346637202159265,
+     "se": 1.2929409009679742,
+     "z": 4.135252584365184,
+     "p_wald": 3.545644353408239e-05
+    },
+    "regime_se3": {
+     "coef": 4.996836057254673,
+     "se": 1.3723566936675464,
+     "z": 3.641062181801226,
+     "p_wald": 0.0002715155431976766
+    },
+    "regime_wangchen2": {
+     "coef": 0.6228365502021233,
+     "se": 1.3303880564783264,
+     "z": 0.4681615617106752,
+     "p_wald": 0.6396690578837056
+    },
+    "regime_wangchen2_a0.03": {
+     "coef": 0.6775701783055496,
+     "se": 1.12662416558663,
+     "z": 0.6014163365231392,
+     "p_wald": 0.5475627204219363
+    }
+   },
+   "LR_log1p_U": {
+    "chi2": 123.04298215519566,
+    "df": 1,
+    "p": 1.364604889893153e-28
+   },
+   "LR_log_N_beyond_U": {
+    "chi2": 0.029489379961205486,
+    "df": 1,
+    "p": 0.8636539496032634
+   },
+   "loglik": -140.05646604906963,
+   "model": "logit P(not_excited) ~ log(1+U) + [set H1] + log N + regime fixed effects (no intercept; ridge 1e-6)"
+  },
+  "geometric_model": {
+   "chua_I": {
+    "n_rows": 66,
+    "q_fit": 0.7663024881507933,
+    "q_at_lower_bound": false,
+    "p_cube_median": 0.11825,
+    "one_minus_p_squared": 0.7774830625000001,
+    "U_mean": 8.984848484848484
+   },
+   "chua_II": {
+    "n_rows": 13,
+    "q_fit": 0.7303484697215633,
+    "q_at_lower_bound": false,
+    "p_cube_median": 0.0055,
+    "one_minus_p_squared": 0.9890302500000001,
+    "U_mean": 2.230769230769231
+   },
+   "le1": {
+    "n_rows": 58,
+    "q_fit": 0.8543093999733604,
+    "q_at_lower_bound": false,
+    "p_cube_median": 0.0695,
+    "one_minus_p_squared": 0.86583025,
+    "U_mean": 9.982758620689655
+   },
+   "se11": {
+    "n_rows": 96,
+    "q_fit": 0.8341450602439549,
+    "q_at_lower_bound": false,
+    "p_cube_median": 0.029,
+    "one_minus_p_squared": 0.9428409999999999,
+    "U_mean": 8.46875
+   },
+   "se3": {
+    "n_rows": 86,
+    "q_fit": 0.7764826257299354,
+    "q_at_lower_bound": false,
+    "p_cube_median": 0.10225,
+    "one_minus_p_squared": 0.8059550625,
+    "U_mean": 5.069767441860465
+   },
+   "wangchen2": {
+    "n_rows": 48,
+    "q_fit": 0.00010396370470828441,
+    "q_at_lower_bound": true,
+    "p_cube_median": 0.685,
+    "one_minus_p_squared": 0.09922499999999997,
+    "U_mean": 7.625
+   },
+   "wangchen2_a0.03": {
+    "n_rows": 72,
+    "q_fit": 0.18198403314003253,
+    "q_at_lower_bound": false,
+    "p_cube_median": 0.42674999999999996,
+    "one_minus_p_squared": 0.32861556250000007,
+    "U_mean": 8.222222222222221
+   }
+  },
+  "U_of_N": {
+   "chua_I/HE1": {
+    "N": [
+     50,
+     100,
+     150,
+     200,
+     300,
+     500,
+     700,
+     1000,
+     1400,
+     2000
+    ],
+    "U_mean": [
+     2.0,
+     3.6,
+     2.5,
+     2.8,
+     2.9,
+     4.5,
+     6.666666666666667,
+     22.833333333333332,
+     20.0,
+     29.166666666666668
+    ],
+    "argmin_N": 50,
+    "U_at_min": 2.0,
+    "spearman_rho": 0.5258655925089543,
+    "spearman_p": 5.466387615176142e-07,
+    "shape": "increasing",
+    "shape_rule": "U-shaped if the minimum of mean U is interior and both ends exceed it by > 1; increasing if Spearman > 0 (p < 0.05) and U(N_min) within 1 of the minimum"
+   },
+   "chua_II/HE1": {
+    "N": [
+     50,
+     100,
+     150,
+     200,
+     300,
+     500,
+     700,
+     1000,
+     1400,
+     2000
+    ],
+    "U_mean": [
+     3.5,
+     6.9,
+     4.0,
+     5.2,
+     4.0,
+     3.0,
+     1.8333333333333333,
+     2.3333333333333335,
+     2.3333333333333335,
+     3.0
+    ],
+    "argmin_N": 700,
+    "U_at_min": 1.8333333333333333,
+    "spearman_rho": -0.33946788876305345,
+    "spearman_p": 0.002699855647960639,
+    "shape": "U-shaped",
+    "shape_rule": "U-shaped if the minimum of mean U is interior and both ends exceed it by > 1; increasing if Spearman > 0 (p < 0.05) and U(N_min) within 1 of the minimum"
+   },
+   "le1/HE1": {
+    "N": [
+     50,
+     100,
+     150,
+     200,
+     300,
+     500,
+     700,
+     1000,
+     1400,
+     2000
+    ],
+    "U_mean": [
+     13.4,
+     7.7,
+     8.7,
+     6.7,
+     6.2,
+     8.166666666666666,
+     8.5,
+     10.5,
+     16.666666666666668,
+     20.833333333333332
+    ],
+    "argmin_N": 300,
+    "U_at_min": 6.2,
+    "spearman_rho": -0.17134216853568096,
+    "spearman_p": 0.12859302932396588,
+    "shape": "U-shaped",
+    "shape_rule": "U-shaped if the minimum of mean U is interior and both ends exceed it by > 1; increasing if Spearman > 0 (p < 0.05) and U(N_min) within 1 of the minimum"
+   },
+   "se11/H1": {
+    "N": [
+     50,
+     100,
+     150,
+     200,
+     300,
+     500,
+     700,
+     1000,
+     1400,
+     2000
+    ],
+    "U_mean": [
+     5.7,
+     3.5,
+     3.9,
+     3.7,
+     4.833333333333333,
+     5.333333333333333,
+     8.0,
+     11.833333333333334,
+     16.833333333333332,
+     17.166666666666668
+    ],
+    "argmin_N": 100,
+    "U_at_min": 3.5,
+    "spearman_rho": 0.05401062643725944,
+    "spearman_p": 0.6430858232748438,
+    "shape": "U-shaped",
+    "shape_rule": "U-shaped if the minimum of mean U is interior and both ends exceed it by > 1; increasing if Spearman > 0 (p < 0.05) and U(N_min) within 1 of the minimum"
+   },
+   "se11/HE1": {
+    "N": [
+     50,
+     100,
+     150,
+     200,
+     300,
+     500,
+     700,
+     1000,
+     1400,
+     2000
+    ],
+    "U_mean": [
+     5.8,
+     5.2,
+     2.7,
+     4.4,
+     2.8,
+     2.3333333333333335,
+     5.5,
+     8.833333333333334,
+     15.333333333333334,
+     21.166666666666668
+    ],
+    "argmin_N": 500,
+    "U_at_min": 2.3333333333333335,
+    "spearman_rho": -0.10887003383187126,
+    "spearman_p": 0.3364019406443652,
+    "shape": "U-shaped",
+    "shape_rule": "U-shaped if the minimum of mean U is interior and both ends exceed it by > 1; increasing if Spearman > 0 (p < 0.05) and U(N_min) within 1 of the minimum"
+   },
+   "se3/H1": {
+    "N": [
+     50,
+     100,
+     150,
+     200,
+     300,
+     500,
+     700,
+     1000,
+     1400,
+     2000
+    ],
+    "U_mean": [
+     5.4,
+     7.3,
+     7.4,
+     4.7,
+     5.166666666666667,
+     5.5,
+     5.333333333333333,
+     4.5,
+     5.333333333333333,
+     6.0
+    ],
+    "argmin_N": 1000,
+    "U_at_min": 4.5,
+    "spearman_rho": -0.1761472855573037,
+    "spearman_p": 0.12798531549912812,
+    "shape": "flat/irregular",
+    "shape_rule": "U-shaped if the minimum of mean U is interior and both ends exceed it by > 1; increasing if Spearman > 0 (p < 0.05) and U(N_min) within 1 of the minimum"
+   },
+   "se3/HE1": {
+    "N": [
+     50,
+     100,
+     150,
+     200,
+     300,
+     500,
+     700,
+     1000,
+     1400,
+     2000
+    ],
+    "U_mean": [
+     9.8,
+     9.3,
+     10.2,
+     9.9,
+     3.8,
+     2.3333333333333335,
+     3.5,
+     4.166666666666667,
+     4.333333333333333,
+     8.5
+    ],
+    "argmin_N": 500,
+    "U_at_min": 2.3333333333333335,
+    "spearman_rho": -0.544067168574108,
+    "spearman_p": 1.8275748491061236e-07,
+    "shape": "U-shaped",
+    "shape_rule": "U-shaped if the minimum of mean U is interior and both ends exceed it by > 1; increasing if Spearman > 0 (p < 0.05) and U(N_min) within 1 of the minimum"
+   },
+   "wangchen2/HE1": {
+    "N": [
+     50,
+     100,
+     150,
+     200,
+     300,
+     500,
+     700,
+     1000,
+     1400,
+     2000
+    ],
+    "U_mean": [
+     9.6,
+     7.9,
+     4.0,
+     4.3,
+     3.3333333333333335,
+     3.8333333333333335,
+     3.1666666666666665,
+     5.166666666666667,
+     11.0,
+     24.833333333333332
+    ],
+    "argmin_N": 700,
+    "U_at_min": 3.1666666666666665,
+    "spearman_rho": -0.18264110270428174,
+    "spearman_p": 0.11430069643044899,
+    "shape": "U-shaped",
+    "shape_rule": "U-shaped if the minimum of mean U is interior and both ends exceed it by > 1; increasing if Spearman > 0 (p < 0.05) and U(N_min) within 1 of the minimum"
+   },
+   "wangchen2_a0.03/HE1": {
+    "N": [
+     50,
+     100,
+     150,
+     200,
+     300,
+     500,
+     700,
+     1000,
+     1400,
+     2000
+    ],
+    "U_mean": [
+     5.4,
+     2.3,
+     2.5,
+     0.9,
+     1.3333333333333333,
+     2.6666666666666665,
+     6.833333333333333,
+     16.666666666666668,
+     20.166666666666668,
+     38.166666666666664
+    ],
+    "argmin_N": 200,
+    "U_at_min": 0.9,
+    "spearman_rho": 0.11674939216514357,
+    "spearman_p": 0.31520068667144985,
+    "shape": "U-shaped",
+    "shape_rule": "U-shaped if the minimum of mean U is interior and both ends exceed it by > 1; increasing if Spearman > 0 (p < 0.05) and U(N_min) within 1 of the minimum"
+   }
+  },
+  "sensitivity_without_cpu_only_N300_base_models": {
+   "n_rows_law": 370,
+   "bins": [
+    {
+     "U_bin": "0",
+     "U_lo": 0,
+     "U_hi": 0,
+     "n": 17,
+     "k": 17,
+     "share": 1.0,
+     "ci95_lo": 0.8156818649911483,
+     "ci95_hi": 1.0,
+     "U_mean_in_bin": 0.0
+    },
+    {
+     "U_bin": "1",
+     "U_lo": 1,
+     "U_hi": 1,
+     "n": 49,
+     "k": 18,
+     "share": 0.3673469387755102,
+     "ci95_lo": 0.24665172968683138,
+     "ci95_hi": 0.5073293243920758,
+     "U_mean_in_bin": 1.0
+    },
+    {
+     "U_bin": "2",
+     "U_lo": 2,
+     "U_hi": 2,
+     "n": 76,
+     "k": 38,
+     "share": 0.5,
+     "ci95_lo": 0.39032595445464624,
+     "ci95_hi": 0.6096740455453538,
+     "U_mean_in_bin": 2.0
+    },
+    {
+     "U_bin": "3-4",
+     "U_lo": 3,
+     "U_hi": 4,
+     "n": 91,
+     "k": 25,
+     "share": 0.27472527472527475,
+     "ci95_lo": 0.19355178327653003,
+     "ci95_hi": 0.3741478228892293,
+     "U_mean_in_bin": 3.4835164835164836
+    },
+    {
+     "U_bin": "5-8",
+     "U_lo": 5,
+     "U_hi": 8,
+     "n": 71,
+     "k": 10,
+     "share": 0.14084507042253522,
+     "ci95_lo": 0.07834202212357166,
+     "ci95_hi": 0.24021749283475802,
+     "U_mean_in_bin": 6.0
+    },
+    {
+     "U_bin": "9-16",
+     "U_lo": 9,
+     "U_hi": 16,
+     "n": 25,
+     "k": 0,
+     "share": 0.0,
+     "ci95_lo": 1.3877787807814457e-17,
+     "ci95_hi": 0.13319225093904846,
+     "U_mean_in_bin": 12.04
+    },
+    {
+     "U_bin": ">=17",
+     "U_lo": 17,
+     "U_hi": null,
+     "n": 41,
+     "k": 2,
+     "share": 0.04878048780487805,
+     "ci95_lo": 0.013480945365169042,
+     "ci95_hi": 0.16138978870370846,
+     "U_mean_in_bin": 37.73170731707317
+    }
+   ],
+   "log1p_U": {
+    "coef": -3.060296789059274,
+    "se": 0.40250712560609325,
+    "z": -7.603087235911897,
+    "p_wald": 2.891484322976183e-14
+   },
+   "log_N": {
+    "coef": -0.05887995364349166,
+    "se": 0.1788887163694361,
+    "z": -0.3291429154306993,
+    "p_wald": 0.7420476678932055
+   },
+   "LR_log_N_beyond_U": {
+    "chi2": 0.10858569022752818,
+    "df": 1,
+    "p": 0.7417600881521152
+   }
+  }
+ },
+ "lite_vs_full": {
+  "original_check_se3_se11_HE1_N500_700": {
+   "n_pairs": 24,
+   "n_agree_coarse": 24,
+   "n_lite_not_excited": 18,
+   "n_lite_not_excited_full_hidden_stat": 18,
+   "n_full_hidden_stat": 18,
+   "all_same_model_train_rmse": true,
+   "regimes": [
+    "se11",
+    "se3"
+   ],
+   "N_values": [
+    500,
+    700
+   ],
+   "crosstab_lite_to_full": {
+    "not_excited -> hidden_stat": 18,
+    "self_excited -> self_excited": 4,
+    "excited_r -> excited_r": 2
+   },
+   "coarse_classes": "candidate = lite not_excited / full hidden_stat or undetermined; excited = self_excited or excited_r; not_reproduced"
+  },
+  "extended_check_all_overlapping_models": {
+   "n_pairs": 150,
+   "n_agree_coarse": 149,
+   "n_lite_not_excited": 45,
+   "n_lite_not_excited_full_hidden_stat": 45,
+   "n_full_hidden_stat": 45,
+   "all_same_model_train_rmse": true,
+   "regimes": [
+    "chua_I",
+    "chua_II",
+    "se11",
+    "se3",
+    "wangchen2",
+    "wangchen2_a0.03"
+   ],
+   "N_values": [
+    300,
+    500,
+    700,
+    1000
+   ],
+   "crosstab_lite_to_full": {
+    "self_excited -> self_excited": 67,
+    "not_excited -> hidden_stat": 45,
+    "not_reproduced -> not_reproduced": 34,
+    "excited_r -> excited_r": 3,
+    "self_excited -> not_reproduced": 1
+   },
+   "coarse_classes": "candidate = lite not_excited / full hidden_stat or undetermined; excited = self_excited or excited_r; not_reproduced"
+  },
+  "le1_separate": {
+   "n_pairs": 16,
+   "n_agree_coarse": 14,
+   "n_lite_not_excited": 7,
+   "n_lite_not_excited_full_hidden_stat": 5,
+   "n_full_hidden_stat": 5,
+   "all_same_model_train_rmse": true,
+   "regimes": [
+    "le1"
+   ],
+   "N_values": [
+    300,
+    1000
+   ],
+   "crosstab_lite_to_full": {
+    "self_excited -> self_excited": 8,
+    "not_excited -> hidden_stat": 5,
+    "not_excited -> excited_r": 1,
+    "excited_r -> self_excited": 1,
+    "not_excited -> self_excited": 1
+   },
+   "coarse_classes": "candidate = lite not_excited / full hidden_stat or undetermined; excited = self_excited or excited_r; not_reproduced"
+  },
+  "note": "extended check: pooled over the six regimes se3, se11, wangchen2, wangchen2_a0.03, chua_I, chua_II; LE1 (attractor hidden only in the weak sense) is excluded and reported separately under le1_separate"
+ },
+ "robustness": {
+  "description": "stage N lite protocol, node_results/N (CPU), se3/se11/le1/chua_I, HE1, N 300, rho 0.9, eta 1e-7/1e-4, seeds 0-4; settings base (input 0.5, density 0.05), input 0.2/1.0, density 0.02/0.2; logic of gpu/analyze_robust.py; pooled bins and fit on se3, se11, chua_I (LE1 separately)",
+  "regimes": [
+   "chua_I",
+   "se11",
+   "se3"
+  ],
+  "n_models": 150,
+  "n_rows": 200,
+  "n_models_index_sum_1": 150,
+  "n_rows_reproduced": 121,
+  "n_not_excited": 58,
+  "ensemble_all_regimes": {
+   "n_models": 200,
+   "n_rows": 250,
+   "n_rows_reproduced": 170
+  },
+  "settings_table": {
+   "chua_I/base": {
+    "n_rows": 20,
+    "n_models": 10,
+    "U_mean": 2.9,
+    "n_index_sum_1": 10,
+    "n_reproduced": 10,
+    "n_not_excited": 0
+   },
+   "chua_I/dens0.02": {
+    "n_rows": 20,
+    "n_models": 10,
+    "U_mean": 2.1,
+    "n_index_sum_1": 10,
+    "n_reproduced": 10,
+    "n_not_excited": 4
+   },
+   "chua_I/dens0.2": {
+    "n_rows": 20,
+    "n_models": 10,
+    "U_mean": 2.9,
+    "n_index_sum_1": 10,
+    "n_reproduced": 10,
+    "n_not_excited": 1
+   },
+   "chua_I/in0.2": {
+    "n_rows": 20,
+    "n_models": 10,
+    "U_mean": 4.4,
+    "n_index_sum_1": 10,
+    "n_reproduced": 7,
+    "n_not_excited": 2
+   },
+   "chua_I/in1": {
+    "n_rows": 20,
+    "n_models": 10,
+    "U_mean": 4.3,
+    "n_index_sum_1": 10,
+    "n_reproduced": 11,
+    "n_not_excited": 7
+   },
+   "le1/base": {
+    "n_rows": 10,
+    "n_models": 10,
+    "U_mean": 6.2,
+    "n_index_sum_1": 10,
+    "n_reproduced": 10,
+    "n_not_excited": 6
+   },
+   "le1/dens0.02": {
+    "n_rows": 10,
+    "n_models": 10,
+    "U_mean": 5.2,
+    "n_index_sum_1": 10,
+    "n_reproduced": 10,
+    "n_not_excited": 8
+   },
+   "le1/dens0.2": {
+    "n_rows": 10,
+    "n_models": 10,
+    "U_mean": 6.7,
+    "n_index_sum_1": 10,
+    "n_reproduced": 10,
+    "n_not_excited": 9
+   },
+   "le1/in0.2": {
+    "n_rows": 10,
+    "n_models": 10,
+    "U_mean": 4.0,
+    "n_index_sum_1": 10,
+    "n_reproduced": 10,
+    "n_not_excited": 5
+   },
+   "le1/in1": {
+    "n_rows": 10,
+    "n_models": 10,
+    "U_mean": 14.2,
+    "n_index_sum_1": 10,
+    "n_reproduced": 9,
+    "n_not_excited": 2
+   },
+   "se11/base": {
+    "n_rows": 10,
+    "n_models": 10,
+    "U_mean": 2.8,
+    "n_index_sum_1": 10,
+    "n_reproduced": 8,
+    "n_not_excited": 6
+   },
+   "se11/dens0.02": {
+    "n_rows": 10,
+    "n_models": 10,
+    "U_mean": 2.7,
+    "n_index_sum_1": 10,
+    "n_reproduced": 7,
+    "n_not_excited": 7
+   },
+   "se11/dens0.2": {
+    "n_rows": 10,
+    "n_models": 10,
+    "U_mean": 1.8,
+    "n_index_sum_1": 10,
+    "n_reproduced": 6,
+    "n_not_excited": 5
+   },
+   "se11/in0.2": {
+    "n_rows": 10,
+    "n_models": 10,
+    "U_mean": 3.1,
+    "n_index_sum_1": 10,
+    "n_reproduced": 5,
+    "n_not_excited": 5
+   },
+   "se11/in1": {
+    "n_rows": 10,
+    "n_models": 10,
+    "U_mean": 4.2,
+    "n_index_sum_1": 10,
+    "n_reproduced": 9,
+    "n_not_excited": 3
+   },
+   "se3/base": {
+    "n_rows": 10,
+    "n_models": 10,
+    "U_mean": 3.8,
+    "n_index_sum_1": 10,
+    "n_reproduced": 9,
+    "n_not_excited": 2
+   },
+   "se3/dens0.02": {
+    "n_rows": 10,
+    "n_models": 10,
+    "U_mean": 4.4,
+    "n_index_sum_1": 10,
+    "n_reproduced": 10,
+    "n_not_excited": 7
+   },
+   "se3/dens0.2": {
+    "n_rows": 10,
+    "n_models": 10,
+    "U_mean": 6.4,
+    "n_index_sum_1": 10,
+    "n_reproduced": 10,
+    "n_not_excited": 2
+   },
+   "se3/in0.2": {
+    "n_rows": 10,
+    "n_models": 10,
+    "U_mean": 3.7,
+    "n_index_sum_1": 10,
+    "n_reproduced": 9,
+    "n_not_excited": 7
+   },
+   "se3/in1": {
+    "n_rows": 10,
+    "n_models": 10,
+    "U_mean": 15.8,
+    "n_index_sum_1": 10,
+    "n_reproduced": 0,
+    "n_not_excited": 0
+   }
+  },
+  "bins": [
+   {
+    "U_bin": "0",
+    "U_lo": 0,
+    "U_hi": 0,
+    "n": 5,
+    "k": 5,
+    "share": 1.0,
+    "ci95_lo": 0.5655175352168251,
+    "ci95_hi": 1.0,
+    "U_mean_in_bin": 0.0
+   },
+   {
+    "U_bin": "1",
+    "U_lo": 1,
+    "U_hi": 1,
+    "n": 9,
+    "k": 8,
+    "share": 0.8888888888888888,
+    "ci95_lo": 0.5650002944233439,
+    "ci95_hi": 0.9801091123614551,
+    "U_mean_in_bin": 1.0
+   },
+   {
+    "U_bin": "2",
+    "U_lo": 2,
+    "U_hi": 2,
+    "n": 36,
+    "k": 22,
+    "share": 0.6111111111111112,
+    "ci95_lo": 0.44864459096605147,
+    "ci95_hi": 0.75215126934629,
+    "U_mean_in_bin": 2.0
+   },
+   {
+    "U_bin": "3-4",
+    "U_lo": 3,
+    "U_hi": 4,
+    "n": 36,
+    "k": 14,
+    "share": 0.3888888888888889,
+    "ci95_lo": 0.24784873065371,
+    "ci95_hi": 0.5513554090339485,
+    "U_mean_in_bin": 3.6944444444444446
+   },
+   {
+    "U_bin": "5-8",
+    "U_lo": 5,
+    "U_hi": 8,
+    "n": 33,
+    "k": 9,
+    "share": 0.2727272727272727,
+    "ci95_lo": 0.1506744088542064,
+    "ci95_hi": 0.44217559002872625,
+    "U_mean_in_bin": 6.03030303030303
+   },
+   {
+    "U_bin": "9-16",
+    "U_lo": 9,
+    "U_hi": 16,
+    "n": 2,
+    "k": 0,
+    "share": 0.0,
+    "ci95_lo": 0.0,
+    "ci95_hi": 0.6576197724933469,
+    "U_mean_in_bin": 9.5
+   },
+   {
+    "U_bin": ">=17",
+    "U_lo": 17,
+    "U_hi": null,
+    "n": 0,
+    "k": 0,
+    "share": null,
+    "ci95_lo": null,
+    "ci95_hi": null,
+    "U_mean_in_bin": null
+   }
+  ],
+  "logit": {
+   "coef": {
+    "const": {
+     "coef": 1.8096229312423895,
+     "se": 1.0194449658482652,
+     "z": 1.775106054633002,
+     "p_wald": 0.07588037746326029
+    },
+    "log1p_U": {
+     "coef": -3.3177674598106393,
+     "se": 0.768614693688859,
+     "z": -4.316554818757727,
+     "p_wald": 1.584833357892435e-05
+    },
+    "regime_se11": {
+     "coef": 2.668429174330011,
+     "se": 0.6690210563763171,
+     "z": 3.988557832220229,
+     "p_wald": 6.647619781906831e-05
+    },
+    "regime_se3": {
+     "coef": 2.2994474604344974,
+     "se": 0.7203169437524594,
+     "z": 3.19227179143618,
+     "p_wald": 0.0014115843918296813
+    },
+    "setting_dens0.02": {
+     "coef": 1.96003577967143,
+     "se": 0.7249178137467386,
+     "z": 2.703804131313842,
+     "p_wald": 0.006855068371783642
+    },
+    "setting_dens0.2": {
+     "coef": 0.500192608807907,
+     "se": 0.7872222626147305,
+     "z": 0.6353893081561682,
+     "p_wald": 0.5251745395654319
+    },
+    "setting_in0.2": {
+     "coef": 2.4618582317393662,
+     "se": 0.8608193995348785,
+     "z": 2.859900965370399,
+     "p_wald": 0.004237733236887955
+    },
+    "setting_in1": {
+     "coef": 2.2151858555473907,
+     "se": 0.834841747243479,
+     "z": 2.6534200797475673,
+     "p_wald": 0.007968063726771715
+    }
+   },
+   "model": "logit P(not_excited) ~ const + log(1+U) + regime + setting (base = input 0.5, density 0.05; reference regime chua_I)"
+  },
+  "LR_settings_beyond_U": {
+   "chi2": 17.026542661519116,
+   "df": 4,
+   "p": 0.0019101308625631328
+  },
+  "le1_separate": {
+   "n_models": 50,
+   "n_rows_reproduced": 49,
+   "n_not_excited": 30,
+   "bins": [
+    {
+     "U_bin": "0",
+     "U_lo": 0,
+     "U_hi": 0,
+     "n": 0,
+     "k": 0,
+     "share": null,
+     "ci95_lo": null,
+     "ci95_hi": null,
+     "U_mean_in_bin": null
+    },
+    {
+     "U_bin": "1",
+     "U_lo": 1,
+     "U_hi": 1,
+     "n": 0,
+     "k": 0,
+     "share": null,
+     "ci95_lo": null,
+     "ci95_hi": null,
+     "U_mean_in_bin": null
+    },
+    {
+     "U_bin": "2",
+     "U_lo": 2,
+     "U_hi": 2,
+     "n": 2,
+     "k": 2,
+     "share": 1.0,
+     "ci95_lo": 0.34238022750665303,
+     "ci95_hi": 1.0,
+     "U_mean_in_bin": 2.0
+    },
+    {
+     "U_bin": "3-4",
+     "U_lo": 3,
+     "U_hi": 4,
+     "n": 8,
+     "k": 6,
+     "share": 0.75,
+     "ci95_lo": 0.40927543031016883,
+     "ci95_hi": 0.9285207872478909,
+     "U_mean_in_bin": 3.875
+    },
+    {
+     "U_bin": "5-8",
+     "U_lo": 5,
+     "U_hi": 8,
+     "n": 27,
+     "k": 18,
+     "share": 0.6666666666666666,
+     "ci95_lo": 0.47824760507320074,
+     "ci95_hi": 0.8135673850128435,
+     "U_mean_in_bin": 5.851851851851852
+    },
+    {
+     "U_bin": "9-16",
+     "U_lo": 9,
+     "U_hi": 16,
+     "n": 11,
+     "k": 4,
+     "share": 0.36363636363636365,
+     "ci95_lo": 0.15166471095367573,
+     "ci95_hi": 0.6461988254921511,
+     "U_mean_in_bin": 12.636363636363637
+    },
+    {
+     "U_bin": ">=17",
+     "U_lo": 17,
+     "U_hi": null,
+     "n": 1,
+     "k": 0,
+     "share": 0.0,
+     "ci95_lo": 0.0,
+     "ci95_hi": 0.7934506856227626,
+     "U_mean_in_bin": 20.0
+    }
+   ],
+   "by_setting": {
+    "base": [
+     6,
+     10
+    ],
+    "dens0.02": [
+     8,
+     10
+    ],
+    "dens0.2": [
+     9,
+     10
+    ],
+    "in0.2": [
+     5,
+     10
+    ],
+    "in1": [
+     2,
+     9
+    ]
+   }
+  },
+  "sensitivity_with_le1": {
+   "n_rows_reproduced": 170,
+   "coef": {
+    "const": {
+     "coef": 2.027439815280372,
+     "se": 0.8449951912662873,
+     "z": 2.3993507137503403,
+     "p_wald": 0.016424175438307258
+    },
+    "log1p_U": {
+     "coef": -3.2542296688811665,
+     "se": 0.6457789384593772,
+     "z": -5.039231655099687,
+     "p_wald": 4.674044677513071e-07
+    },
+    "setting_dens0.02": {
+     "coef": 1.5203986022129867,
+     "se": 0.5890482244882288,
+     "z": 2.581110576360577,
+     "p_wald": 0.009848303167418384
+    },
+    "setting_dens0.2": {
+     "coef": 0.96435959841536,
+     "se": 0.5862613504156615,
+     "z": 1.6449312200635866,
+     "p_wald": 0.09998399579072774
+    },
+    "setting_in0.2": {
+     "coef": 0.8371980958452805,
+     "se": 0.6314841774164052,
+     "z": 1.3257625856446853,
+     "p_wald": 0.18491834953366748
+    },
+    "setting_in1": {
+     "coef": 1.7304535844306543,
+     "se": 0.6944525104946561,
+     "z": 2.4918242187619977,
+     "p_wald": 0.012708891696735917
+    }
+   },
+   "LR_settings_beyond_U": {
+    "chi2": 10.013196298103253,
+    "df": 4,
+    "p": 0.0402059778155537
+   }
+  }
+ },
+ "sample_decision": {
+  "main_survival_curve": "N_sweep (stage N lite protocol, six regimes without LE1, sets HE1+H1, N 50-2000, rows reproduced with index sum 1); LE1 under le1_separate",
+  "check": "stage_C_full_protocol (independent full-protocol labels hidden_stat) and lite_vs_full",
+  "robustness_in_sweep": "suffixed robustness runs (_in<x>/_dens<x>) are excluded from the sweep; the base-setting robustness runs are plain-named N = 300 models and are merged into the sweep with de-duplication against identical A100 models"
+ },
+ "notes_vs_theory_index": {
+  "stage_C": "theory 669 models were counted on 21.10 with N 300 and 1000 only; now +24 models at N 500/700 (se3, se11, HE1, the lite-vs-full set) and late N 300/1000 completions",
+  "N_sweep": "theory 345 rows were counted on 22.10 before the CPU Newton fix: A100 N 300-2000 for all groups plus pre-fix CPU N 50-200 for only chua_I, le1, se3/HE1, se11/HE1 (N 150 with index sum != 1 in many models). Now: CPU N 50/100/200 recomputed after the fix for all 9 (regime, set) groups, N 150 from the A100 recompute, plus 16 base-setting N 300 CPU models from the robustness experiment",
+  "U_of_N": "wangchen2_a0.03 had only N >= 300 on 22.10 (monotone); with N 50-200 it is U-shaped"
+ }
+}

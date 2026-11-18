@@ -1,0 +1,20 @@
+\begin{table*}
+\caption{Certified enumeration of the fixed points of perceptrons and residual networks by the interval Krawczyk method,
+compared with Newton's method from the starting points of the main text. $\bar K$, $\bar U$, $\bar U_{\mathrm{in}}$: mean
+numbers of certified equilibria, unstable equilibria and unstable equilibria in $Q$; differs: models whose certified set
+differs from the Newton set; missed: equilibria missed by Newton's method; undecided: models with boxes that the method
+could not decide; time: wall-clock time per model in one worker process.}
+\label{tab:sm_cert}
+\begin{ruledtabular}
+\begin{tabular}{lrrrrrrrrrr}
+Class & $H$ & models & $\bar K$ & $\bar U$ & $\bar U_{\mathrm{in}}$ & differs & missed & undecided & median (s) & max (s) \\
+\hline
+mlp & 64 & 160 & $2.08$ & $1.04$ & $0.96$ & 0 & 0 & 0 & $0.41$ & $4.26$ \\
+mlp & 256 & 240 & $1.88$ & $0.99$ & $0.97$ & 0 & 0 & 0 & $5.28$ & $30.6$ \\
+mlp2 & 64 & 160 & $2.09$ & $1.14$ & $1.12$ & 0 & 0 & 0 & $36.8$ & $245$ \\
+mlp2 & 256 & 240 & $3.44$ & $2.71$ & $2.70$ & 0 & 0 & 0 & $215$ & $2772$ \\
+res\footnotemark[1] & 64 & 160 & $2.12$ & $1.34$ & $1.34$ & 0 & 0 & 0 & $0.17$ & $1.66$ \\
+\end{tabular}
+\end{ruledtabular}
+\footnotetext[1]{Residual networks are unbounded; their fixed points are enumerated in $Q$ only.}
+\end{table*}

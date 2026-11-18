@@ -1,0 +1,276 @@
+{
+ "pooling": "pooled over the six regimes se3, se11, wangchen2, wangchen2_a0.03, chua_I, chua_II; LE1 (attractor hidden only in the weak sense) is excluded and reported separately under le1_separate",
+ "n_rows": 299,
+ "regimes": [
+  "chua_I",
+  "chua_II",
+  "se11",
+  "se3",
+  "wangchen2",
+  "wangchen2_a0.03"
+ ],
+ "variants": [
+  "H1",
+  "eqc",
+  "E5",
+  "E10",
+  "E20"
+ ],
+ "N_values": [
+  300,
+  700
+ ],
+ "covariates": "regime dummies (no intercept), log N, variant dummies vs H1; second fit adds log(1+U)",
+ "variant_coef_without_U": {
+  "eqc": [
+   0.4296,
+   0.5225
+  ],
+  "E5": [
+   1.5266,
+   0.5151
+  ],
+  "E10": [
+   1.7467,
+   0.5158
+  ],
+  "E20": [
+   1.6257,
+   0.5148
+  ]
+ },
+ "variant_coef_with_U": {
+  "eqc": [
+   1.4668,
+   0.6321
+  ],
+  "E5": [
+   1.34,
+   0.615
+  ],
+  "E10": [
+   1.3263,
+   0.6196
+  ],
+  "E20": [
+   0.9129,
+   0.6151
+  ]
+ },
+ "log1pU": [
+  -3.7364,
+  0.5789
+ ],
+ "LR_U": [
+  79.9,
+  3.8408598672425375e-19
+ ],
+ "log_N_with_U": [
+  -0.1524,
+  0.4759
+ ],
+ "share_by_variant": {
+  "H1": [
+   9,
+   63
+  ],
+  "eqc": [
+   12,
+   62
+  ],
+  "E5": [
+   21,
+   58
+  ],
+  "E10": [
+   23,
+   58
+  ],
+  "E20": [
+   22,
+   58
+  ]
+ },
+ "le1_separate": {
+  "n_rows": 80,
+  "regimes": [
+   "le1"
+  ],
+  "variants": [
+   "H1",
+   "eqc",
+   "E5",
+   "E10",
+   "E20"
+  ],
+  "N_values": [
+   300,
+   700
+  ],
+  "covariates": "regime dummies (no intercept), log N, variant dummies vs H1; second fit adds log(1+U)",
+  "variant_coef_without_U": {
+   "eqc": [
+    0.0,
+    0.9249
+   ],
+   "E5": [
+    0.3858,
+    0.8832
+   ],
+   "E10": [
+    1.2949,
+    0.8423
+   ],
+   "E20": [
+    3.6686,
+    1.0448
+   ]
+  },
+  "variant_coef_with_U": {
+   "eqc": [
+    5.7159,
+    2.1819
+   ],
+   "E5": [
+    3.0004,
+    1.4923
+   ],
+   "E10": [
+    7.5224,
+    2.239
+   ],
+   "E20": [
+    10.859,
+    2.7847
+   ]
+  },
+  "log1pU": [
+   -7.019,
+   1.9231
+  ],
+  "LR_U": [
+   28.2,
+   1.0707104509033202e-07
+  ],
+  "log_N_with_U": [
+   -1.2597,
+   1.0385
+  ],
+  "share_by_variant": {
+   "H1": [
+    3,
+    16
+   ],
+   "eqc": [
+    3,
+    16
+   ],
+   "E5": [
+    4,
+    16
+   ],
+   "E10": [
+    7,
+    16
+   ],
+   "E20": [
+    14,
+    16
+   ]
+  }
+ },
+ "with_le1_reference": {
+  "n_rows": 379,
+  "regimes": [
+   "chua_I",
+   "chua_II",
+   "le1",
+   "se11",
+   "se3",
+   "wangchen2",
+   "wangchen2_a0.03"
+  ],
+  "variants": [
+   "H1",
+   "eqc",
+   "E5",
+   "E10",
+   "E20"
+  ],
+  "N_values": [
+   300,
+   700
+  ],
+  "covariates": "regime dummies (no intercept), log N, variant dummies vs H1; second fit adds log(1+U)",
+  "variant_coef_without_U": {
+   "eqc": [
+    0.3251,
+    0.4536
+   ],
+   "E5": [
+    1.2368,
+    0.4402
+   ],
+   "E10": [
+    1.6201,
+    0.4388
+   ],
+   "E20": [
+    2.0291,
+    0.441
+   ]
+  },
+  "variant_coef_with_U": {
+   "eqc": [
+    1.5876,
+    0.5574
+   ],
+   "E5": [
+    1.4489,
+    0.525
+   ],
+   "E10": [
+    2.1015,
+    0.5353
+   ],
+   "E20": [
+    2.5288,
+    0.5379
+   ]
+  },
+  "log1pU": [
+   -2.9703,
+   0.4239
+  ],
+  "LR_U": [
+   80.0,
+   3.729655720606312e-19
+  ],
+  "log_N_with_U": [
+   -0.2025,
+   0.3822
+  ],
+  "share_by_variant": {
+   "H1": [
+    12,
+    79
+   ],
+   "eqc": [
+    15,
+    78
+   ],
+   "E5": [
+    25,
+    74
+   ],
+   "E10": [
+    30,
+    74
+   ],
+   "E20": [
+    36,
+    74
+   ]
+  }
+ }
+}

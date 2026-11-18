@@ -1,0 +1,54 @@
+%% Manuscript for Chaos: An Interdisciplinary Journal of Nonlinear Science (AIP Publishing), REVTeX 4.2.
+%% Sources: sections/*.tex; figures/*.pdf (make_figures.py); refs.bib (build.py, from data/bibliography.json).
+%% Build: python paper2_esn/chaos/build.py  ->  manuscript.tex (one flattened file) and manuscript.pdf
+\documentclass[aip,cha,reprint,amsmath,amssymb,longbibliography]{revtex4-2}
+
+\usepackage{graphicx}
+\usepackage{amsthm}
+\usepackage{bm}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue!55!black,citecolor=blue!55!black,urlcolor=blue!55!black]{hyperref}
+
+% float placement: fill pages with figures instead of deferring them past the references
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\floatpagefraction}{0.75}
+\renewcommand{\dbltopfraction}{0.95}
+\renewcommand{\dblfloatpagefraction}{0.75}
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{5}
+\setcounter{dbltopnumber}{3}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{remark}{Remark}
+\newcommand{\ind}{\operatorname{ind}}
+\newcommand{\Uin}{U_{\mathrm{in}}}
+% text the author must supply before submission (printed in red)
+\newcommand{\placeholder}[1]{\textcolor{red}{[#1]}}
+% a number still to be filled from paper2_esn/chaos/numbers (printed in red until replaced)
+\newcommand{\num}[1]{\textcolor{red}{#1}}
+
+\begin{document}
+
+\input{sections/00_front}
+\input{sections/10_intro}
+\input{sections/20_setting}
+\input{sections/30_theory}
+\input{sections/40_methods}
+\input{sections/50_results}
+\input{sections/60_discussion}
+\input{sections/70_conclusion}
+\input{sections/85_backmatter}
+\input{sections/90_appendix}
+
+\clearpage   % place all remaining figures before the reference list
+\bibliography{refs}
+
+\end{document}

@@ -1,0 +1,1442 @@
+{
+ "note": "check of the completeness of the equilibrium sets; see the docstring of paper_completeness.py",
+ "esn_full_protocol_found_by": {
+  "N1000_rho0.6": {
+   "n_networks": 80,
+   "K": 994,
+   "U": 872,
+   "unstable_after_start_phase": 0,
+   "networks_with_unstable_after_start_phase": 0,
+   "found_by": {
+    "start": 994
+   },
+   "boundary_searches": 47,
+   "boundary_newton_runs": 940000,
+   "boundary_new_equilibria": 0
+  },
+  "N1000_rho0.9": {
+   "n_networks": 77,
+   "K": 927,
+   "U": 824,
+   "unstable_after_start_phase": 0,
+   "networks_with_unstable_after_start_phase": 0,
+   "found_by": {
+    "start": 927
+   },
+   "boundary_searches": 37,
+   "boundary_newton_runs": 740000,
+   "boundary_new_equilibria": 0
+  },
+  "N300_rho0.6": {
+   "n_networks": 271,
+   "K": 1817,
+   "U": 1346,
+   "unstable_after_start_phase": 0,
+   "networks_with_unstable_after_start_phase": 0,
+   "found_by": {
+    "start": 1817
+   },
+   "boundary_searches": 120,
+   "boundary_newton_runs": 2400000,
+   "boundary_new_equilibria": 0
+  },
+  "N300_rho0.9": {
+   "n_networks": 272,
+   "K": 1568,
+   "U": 1119,
+   "unstable_after_start_phase": 0,
+   "networks_with_unstable_after_start_phase": 0,
+   "found_by": {
+    "start": 1568
+   },
+   "boundary_searches": 93,
+   "boundary_newton_runs": 1860000,
+   "boundary_new_equilibria": 0
+  },
+  "N300_rho1.2": {
+   "n_networks": 144,
+   "K": 1403,
+   "U": 1244,
+   "unstable_after_start_phase": 3,
+   "networks_with_unstable_after_start_phase": 3,
+   "found_by": {
+    "start": 1400,
+    "deflation": 2,
+    "segment": 1
+   },
+   "boundary_searches": 14,
+   "boundary_newton_runs": 280000,
+   "boundary_new_equilibria": 0
+  },
+  "N500_rho0.9": {
+   "n_networks": 12,
+   "K": 56,
+   "U": 28,
+   "unstable_after_start_phase": 0,
+   "networks_with_unstable_after_start_phase": 0,
+   "found_by": {
+    "start": 56
+   },
+   "boundary_searches": 16,
+   "boundary_newton_runs": 320000,
+   "boundary_new_equilibria": 0
+  },
+  "N700_rho0.9": {
+   "n_networks": 12,
+   "K": 86,
+   "U": 54,
+   "unstable_after_start_phase": 0,
+   "networks_with_unstable_after_start_phase": 0,
+   "found_by": {
+    "start": 86
+   },
+   "boundary_searches": 14,
+   "boundary_newton_runs": 280000,
+   "boundary_new_equilibria": 0
+  }
+ },
+ "esn_saturation": {
+  "n_networks": 184,
+  "by_N_rho": {
+   "N100_rho0.9": {
+    "n_networks": 48,
+    "x2": {
+     "n": 48,
+     "more_equilibria": {
+      "k": 0,
+      "n": 48,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.0741
+      ]
+     },
+     "more_unstable": {
+      "k": 0,
+      "n": 48,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.0741
+      ]
+     },
+     "more_unstable_in_Q": {
+      "k": 0,
+      "n": 48,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.0741
+      ]
+     },
+     "mean_dK": 0.0,
+     "mean_dU": 0.0,
+     "mean_dU_in": 0.0,
+     "max_dU": 0,
+     "mean_U_base": 5.54,
+     "index_sum_1_base": 48,
+     "index_sum_1_after": 48
+    },
+    "x4": {
+     "n": 48,
+     "more_equilibria": {
+      "k": 0,
+      "n": 48,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.0741
+      ]
+     },
+     "more_unstable": {
+      "k": 0,
+      "n": 48,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.0741
+      ]
+     },
+     "more_unstable_in_Q": {
+      "k": 0,
+      "n": 48,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.0741
+      ]
+     },
+     "mean_dK": 0.0,
+     "mean_dU": 0.0,
+     "mean_dU_in": 0.0,
+     "max_dU": 0,
+     "mean_U_base": 5.54,
+     "index_sum_1_base": 48,
+     "index_sum_1_after": 48
+    },
+    "x8": {
+     "n": 48,
+     "more_equilibria": {
+      "k": 0,
+      "n": 48,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.0741
+      ]
+     },
+     "more_unstable": {
+      "k": 0,
+      "n": 48,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.0741
+      ]
+     },
+     "more_unstable_in_Q": {
+      "k": 0,
+      "n": 48,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.0741
+      ]
+     },
+     "mean_dK": 0.0,
+     "mean_dU": 0.0,
+     "mean_dU_in": 0.0,
+     "max_dU": 0,
+     "mean_U_base": 5.54,
+     "index_sum_1_base": 48,
+     "index_sum_1_after": 48
+    },
+    "reproduced_pairs": 15,
+    "not_excited_x1": 3,
+    "not_excited_x1_becomes_excited_at_max": 0,
+    "new_unstable_exciting_reproduced": 0,
+    "new_unstable_total": 0,
+    "new_stable_total": 0
+   },
+   "N300_rho0.9": {
+    "n_networks": 48,
+    "x2": {
+     "n": 48,
+     "more_equilibria": {
+      "k": 0,
+      "n": 48,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.0741
+      ]
+     },
+     "more_unstable": {
+      "k": 0,
+      "n": 48,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.0741
+      ]
+     },
+     "more_unstable_in_Q": {
+      "k": 0,
+      "n": 48,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.0741
+      ]
+     },
+     "mean_dK": 0.0,
+     "mean_dU": 0.0,
+     "mean_dU_in": 0.0,
+     "max_dU": 0,
+     "mean_U_base": 3.5,
+     "index_sum_1_base": 48,
+     "index_sum_1_after": 48
+    },
+    "x4": {
+     "n": 48,
+     "more_equilibria": {
+      "k": 0,
+      "n": 48,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.0741
+      ]
+     },
+     "more_unstable": {
+      "k": 0,
+      "n": 48,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.0741
+      ]
+     },
+     "more_unstable_in_Q": {
+      "k": 0,
+      "n": 48,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.0741
+      ]
+     },
+     "mean_dK": 0.0,
+     "mean_dU": 0.0,
+     "mean_dU_in": 0.0,
+     "max_dU": 0,
+     "mean_U_base": 3.5,
+     "index_sum_1_base": 48,
+     "index_sum_1_after": 48
+    },
+    "x8": {
+     "n": 48,
+     "more_equilibria": {
+      "k": 0,
+      "n": 48,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.0741
+      ]
+     },
+     "more_unstable": {
+      "k": 0,
+      "n": 48,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.0741
+      ]
+     },
+     "more_unstable_in_Q": {
+      "k": 0,
+      "n": 48,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.0741
+      ]
+     },
+     "mean_dK": 0.0,
+     "mean_dU": 0.0,
+     "mean_dU_in": 0.0,
+     "max_dU": 0,
+     "mean_U_base": 3.5,
+     "index_sum_1_base": 48,
+     "index_sum_1_after": 48
+    },
+    "reproduced_pairs": 43,
+    "not_excited_x1": 11,
+    "not_excited_x1_becomes_excited_at_max": 0,
+    "new_unstable_exciting_reproduced": 0,
+    "new_unstable_total": 0,
+    "new_stable_total": 0
+   },
+   "N300_rho1.2": {
+    "n_networks": 48,
+    "x2": {
+     "n": 48,
+     "more_equilibria": {
+      "k": 1,
+      "n": 48,
+      "share": 0.0208,
+      "ci95": [
+       0.0037,
+       0.109
+      ]
+     },
+     "more_unstable": {
+      "k": 1,
+      "n": 48,
+      "share": 0.0208,
+      "ci95": [
+       0.0037,
+       0.109
+      ]
+     },
+     "more_unstable_in_Q": {
+      "k": 1,
+      "n": 48,
+      "share": 0.0208,
+      "ci95": [
+       0.0037,
+       0.109
+      ]
+     },
+     "mean_dK": 0.021,
+     "mean_dU": 0.021,
+     "mean_dU_in": 0.021,
+     "max_dU": 1,
+     "mean_U_base": 8.4,
+     "index_sum_1_base": 47,
+     "index_sum_1_after": 48
+    },
+    "x4": {
+     "n": 48,
+     "more_equilibria": {
+      "k": 1,
+      "n": 48,
+      "share": 0.0208,
+      "ci95": [
+       0.0037,
+       0.109
+      ]
+     },
+     "more_unstable": {
+      "k": 1,
+      "n": 48,
+      "share": 0.0208,
+      "ci95": [
+       0.0037,
+       0.109
+      ]
+     },
+     "more_unstable_in_Q": {
+      "k": 1,
+      "n": 48,
+      "share": 0.0208,
+      "ci95": [
+       0.0037,
+       0.109
+      ]
+     },
+     "mean_dK": 0.021,
+     "mean_dU": 0.021,
+     "mean_dU_in": 0.021,
+     "max_dU": 1,
+     "mean_U_base": 8.4,
+     "index_sum_1_base": 47,
+     "index_sum_1_after": 48
+    },
+    "x8": {
+     "n": 48,
+     "more_equilibria": {
+      "k": 2,
+      "n": 48,
+      "share": 0.0417,
+      "ci95": [
+       0.0115,
+       0.1398
+      ]
+     },
+     "more_unstable": {
+      "k": 2,
+      "n": 48,
+      "share": 0.0417,
+      "ci95": [
+       0.0115,
+       0.1398
+      ]
+     },
+     "more_unstable_in_Q": {
+      "k": 2,
+      "n": 48,
+      "share": 0.0417,
+      "ci95": [
+       0.0115,
+       0.1398
+      ]
+     },
+     "mean_dK": 0.042,
+     "mean_dU": 0.042,
+     "mean_dU_in": 0.042,
+     "max_dU": 1,
+     "mean_U_base": 8.4,
+     "index_sum_1_base": 47,
+     "index_sum_1_after": 47
+    },
+    "reproduced_pairs": 23,
+    "not_excited_x1": 0,
+    "not_excited_x1_becomes_excited_at_max": 0,
+    "new_unstable_exciting_reproduced": 1,
+    "new_unstable_total": 2,
+    "new_stable_total": 0
+   },
+   "N700_rho0.9": {
+    "n_networks": 24,
+    "x2": {
+     "n": 24,
+     "more_equilibria": {
+      "k": 0,
+      "n": 24,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.138
+      ]
+     },
+     "more_unstable": {
+      "k": 0,
+      "n": 24,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.138
+      ]
+     },
+     "more_unstable_in_Q": {
+      "k": 0,
+      "n": 24,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.138
+      ]
+     },
+     "mean_dK": 0.0,
+     "mean_dU": 0.0,
+     "mean_dU_in": 0.0,
+     "max_dU": 0,
+     "mean_U_base": 5.96,
+     "index_sum_1_base": 24,
+     "index_sum_1_after": 24
+    },
+    "x4": {
+     "n": 24,
+     "more_equilibria": {
+      "k": 0,
+      "n": 24,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.138
+      ]
+     },
+     "more_unstable": {
+      "k": 0,
+      "n": 24,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.138
+      ]
+     },
+     "more_unstable_in_Q": {
+      "k": 0,
+      "n": 24,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.138
+      ]
+     },
+     "mean_dK": 0.0,
+     "mean_dU": 0.0,
+     "mean_dU_in": 0.0,
+     "max_dU": 0,
+     "mean_U_base": 5.96,
+     "index_sum_1_base": 24,
+     "index_sum_1_after": 24
+    },
+    "reproduced_pairs": 23,
+    "not_excited_x1": 7,
+    "not_excited_x1_becomes_excited_at_max": 0,
+    "new_unstable_exciting_reproduced": 0,
+    "new_unstable_total": 0,
+    "new_stable_total": 0
+   },
+   "N1400_rho0.9": {
+    "n_networks": 8,
+    "x2": {
+     "n": 8,
+     "more_equilibria": {
+      "k": 0,
+      "n": 8,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.3244
+      ]
+     },
+     "more_unstable": {
+      "k": 0,
+      "n": 8,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.3244
+      ]
+     },
+     "more_unstable_in_Q": {
+      "k": 0,
+      "n": 8,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.3244
+      ]
+     },
+     "mean_dK": 0.0,
+     "mean_dU": 0.0,
+     "mean_dU_in": 0.0,
+     "max_dU": 0,
+     "mean_U_base": 18.12,
+     "index_sum_1_base": 8,
+     "index_sum_1_after": 8
+    },
+    "x4": {
+     "n": 8,
+     "more_equilibria": {
+      "k": 0,
+      "n": 8,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.3244
+      ]
+     },
+     "more_unstable": {
+      "k": 0,
+      "n": 8,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.3244
+      ]
+     },
+     "more_unstable_in_Q": {
+      "k": 0,
+      "n": 8,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.3244
+      ]
+     },
+     "mean_dK": 0.0,
+     "mean_dU": 0.0,
+     "mean_dU_in": 0.0,
+     "max_dU": 0,
+     "mean_U_base": 18.12,
+     "index_sum_1_base": 8,
+     "index_sum_1_after": 8
+    },
+    "reproduced_pairs": 8,
+    "not_excited_x1": 2,
+    "not_excited_x1_becomes_excited_at_max": 0,
+    "new_unstable_exciting_reproduced": 0,
+    "new_unstable_total": 0,
+    "new_stable_total": 0
+   },
+   "N2000_rho0.9": {
+    "n_networks": 8,
+    "x2": {
+     "n": 8,
+     "more_equilibria": {
+      "k": 0,
+      "n": 8,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.3244
+      ]
+     },
+     "more_unstable": {
+      "k": 0,
+      "n": 8,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.3244
+      ]
+     },
+     "more_unstable_in_Q": {
+      "k": 0,
+      "n": 8,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.3244
+      ]
+     },
+     "mean_dK": 0.0,
+     "mean_dU": 0.0,
+     "mean_dU_in": 0.0,
+     "max_dU": 0,
+     "mean_U_base": 32.88,
+     "index_sum_1_base": 8,
+     "index_sum_1_after": 8
+    },
+    "x4": {
+     "n": 8,
+     "more_equilibria": {
+      "k": 0,
+      "n": 8,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.3244
+      ]
+     },
+     "more_unstable": {
+      "k": 0,
+      "n": 8,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.3244
+      ]
+     },
+     "more_unstable_in_Q": {
+      "k": 0,
+      "n": 8,
+      "share": 0.0,
+      "ci95": [
+       0.0,
+       0.3244
+      ]
+     },
+     "mean_dK": 0.0,
+     "mean_dU": 0.0,
+     "mean_dU_in": 0.0,
+     "max_dU": 0,
+     "mean_U_base": 32.88,
+     "index_sum_1_base": 8,
+     "index_sum_1_after": 8
+    },
+    "reproduced_pairs": 8,
+    "not_excited_x1": 0,
+    "not_excited_x1_becomes_excited_at_max": 0,
+    "new_unstable_exciting_reproduced": 0,
+    "new_unstable_total": 0,
+    "new_stable_total": 0
+   }
+  },
+  "pooled_main_regimes": {
+   "n_networks": 184,
+   "x2": {
+    "n": 184,
+    "more_equilibria": {
+     "k": 1,
+     "n": 184,
+     "share": 0.0054,
+     "ci95": [
+      0.001,
+      0.0301
+     ]
+    },
+    "more_unstable": {
+     "k": 1,
+     "n": 184,
+     "share": 0.0054,
+     "ci95": [
+      0.001,
+      0.0301
+     ]
+    },
+    "more_unstable_in_Q": {
+     "k": 1,
+     "n": 184,
+     "share": 0.0054,
+     "ci95": [
+      0.001,
+      0.0301
+     ]
+    },
+    "mean_dK": 0.005,
+    "mean_dU": 0.005,
+    "mean_dU_in": 0.005,
+    "max_dU": 1,
+    "mean_U_base": 7.54,
+    "index_sum_1_base": 183,
+    "index_sum_1_after": 184
+   },
+   "x4": {
+    "n": 184,
+    "more_equilibria": {
+     "k": 1,
+     "n": 184,
+     "share": 0.0054,
+     "ci95": [
+      0.001,
+      0.0301
+     ]
+    },
+    "more_unstable": {
+     "k": 1,
+     "n": 184,
+     "share": 0.0054,
+     "ci95": [
+      0.001,
+      0.0301
+     ]
+    },
+    "more_unstable_in_Q": {
+     "k": 1,
+     "n": 184,
+     "share": 0.0054,
+     "ci95": [
+      0.001,
+      0.0301
+     ]
+    },
+    "mean_dK": 0.005,
+    "mean_dU": 0.005,
+    "mean_dU_in": 0.005,
+    "max_dU": 1,
+    "mean_U_base": 7.54,
+    "index_sum_1_base": 183,
+    "index_sum_1_after": 184
+   },
+   "x8": {
+    "n": 144,
+    "more_equilibria": {
+     "k": 2,
+     "n": 144,
+     "share": 0.0139,
+     "ci95": [
+      0.0038,
+      0.0492
+     ]
+    },
+    "more_unstable": {
+     "k": 2,
+     "n": 144,
+     "share": 0.0139,
+     "ci95": [
+      0.0038,
+      0.0492
+     ]
+    },
+    "more_unstable_in_Q": {
+     "k": 2,
+     "n": 144,
+     "share": 0.0139,
+     "ci95": [
+      0.0038,
+      0.0492
+     ]
+    },
+    "mean_dK": 0.014,
+    "mean_dU": 0.014,
+    "mean_dU_in": 0.014,
+    "max_dU": 1,
+    "mean_U_base": 5.81,
+    "index_sum_1_base": 143,
+    "index_sum_1_after": 143
+   },
+   "reproduced_pairs": 120,
+   "not_excited_x1": 23,
+   "not_excited_x1_becomes_excited_at_max": 0,
+   "new_unstable_exciting_reproduced": 1,
+   "new_unstable_total": 2,
+   "new_stable_total": 0
+  },
+  "vs_full_protocol_C": {
+   "N300_rho0.9": {
+    "n": 48,
+    "more_equilibria": {
+     "k": 0,
+     "n": 48,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.0741
+     ]
+    },
+    "more_unstable": {
+     "k": 0,
+     "n": 48,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.0741
+     ]
+    },
+    "more_unstable_in_Q": {
+     "k": 0,
+     "n": 48,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.0741
+     ]
+    },
+    "mean_dU": 0.0,
+    "mean_dU_in": 0.0,
+    "reproduced_pairs": 43,
+    "not_excited_with_C_set": 11,
+    "becomes_excited_with_all": 0
+   },
+   "N300_rho1.2": {
+    "n": 48,
+    "more_equilibria": {
+     "k": 2,
+     "n": 48,
+     "share": 0.0417,
+     "ci95": [
+      0.0115,
+      0.1398
+     ]
+    },
+    "more_unstable": {
+     "k": 2,
+     "n": 48,
+     "share": 0.0417,
+     "ci95": [
+      0.0115,
+      0.1398
+     ]
+    },
+    "more_unstable_in_Q": {
+     "k": 2,
+     "n": 48,
+     "share": 0.0417,
+     "ci95": [
+      0.0115,
+      0.1398
+     ]
+    },
+    "mean_dU": 0.042,
+    "mean_dU_in": 0.042,
+    "reproduced_pairs": 23,
+    "not_excited_with_C_set": 0,
+    "becomes_excited_with_all": 0
+   },
+   "N700_rho0.9": {
+    "n": 6,
+    "more_equilibria": {
+     "k": 0,
+     "n": 6,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.3903
+     ]
+    },
+    "more_unstable": {
+     "k": 0,
+     "n": 6,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.3903
+     ]
+    },
+    "more_unstable_in_Q": {
+     "k": 0,
+     "n": 6,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.3903
+     ]
+    },
+    "mean_dU": 0.0,
+    "mean_dU_in": 0.0,
+    "reproduced_pairs": 6,
+    "not_excited_with_C_set": 4,
+    "becomes_excited_with_all": 0
+   }
+  },
+  "reproduction": {
+   "n_N": 136,
+   "K_U_isum_equal": 135,
+   "fingerprint_equal": 133,
+   "reproduced_flag_equal": 136,
+   "label_equal": 134,
+   "train_rmse_max_rel_diff": 5.4480354136989e-07,
+   "n_C": 48,
+   "C_K_U_equal": 48,
+   "mismatches": [
+    {
+     "regime": "se11",
+     "name": "H1_N700_rho0.9_eta1e-07_s0",
+     "src": "N",
+     "train_rmse_rel_diff": 1.4276143645236707e-08,
+     "K_stored": 17,
+     "U_stored": 14,
+     "isum_stored": 1,
+     "K_x1": 15,
+     "U_x1": 12,
+     "isum_x1": 1,
+     "fp_fingerprint_match": false,
+     "reproduced_stored": {
+      "HA": true
+     },
+     "reproduced_now": {
+      "HA": true
+     },
+     "label_stored": {
+      "HA": "self_excited"
+     },
+     "label_now": {
+      "HA": "self_excited"
+     }
+    }
+   ]
+  },
+  "time_s": {
+   "N100": {
+    "median_total": 85.9,
+    "median_blocks": 61.0
+   },
+   "N300": {
+    "median_total": 256.8,
+    "median_blocks": 220.3
+   },
+   "N700": {
+    "median_total": 605.0,
+    "median_blocks": 584.5
+   },
+   "N1400": {
+    "median_total": 8234.8,
+    "median_blocks": 8029.4
+   },
+   "N2000": {
+    "median_total": 14689.5,
+    "median_blocks": 14186.7
+   }
+  },
+  "networks_with_new_unstable": [
+   {
+    "regime": "wangchen2",
+    "set": "H1",
+    "N": 300,
+    "rho": 1.2,
+    "eta": 1e-07,
+    "seed": 1,
+    "new_unstable": 1,
+    "new_unstable_in": 1,
+    "new_exciting": {
+     "HA": 1
+    },
+    "reproduced": {
+     "HA": false
+    },
+    "labels": {
+     "HA": {
+      "x1": "self_excited",
+      "x2": "self_excited",
+      "x4": "self_excited",
+      "x8": "self_excited"
+     }
+    },
+    "cum": {
+     "x1": {
+      "K": 13,
+      "U": 13,
+      "U_in": 13,
+      "K_in": 13,
+      "index_sum": 1
+     },
+     "x2": {
+      "K": 13,
+      "U": 13,
+      "U_in": 13,
+      "K_in": 13,
+      "index_sum": 1
+     },
+     "x4": {
+      "K": 13,
+      "U": 13,
+      "U_in": 13,
+      "K_in": 13,
+      "index_sum": 1
+     },
+     "x8": {
+      "K": 14,
+      "U": 14,
+      "U_in": 14,
+      "K_in": 14,
+      "index_sum": 0
+     },
+     "C": {
+      "K": 13,
+      "U": 13,
+      "U_in": 13,
+      "K_in": 13,
+      "index_sum": 1
+     },
+     "C_and_x1": {
+      "K": 13,
+      "U": 13,
+      "U_in": 13,
+      "K_in": 13,
+      "index_sum": 1
+     },
+     "C_and_all": {
+      "K": 14,
+      "U": 14,
+      "U_in": 14,
+      "K_in": 14,
+      "index_sum": 0
+     }
+    },
+    "new_by": {
+     "plain": 1
+    }
+   },
+   {
+    "regime": "chua_II",
+    "set": "H1",
+    "N": 300,
+    "rho": 1.2,
+    "eta": 0.0001,
+    "seed": 1,
+    "new_unstable": 1,
+    "new_unstable_in": 1,
+    "new_exciting": {
+     "HA_a": 1,
+     "HA_b": 1
+    },
+    "reproduced": {
+     "HA_a": true,
+     "HA_b": false
+    },
+    "labels": {
+     "HA_a": {
+      "x1": "self_excited",
+      "x2": "self_excited",
+      "x4": "self_excited",
+      "x8": "self_excited"
+     },
+     "HA_b": {
+      "x1": "self_excited",
+      "x2": "self_excited",
+      "x4": "self_excited",
+      "x8": "self_excited"
+     }
+    },
+    "cum": {
+     "x1": {
+      "K": 6,
+      "U": 4,
+      "U_in": 4,
+      "K_in": 6,
+      "index_sum": 0
+     },
+     "x2": {
+      "K": 7,
+      "U": 5,
+      "U_in": 5,
+      "K_in": 7,
+      "index_sum": 1
+     },
+     "x4": {
+      "K": 7,
+      "U": 5,
+      "U_in": 5,
+      "K_in": 7,
+      "index_sum": 1
+     },
+     "x8": {
+      "K": 7,
+      "U": 5,
+      "U_in": 5,
+      "K_in": 7,
+      "index_sum": 1
+     },
+     "C": {
+      "K": 7,
+      "U": 5,
+      "U_in": 5,
+      "K_in": 7,
+      "index_sum": 1
+     },
+     "C_and_x1": {
+      "K": 7,
+      "U": 5,
+      "U_in": 5,
+      "K_in": 7,
+      "index_sum": 1
+     },
+     "C_and_all": {
+      "K": 7,
+      "U": 5,
+      "U_in": 5,
+      "K_in": 7,
+      "index_sum": 1
+     }
+    },
+    "new_by": {
+     "plain": 1
+    }
+   }
+  ]
+ },
+ "certified_3d": {
+  "n_models": 960,
+  "domain": {
+   "mlp": "image box of F (all fixed points)",
+   "mlp2": "image box of F (all fixed points)",
+   "res": "region Q inflated by 1% of its width (completeness only in Q)"
+  },
+  "by_class_width": {
+   "mlp_H64": {
+    "n_models": 160,
+    "certified_complete": 160,
+    "K_differs": {
+     "k": 0,
+     "n": 160,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.0234
+     ]
+    },
+    "U_differs": {
+     "k": 0,
+     "n": 160,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.0234
+     ]
+    },
+    "U_in_differs": {
+     "k": 0,
+     "n": 160,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.0234
+     ]
+    },
+    "missed_total": 0,
+    "missed_unstable": 0,
+    "missed_stable": 0,
+    "missed_inside_Q": 0,
+    "missed_unstable_inside_Q": 0,
+    "newton_not_certified": 0,
+    "mean_K_cert": 2.08,
+    "mean_U_cert": 1.04,
+    "mean_U_in_cert": 0.96,
+    "index_sum_1_cert": 160,
+    "time_s": {
+     "median": 0.41,
+     "max": 4.26
+    },
+    "boxes_median": 13838,
+    "undecided_models": 0,
+    "by_device": {
+     "cpu/10seeds": 80,
+     "cuda/20seeds": 80
+    }
+   },
+   "mlp_H256": {
+    "n_models": 240,
+    "certified_complete": 240,
+    "K_differs": {
+     "k": 0,
+     "n": 240,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.0158
+     ]
+    },
+    "U_differs": {
+     "k": 0,
+     "n": 240,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.0158
+     ]
+    },
+    "U_in_differs": {
+     "k": 0,
+     "n": 240,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.0158
+     ]
+    },
+    "missed_total": 0,
+    "missed_unstable": 0,
+    "missed_stable": 0,
+    "missed_inside_Q": 0,
+    "missed_unstable_inside_Q": 0,
+    "newton_not_certified": 0,
+    "mean_K_cert": 1.88,
+    "mean_U_cert": 0.99,
+    "mean_U_in_cert": 0.97,
+    "index_sum_1_cert": 240,
+    "time_s": {
+     "median": 5.28,
+     "max": 30.59
+    },
+    "boxes_median": 23812,
+    "undecided_models": 0,
+    "by_device": {
+     "cuda/20seeds": 240
+    }
+   },
+   "mlp2_H64": {
+    "n_models": 160,
+    "certified_complete": 160,
+    "K_differs": {
+     "k": 0,
+     "n": 160,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.0234
+     ]
+    },
+    "U_differs": {
+     "k": 0,
+     "n": 160,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.0234
+     ]
+    },
+    "U_in_differs": {
+     "k": 0,
+     "n": 160,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.0234
+     ]
+    },
+    "missed_total": 0,
+    "missed_unstable": 0,
+    "missed_stable": 0,
+    "missed_inside_Q": 0,
+    "missed_unstable_inside_Q": 0,
+    "newton_not_certified": 0,
+    "mean_K_cert": 2.09,
+    "mean_U_cert": 1.14,
+    "mean_U_in_cert": 1.12,
+    "index_sum_1_cert": 160,
+    "time_s": {
+     "median": 36.81,
+     "max": 245.09
+    },
+    "boxes_median": 173185,
+    "undecided_models": 0,
+    "by_device": {
+     "cpu/10seeds": 80,
+     "cuda/20seeds": 80
+    }
+   },
+   "mlp2_H256": {
+    "n_models": 240,
+    "certified_complete": 240,
+    "K_differs": {
+     "k": 0,
+     "n": 240,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.0158
+     ]
+    },
+    "U_differs": {
+     "k": 0,
+     "n": 240,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.0158
+     ]
+    },
+    "U_in_differs": {
+     "k": 0,
+     "n": 240,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.0158
+     ]
+    },
+    "missed_total": 0,
+    "missed_unstable": 0,
+    "missed_stable": 0,
+    "missed_inside_Q": 0,
+    "missed_unstable_inside_Q": 0,
+    "newton_not_certified": 0,
+    "mean_K_cert": 3.44,
+    "mean_U_cert": 2.71,
+    "mean_U_in_cert": 2.7,
+    "index_sum_1_cert": 240,
+    "time_s": {
+     "median": 214.7,
+     "max": 2771.71
+    },
+    "boxes_median": 241820,
+    "undecided_models": 0,
+    "by_device": {
+     "cuda/20seeds": 240
+    }
+   },
+   "res_H64": {
+    "n_models": 160,
+    "certified_complete": 160,
+    "K_differs": {
+     "k": 0,
+     "n": 160,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.0234
+     ]
+    },
+    "U_differs": {
+     "k": 0,
+     "n": 160,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.0234
+     ]
+    },
+    "U_in_differs": {
+     "k": 0,
+     "n": 160,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.0234
+     ]
+    },
+    "missed_total": 0,
+    "missed_unstable": 0,
+    "missed_stable": 0,
+    "missed_inside_Q": 0,
+    "missed_unstable_inside_Q": 0,
+    "newton_not_certified": 0,
+    "mean_K_cert": 2.12,
+    "mean_U_cert": 1.34,
+    "mean_U_in_cert": 1.34,
+    "index_sum_1_cert": 93,
+    "time_s": {
+     "median": 0.17,
+     "max": 1.66
+    },
+    "boxes_median": 10504,
+    "undecided_models": 0,
+    "by_device": {
+     "cpu/10seeds": 80,
+     "cuda/20seeds": 80
+    },
+    "start_box": {
+     "n": 160,
+     "K_differs": 1,
+     "missed": 1,
+     "missed_unstable": 1,
+     "undecided_models": 0
+    }
+   }
+  },
+  "reproduction_stage_M": {
+   "n": 720,
+   "train_mse_rel_diff_max": 0.0,
+   "train_mse_rel_diff_median": 0.0,
+   "K_equal": 720,
+   "U_equal": 720
+  },
+  "models_with_missed": []
+ }
+}

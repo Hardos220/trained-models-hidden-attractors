@@ -1,0 +1,1459 @@
+{
+ "H1": {
+  "ngrc": {
+   "eta=0.001": {
+    "chua_I": {
+     "n": 5,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 2.8,
+     "mean_U_in": 1.0,
+     "share_escape": 1.0,
+     "median_train_rmse": 0.010959031369177566,
+     "hidden_basin_fate": {}
+    },
+    "chua_II": {
+     "n": 5,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 3.6,
+     "mean_U_in": 2.0,
+     "share_escape": 1.0,
+     "median_train_rmse": 0.005470069721814414,
+     "hidden_basin_fate": {}
+    },
+    "se11": {
+     "n": 5,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 2.0,
+     "mean_U_in": 1.0,
+     "share_escape": 1.0,
+     "median_train_rmse": 0.002120557940019055,
+     "hidden_basin_fate": {}
+    },
+    "se3": {
+     "n": 5,
+     "reproduced_any": 5,
+     "reproduced": {
+      "HA": 5
+     },
+     "labels": {
+      "hidden_stat": 5
+     },
+     "mean_U": 1.0,
+     "mean_U_in": 0.0,
+     "share_escape": 0.744,
+     "median_train_rmse": 0.00019535863782831777,
+     "hidden_basin_fate": {}
+    },
+    "wangchen2": {
+     "n": 5,
+     "reproduced_any": 5,
+     "reproduced": {
+      "HA": 5
+     },
+     "labels": {
+      "self_excited": 5
+     },
+     "mean_U": 8.0,
+     "mean_U_in": 3.0,
+     "share_escape": 0.991,
+     "median_train_rmse": 0.0018779642608146606,
+     "hidden_basin_fate": {}
+    },
+    "wangchen2_a0.03": {
+     "n": 5,
+     "reproduced_any": 5,
+     "reproduced": {
+      "HA": 5
+     },
+     "labels": {
+      "hidden_stat": 5
+     },
+     "mean_U": 2.4,
+     "mean_U_in": 0.8,
+     "share_escape": 0.997,
+     "median_train_rmse": 0.0012865762850928185,
+     "hidden_basin_fate": {}
+    }
+   },
+   "eta=0.1": {
+    "chua_I": {
+     "n": 5,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 1.4,
+     "mean_U_in": 0.0,
+     "share_escape": 1.0,
+     "median_train_rmse": 0.012313222187975714,
+     "hidden_basin_fate": {}
+    },
+    "chua_II": {
+     "n": 5,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 3.0,
+     "mean_U_in": 1.0,
+     "share_escape": 1.0,
+     "median_train_rmse": 0.00598005763349504,
+     "hidden_basin_fate": {}
+    },
+    "se11": {
+     "n": 5,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 1.0,
+     "mean_U_in": 0.0,
+     "share_escape": 0.994,
+     "median_train_rmse": 0.005404821733316441,
+     "hidden_basin_fate": {}
+    },
+    "se3": {
+     "n": 5,
+     "reproduced_any": 5,
+     "reproduced": {
+      "HA": 5
+     },
+     "labels": {
+      "hidden_stat": 5
+     },
+     "mean_U": 3.0,
+     "mean_U_in": 0.0,
+     "share_escape": 0.724,
+     "median_train_rmse": 0.00031154775310322596,
+     "hidden_basin_fate": {}
+    },
+    "wangchen2": {
+     "n": 5,
+     "reproduced_any": 5,
+     "reproduced": {
+      "HA": 5
+     },
+     "labels": {
+      "self_excited": 5
+     },
+     "mean_U": 8.0,
+     "mean_U_in": 2.0,
+     "share_escape": 0.979,
+     "median_train_rmse": 0.002047517839693397,
+     "hidden_basin_fate": {}
+    },
+    "wangchen2_a0.03": {
+     "n": 5,
+     "reproduced_any": 5,
+     "reproduced": {
+      "HA": 5
+     },
+     "labels": {
+      "self_excited": 2,
+      "excited_r": 3
+     },
+     "mean_U": 1.0,
+     "mean_U_in": 1.0,
+     "share_escape": 0.978,
+     "median_train_rmse": 0.001418277341783412,
+     "hidden_basin_fate": {}
+    }
+   },
+   "eta=10": {
+    "chua_I": {
+     "n": 5,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 4.0,
+     "mean_U_in": 1.0,
+     "share_escape": 0.567,
+     "median_train_rmse": 0.018611028593636433,
+     "hidden_basin_fate": {}
+    },
+    "chua_II": {
+     "n": 5,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 3.0,
+     "mean_U_in": 3.0,
+     "share_escape": 1.0,
+     "median_train_rmse": 0.008699670061649489,
+     "hidden_basin_fate": {}
+    },
+    "se11": {
+     "n": 5,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 2.0,
+     "mean_U_in": 1.0,
+     "share_escape": 1.0,
+     "median_train_rmse": 0.009988083944170643,
+     "hidden_basin_fate": {}
+    },
+    "se3": {
+     "n": 5,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 3.0,
+     "mean_U_in": 1.0,
+     "share_escape": 0.825,
+     "median_train_rmse": 0.0026171248523026644,
+     "hidden_basin_fate": {}
+    },
+    "wangchen2": {
+     "n": 5,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 1.0,
+     "mean_U_in": 0.0,
+     "share_escape": 0.995,
+     "median_train_rmse": 0.00417051009295523,
+     "hidden_basin_fate": {}
+    },
+    "wangchen2_a0.03": {
+     "n": 5,
+     "reproduced_any": 5,
+     "reproduced": {
+      "HA": 5
+     },
+     "labels": {
+      "self_excited": 5
+     },
+     "mean_U": 6.0,
+     "mean_U_in": 3.0,
+     "share_escape": 0.966,
+     "median_train_rmse": 0.003150234565472739,
+     "hidden_basin_fate": {}
+    }
+   },
+   "by_regime": {
+    "chua_I": {
+     "n": 15,
+     "pairs": 30,
+     "reproduced": 0,
+     "labels": {},
+     "hidden": 0,
+     "mean_U": 2.73,
+     "mean_U_in": 0.67
+    },
+    "chua_II": {
+     "n": 15,
+     "pairs": 30,
+     "reproduced": 0,
+     "labels": {},
+     "hidden": 0,
+     "mean_U": 3.2,
+     "mean_U_in": 2.0
+    },
+    "se11": {
+     "n": 15,
+     "pairs": 15,
+     "reproduced": 0,
+     "labels": {},
+     "hidden": 0,
+     "mean_U": 1.67,
+     "mean_U_in": 0.67
+    },
+    "se3": {
+     "n": 15,
+     "pairs": 15,
+     "reproduced": 10,
+     "labels": {
+      "hidden_stat": 10
+     },
+     "hidden": 10,
+     "mean_U": 2.33,
+     "mean_U_in": 0.33
+    },
+    "wangchen2": {
+     "n": 15,
+     "pairs": 15,
+     "reproduced": 10,
+     "labels": {
+      "self_excited": 10
+     },
+     "hidden": 0,
+     "mean_U": 5.67,
+     "mean_U_in": 1.67
+    },
+    "wangchen2_a0.03": {
+     "n": 15,
+     "pairs": 15,
+     "reproduced": 15,
+     "labels": {
+      "hidden_stat": 5,
+      "self_excited": 7,
+      "excited_r": 3
+     },
+     "hidden": 5,
+     "mean_U": 3.13,
+     "mean_U_in": 1.6
+    }
+   }
+  },
+  "poly": {
+   "thr=0.003": {
+    "chua_I": {
+     "n": 10,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 1.0,
+     "mean_U_in": 1.0,
+     "share_escape": 0.967,
+     "median_train_rmse": 0.027992998871558296,
+     "hidden_basin_fate": {
+      "equilibrium": 0.35,
+      "escape": 0.65
+     }
+    },
+    "chua_II": {
+     "n": 10,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 2.0,
+     "mean_U_in": 2.0,
+     "share_escape": 1.0,
+     "median_train_rmse": 0.010651322362505773,
+     "hidden_basin_fate": {
+      "escape": 1.0
+     }
+    },
+    "se11": {
+     "n": 10,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 1.0,
+     "mean_U_in": 0.0,
+     "share_escape": 0.973,
+     "median_train_rmse": 0.015518171324289964,
+     "hidden_basin_fate": {
+      "equilibrium": 0.316,
+      "escape": 0.653,
+      "other": 0.031
+     }
+    },
+    "se3": {
+     "n": 10,
+     "reproduced_any": 2,
+     "reproduced": {
+      "HA": 2
+     },
+     "labels": {
+      "not_excited": 2
+     },
+     "mean_U": 1.5,
+     "mean_U_in": 0.0,
+     "share_escape": 0.717,
+     "median_train_rmse": 0.001597620088719681,
+     "hidden_basin_fate": {
+      "attractor": 0.194,
+      "equilibrium": 0.092,
+      "escape": 0.007,
+      "other": 0.708
+     }
+    },
+    "wangchen2": {
+     "n": 10,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 6.0,
+     "mean_U_in": 2.0,
+     "share_escape": 1.0,
+     "median_train_rmse": 0.015039583028916802,
+     "hidden_basin_fate": {
+      "escape": 1.0
+     }
+    },
+    "wangchen2_a0.03": {
+     "n": 10,
+     "reproduced_any": 10,
+     "reproduced": {
+      "HA": 10
+     },
+     "labels": {
+      "self_excited": 10
+     },
+     "mean_U": 6.0,
+     "mean_U_in": 2.0,
+     "share_escape": 0.727,
+     "median_train_rmse": 0.00864778114137792,
+     "hidden_basin_fate": {
+      "attractor": 0.395,
+      "escape": 0.602,
+      "other": 0.003
+     }
+    }
+   },
+   "thr=0.01": {
+    "chua_I": {
+     "n": 10,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 1.0,
+     "mean_U_in": 1.0,
+     "share_escape": 0.966,
+     "median_train_rmse": 0.028001549400191797,
+     "hidden_basin_fate": {
+      "equilibrium": 0.361,
+      "escape": 0.639
+     }
+    },
+    "chua_II": {
+     "n": 10,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 2.0,
+     "mean_U_in": 2.0,
+     "share_escape": 1.0,
+     "median_train_rmse": 0.012148449368627077,
+     "hidden_basin_fate": {
+      "escape": 1.0
+     }
+    },
+    "se11": {
+     "n": 10,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 1.0,
+     "mean_U_in": 0.0,
+     "share_escape": 0.97,
+     "median_train_rmse": 0.01553046343162785,
+     "hidden_basin_fate": {
+      "equilibrium": 0.377,
+      "escape": 0.584,
+      "other": 0.039
+     }
+    },
+    "se3": {
+     "n": 10,
+     "reproduced_any": 4,
+     "reproduced": {
+      "HA": 4
+     },
+     "labels": {
+      "not_excited": 4
+     },
+     "mean_U": 2.0,
+     "mean_U_in": 0.0,
+     "share_escape": 0.855,
+     "median_train_rmse": 0.0028612655344812847,
+     "hidden_basin_fate": {
+      "attractor": 0.393,
+      "equilibrium": 0.022,
+      "escape": 0.585,
+      "other": 0.001
+     }
+    },
+    "wangchen2": {
+     "n": 10,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 5.5,
+     "mean_U_in": 1.5,
+     "share_escape": 1.0,
+     "median_train_rmse": 0.0155625882764782,
+     "hidden_basin_fate": {
+      "escape": 1.0
+     }
+    },
+    "wangchen2_a0.03": {
+     "n": 10,
+     "reproduced_any": 10,
+     "reproduced": {
+      "HA": 10
+     },
+     "labels": {
+      "self_excited": 10
+     },
+     "mean_U": 4.0,
+     "mean_U_in": 2.0,
+     "share_escape": 0.742,
+     "median_train_rmse": 0.008773005675661956,
+     "hidden_basin_fate": {
+      "attractor": 0.371,
+      "escape": 0.629
+     }
+    }
+   },
+   "thr=0.03": {
+    "chua_I": {
+     "n": 10,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 2.0,
+     "mean_U_in": 2.0,
+     "share_escape": 1.0,
+     "median_train_rmse": 0.029201788039636856,
+     "hidden_basin_fate": {
+      "escape": 1.0
+     }
+    },
+    "chua_II": {
+     "n": 10,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 2.0,
+     "mean_U_in": 2.0,
+     "share_escape": 1.0,
+     "median_train_rmse": 0.012166219847987306,
+     "hidden_basin_fate": {
+      "escape": 1.0
+     }
+    },
+    "se11": {
+     "n": 10,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 2.0,
+     "mean_U_in": 2.0,
+     "share_escape": 1.0,
+     "median_train_rmse": 0.022774857850573555,
+     "hidden_basin_fate": {
+      "escape": 1.0
+     }
+    },
+    "se3": {
+     "n": 10,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 1.0,
+     "mean_U_in": 1.0,
+     "share_escape": 1.0,
+     "median_train_rmse": 0.026190869981730314,
+     "hidden_basin_fate": {
+      "escape": 1.0
+     }
+    },
+    "wangchen2": {
+     "n": 10,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 0.0,
+     "mean_U_in": 0.0,
+     "share_escape": 0.998,
+     "median_train_rmse": 0.036378311135575506,
+     "hidden_basin_fate": {
+      "equilibrium": 0.002,
+      "escape": 0.998
+     }
+    },
+    "wangchen2_a0.03": {
+     "n": 10,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 0.0,
+     "mean_U_in": 0.0,
+     "share_escape": 0.996,
+     "median_train_rmse": 0.022705790715054755,
+     "hidden_basin_fate": {
+      "equilibrium": 0.004,
+      "escape": 0.996
+     }
+    }
+   },
+   "by_regime": {
+    "chua_I": {
+     "n": 30,
+     "pairs": 60,
+     "reproduced": 0,
+     "labels": {},
+     "hidden": 0,
+     "mean_U": 1.33,
+     "mean_U_in": 1.33
+    },
+    "chua_II": {
+     "n": 30,
+     "pairs": 60,
+     "reproduced": 0,
+     "labels": {},
+     "hidden": 0,
+     "mean_U": 2.0,
+     "mean_U_in": 2.0
+    },
+    "se11": {
+     "n": 30,
+     "pairs": 30,
+     "reproduced": 0,
+     "labels": {},
+     "hidden": 0,
+     "mean_U": 1.33,
+     "mean_U_in": 0.67
+    },
+    "se3": {
+     "n": 30,
+     "pairs": 30,
+     "reproduced": 6,
+     "labels": {
+      "not_excited": 6
+     },
+     "hidden": 6,
+     "mean_U": 1.5,
+     "mean_U_in": 0.33
+    },
+    "wangchen2": {
+     "n": 30,
+     "pairs": 30,
+     "reproduced": 0,
+     "labels": {},
+     "hidden": 0,
+     "mean_U": 3.83,
+     "mean_U_in": 1.17
+    },
+    "wangchen2_a0.03": {
+     "n": 30,
+     "pairs": 30,
+     "reproduced": 20,
+     "labels": {
+      "self_excited": 20
+     },
+     "hidden": 0,
+     "mean_U": 3.33,
+     "mean_U_in": 1.33
+    }
+   }
+  },
+  "total": {
+   "ngrc": {
+    "n": 90,
+    "reproduced_any": 35,
+    "reproduced_pairs": 35,
+    "hidden": 15,
+    "labels": {
+     "hidden_stat": 15,
+     "self_excited": 17,
+     "excited_r": 3
+    },
+    "regimes": [
+     "chua_I",
+     "chua_II",
+     "se11",
+     "se3",
+     "wangchen2",
+     "wangchen2_a0.03"
+    ]
+   },
+   "poly": {
+    "n": 180,
+    "reproduced_any": 26,
+    "reproduced_pairs": 26,
+    "hidden": 6,
+    "labels": {
+     "not_excited": 6,
+     "self_excited": 20
+    },
+    "regimes": [
+     "chua_I",
+     "chua_II",
+     "se11",
+     "se3",
+     "wangchen2",
+     "wangchen2_a0.03"
+    ]
+   }
+  },
+  "total_all_regimes": {
+   "ngrc": {
+    "n": 90,
+    "reproduced_any": 35,
+    "reproduced_pairs": 35,
+    "hidden": 15,
+    "labels": {
+     "hidden_stat": 15,
+     "self_excited": 17,
+     "excited_r": 3
+    },
+    "regimes": [
+     "chua_I",
+     "chua_II",
+     "se11",
+     "se3",
+     "wangchen2",
+     "wangchen2_a0.03"
+    ]
+   },
+   "poly": {
+    "n": 180,
+    "reproduced_any": 26,
+    "reproduced_pairs": 26,
+    "hidden": 6,
+    "labels": {
+     "not_excited": 6,
+     "self_excited": 20
+    },
+    "regimes": [
+     "chua_I",
+     "chua_II",
+     "se11",
+     "se3",
+     "wangchen2",
+     "wangchen2_a0.03"
+    ]
+   }
+  },
+  "le1_separate": {
+   "ngrc": {
+    "n": 0,
+    "reproduced_any": 0,
+    "reproduced_pairs": 0,
+    "hidden": 0,
+    "labels": {},
+    "regimes": []
+   },
+   "poly": {
+    "n": 0,
+    "reproduced_any": 0,
+    "reproduced_pairs": 0,
+    "hidden": 0,
+    "labels": {},
+    "regimes": []
+   }
+  },
+  "pooling": "total: pooled over the six regimes se3, se11, wangchen2, wangchen2_a0.03, chua_I, chua_II; LE1 (attractor hidden only in the weak sense) is excluded and reported separately under le1_separate"
+ },
+ "HE1": {
+  "ngrc": {
+   "eta=0.001": {
+    "chua_I": {
+     "n": 5,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 3.2,
+     "mean_U_in": 0.0,
+     "share_escape": 0.998,
+     "median_train_rmse": 0.01440567909606397,
+     "hidden_basin_fate": {}
+    },
+    "chua_II": {
+     "n": 5,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 2.0,
+     "mean_U_in": 2.0,
+     "share_escape": 1.0,
+     "median_train_rmse": 0.010107516388938855,
+     "hidden_basin_fate": {}
+    },
+    "se11": {
+     "n": 5,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 2.2,
+     "mean_U_in": 1.0,
+     "share_escape": 1.0,
+     "median_train_rmse": 0.004738182027262837,
+     "hidden_basin_fate": {}
+    },
+    "se3": {
+     "n": 5,
+     "reproduced_any": 5,
+     "reproduced": {
+      "HA": 5
+     },
+     "labels": {
+      "hidden_stat": 5
+     },
+     "mean_U": 3.2,
+     "mean_U_in": 0.0,
+     "share_escape": 0.735,
+     "median_train_rmse": 0.00021840886795142936,
+     "hidden_basin_fate": {}
+    },
+    "wangchen2": {
+     "n": 5,
+     "reproduced_any": 5,
+     "reproduced": {
+      "HA": 5
+     },
+     "labels": {
+      "hidden_stat": 5
+     },
+     "mean_U": 3.4,
+     "mean_U_in": 0.0,
+     "share_escape": 0.995,
+     "median_train_rmse": 0.002355379284167052,
+     "hidden_basin_fate": {}
+    },
+    "wangchen2_a0.03": {
+     "n": 5,
+     "reproduced_any": 5,
+     "reproduced": {
+      "HA": 5
+     },
+     "labels": {
+      "hidden_stat": 2,
+      "excited_r": 1,
+      "self_excited": 2
+     },
+     "mean_U": 4.6,
+     "mean_U_in": 0.2,
+     "share_escape": 0.987,
+     "median_train_rmse": 0.0019067030713721903,
+     "hidden_basin_fate": {}
+    }
+   },
+   "eta=0.1": {
+    "chua_I": {
+     "n": 5,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 1.0,
+     "mean_U_in": 0.0,
+     "share_escape": 0.99,
+     "median_train_rmse": 0.015628183866315936,
+     "hidden_basin_fate": {}
+    },
+    "chua_II": {
+     "n": 5,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 2.0,
+     "mean_U_in": 2.0,
+     "share_escape": 1.0,
+     "median_train_rmse": 0.010721177358363596,
+     "hidden_basin_fate": {}
+    },
+    "se11": {
+     "n": 5,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 3.2,
+     "mean_U_in": 1.0,
+     "share_escape": 1.0,
+     "median_train_rmse": 0.006699966125313232,
+     "hidden_basin_fate": {}
+    },
+    "se3": {
+     "n": 5,
+     "reproduced_any": 5,
+     "reproduced": {
+      "HA": 5
+     },
+     "labels": {
+      "hidden_stat": 5
+     },
+     "mean_U": 2.2,
+     "mean_U_in": 0.0,
+     "share_escape": 0.721,
+     "median_train_rmse": 0.00036986409246603165,
+     "hidden_basin_fate": {}
+    },
+    "wangchen2": {
+     "n": 5,
+     "reproduced_any": 5,
+     "reproduced": {
+      "HA": 5
+     },
+     "labels": {
+      "hidden_stat": 5
+     },
+     "mean_U": 3.0,
+     "mean_U_in": 0.0,
+     "share_escape": 0.97,
+     "median_train_rmse": 0.002575620225530656,
+     "hidden_basin_fate": {}
+    },
+    "wangchen2_a0.03": {
+     "n": 5,
+     "reproduced_any": 5,
+     "reproduced": {
+      "HA": 5
+     },
+     "labels": {
+      "excited_r": 2,
+      "self_excited": 2,
+      "hidden_stat": 1
+     },
+     "mean_U": 3.0,
+     "mean_U_in": 0.4,
+     "share_escape": 0.962,
+     "median_train_rmse": 0.001970346800313557,
+     "hidden_basin_fate": {}
+    }
+   },
+   "eta=10": {
+    "chua_I": {
+     "n": 5,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 1.2,
+     "mean_U_in": 0.2,
+     "share_escape": 0.928,
+     "median_train_rmse": 0.017973494960585208,
+     "hidden_basin_fate": {}
+    },
+    "chua_II": {
+     "n": 5,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 3.0,
+     "mean_U_in": 1.0,
+     "share_escape": 0.026,
+     "median_train_rmse": 0.012988787160957013,
+     "hidden_basin_fate": {}
+    },
+    "se11": {
+     "n": 5,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 1.0,
+     "mean_U_in": 1.0,
+     "share_escape": 0.923,
+     "median_train_rmse": 0.010550641108693073,
+     "hidden_basin_fate": {}
+    },
+    "se3": {
+     "n": 5,
+     "reproduced_any": 4,
+     "reproduced": {
+      "HA": 4
+     },
+     "labels": {
+      "hidden_stat": 4
+     },
+     "mean_U": 1.0,
+     "mean_U_in": 0.0,
+     "share_escape": 0.728,
+     "median_train_rmse": 0.002018240253218202,
+     "hidden_basin_fate": {}
+    },
+    "wangchen2": {
+     "n": 5,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 4.2,
+     "mean_U_in": 0.0,
+     "share_escape": 0.997,
+     "median_train_rmse": 0.003810333705679747,
+     "hidden_basin_fate": {}
+    },
+    "wangchen2_a0.03": {
+     "n": 5,
+     "reproduced_any": 5,
+     "reproduced": {
+      "HA": 5
+     },
+     "labels": {
+      "self_excited": 5
+     },
+     "mean_U": 5.0,
+     "mean_U_in": 2.0,
+     "share_escape": 0.891,
+     "median_train_rmse": 0.002879787889278644,
+     "hidden_basin_fate": {}
+    }
+   },
+   "by_regime": {
+    "chua_I": {
+     "n": 15,
+     "pairs": 30,
+     "reproduced": 0,
+     "labels": {},
+     "hidden": 0,
+     "mean_U": 1.8,
+     "mean_U_in": 0.07
+    },
+    "chua_II": {
+     "n": 15,
+     "pairs": 30,
+     "reproduced": 0,
+     "labels": {},
+     "hidden": 0,
+     "mean_U": 2.33,
+     "mean_U_in": 1.67
+    },
+    "se11": {
+     "n": 15,
+     "pairs": 15,
+     "reproduced": 0,
+     "labels": {},
+     "hidden": 0,
+     "mean_U": 2.13,
+     "mean_U_in": 1.0
+    },
+    "se3": {
+     "n": 15,
+     "pairs": 15,
+     "reproduced": 14,
+     "labels": {
+      "hidden_stat": 14
+     },
+     "hidden": 14,
+     "mean_U": 2.13,
+     "mean_U_in": 0.0
+    },
+    "wangchen2": {
+     "n": 15,
+     "pairs": 15,
+     "reproduced": 10,
+     "labels": {
+      "hidden_stat": 10
+     },
+     "hidden": 10,
+     "mean_U": 3.53,
+     "mean_U_in": 0.0
+    },
+    "wangchen2_a0.03": {
+     "n": 15,
+     "pairs": 15,
+     "reproduced": 15,
+     "labels": {
+      "hidden_stat": 3,
+      "excited_r": 3,
+      "self_excited": 9
+     },
+     "hidden": 3,
+     "mean_U": 4.2,
+     "mean_U_in": 0.87
+    }
+   }
+  },
+  "poly": {
+   "thr=0.003": {
+    "chua_I": {
+     "n": 10,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 1.0,
+     "mean_U_in": 1.0,
+     "share_escape": 0.595,
+     "median_train_rmse": 0.04065350851539408,
+     "hidden_basin_fate": {
+      "equilibrium": 0.653,
+      "escape": 0.347
+     }
+    },
+    "chua_II": {
+     "n": 10,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 2.0,
+     "mean_U_in": 1.2,
+     "share_escape": 0.087,
+     "median_train_rmse": 0.018308303686483077,
+     "hidden_basin_fate": {
+      "escape": 0.046,
+      "other": 0.954
+     }
+    },
+    "se11": {
+     "n": 10,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 1.8,
+     "mean_U_in": 0.1,
+     "share_escape": 0.961,
+     "median_train_rmse": 0.027020903144181964,
+     "hidden_basin_fate": {
+      "equilibrium": 0.157,
+      "escape": 0.843
+     }
+    },
+    "se3": {
+     "n": 10,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 1.7,
+     "mean_U_in": 0.0,
+     "share_escape": 0.716,
+     "median_train_rmse": 0.002692880930785831,
+     "hidden_basin_fate": {
+      "attractor": 0.033,
+      "equilibrium": 0.962,
+      "escape": 0.005
+     }
+    },
+    "wangchen2": {
+     "n": 10,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 3.4,
+     "mean_U_in": 1.6,
+     "share_escape": 0.999,
+     "median_train_rmse": 0.012909463801320156,
+     "hidden_basin_fate": {
+      "equilibrium": 0.0,
+      "escape": 1.0
+     }
+    },
+    "wangchen2_a0.03": {
+     "n": 10,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 1.0,
+     "mean_U_in": 0.0,
+     "share_escape": 0.996,
+     "median_train_rmse": 0.008502877254658156,
+     "hidden_basin_fate": {
+      "equilibrium": 0.0,
+      "escape": 1.0
+     }
+    }
+   },
+   "thr=0.01": {
+    "chua_I": {
+     "n": 10,
+     "reproduced_any": 1,
+     "reproduced": {
+      "HA_a": 1
+     },
+     "labels": {
+      "not_excited": 1
+     },
+     "mean_U": 1.0,
+     "mean_U_in": 1.0,
+     "share_escape": 0.564,
+     "median_train_rmse": 0.04069529594631559,
+     "hidden_basin_fate": {
+      "attractor": 0.001,
+      "equilibrium": 0.619,
+      "escape": 0.349,
+      "other": 0.031
+     }
+    },
+    "chua_II": {
+     "n": 10,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 1.7,
+     "mean_U_in": 1.5,
+     "share_escape": 0.518,
+     "median_train_rmse": 0.018521055605039215,
+     "hidden_basin_fate": {
+      "escape": 0.504,
+      "other": 0.496
+     }
+    },
+    "se11": {
+     "n": 10,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 2.0,
+     "mean_U_in": 0.0,
+     "share_escape": 0.957,
+     "median_train_rmse": 0.027504824278783445,
+     "hidden_basin_fate": {
+      "equilibrium": 0.184,
+      "escape": 0.816
+     }
+    },
+    "se3": {
+     "n": 10,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 2.0,
+     "mean_U_in": 0.0,
+     "share_escape": 0.701,
+     "median_train_rmse": 0.004341973481797261,
+     "hidden_basin_fate": {
+      "equilibrium": 0.994,
+      "escape": 0.006
+     }
+    },
+    "wangchen2": {
+     "n": 10,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 4.0,
+     "mean_U_in": 1.0,
+     "share_escape": 1.0,
+     "median_train_rmse": 0.015520747313720912,
+     "hidden_basin_fate": {
+      "escape": 1.0
+     }
+    },
+    "wangchen2_a0.03": {
+     "n": 10,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 2.0,
+     "mean_U_in": 0.0,
+     "share_escape": 0.99,
+     "median_train_rmse": 0.010064505630474067,
+     "hidden_basin_fate": {
+      "attractor": 0.013,
+      "equilibrium": 0.0,
+      "escape": 0.987
+     }
+    }
+   },
+   "thr=0.03": {
+    "chua_I": {
+     "n": 10,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 1.0,
+     "mean_U_in": 1.0,
+     "share_escape": 1.0,
+     "median_train_rmse": 0.04466111761544568,
+     "hidden_basin_fate": {
+      "escape": 1.0
+     }
+    },
+    "chua_II": {
+     "n": 10,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 1.2,
+     "mean_U_in": 1.2,
+     "share_escape": 1.0,
+     "median_train_rmse": 0.02024821039845469,
+     "hidden_basin_fate": {
+      "escape": 1.0
+     }
+    },
+    "se11": {
+     "n": 10,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 1.0,
+     "mean_U_in": 1.0,
+     "share_escape": 1.0,
+     "median_train_rmse": 0.03444817336104587,
+     "hidden_basin_fate": {
+      "escape": 1.0
+     }
+    },
+    "se3": {
+     "n": 10,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 1.1,
+     "mean_U_in": 1.0,
+     "share_escape": 1.0,
+     "median_train_rmse": 0.018376619908917605,
+     "hidden_basin_fate": {
+      "escape": 1.0
+     }
+    },
+    "wangchen2": {
+     "n": 10,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 0.0,
+     "mean_U_in": 0.0,
+     "share_escape": 1.0,
+     "median_train_rmse": 0.03842968749619114,
+     "hidden_basin_fate": {
+      "equilibrium": 0.0,
+      "escape": 1.0
+     }
+    },
+    "wangchen2_a0.03": {
+     "n": 10,
+     "reproduced_any": 0,
+     "reproduced": {},
+     "labels": {},
+     "mean_U": 0.0,
+     "mean_U_in": 0.0,
+     "share_escape": 0.999,
+     "median_train_rmse": 0.027324141098751142,
+     "hidden_basin_fate": {
+      "equilibrium": 0.001,
+      "escape": 0.999
+     }
+    }
+   },
+   "by_regime": {
+    "chua_I": {
+     "n": 30,
+     "pairs": 60,
+     "reproduced": 1,
+     "labels": {
+      "not_excited": 1
+     },
+     "hidden": 1,
+     "mean_U": 1.0,
+     "mean_U_in": 1.0
+    },
+    "chua_II": {
+     "n": 30,
+     "pairs": 60,
+     "reproduced": 0,
+     "labels": {},
+     "hidden": 0,
+     "mean_U": 1.63,
+     "mean_U_in": 1.3
+    },
+    "se11": {
+     "n": 30,
+     "pairs": 30,
+     "reproduced": 0,
+     "labels": {},
+     "hidden": 0,
+     "mean_U": 1.6,
+     "mean_U_in": 0.37
+    },
+    "se3": {
+     "n": 30,
+     "pairs": 30,
+     "reproduced": 0,
+     "labels": {},
+     "hidden": 0,
+     "mean_U": 1.6,
+     "mean_U_in": 0.33
+    },
+    "wangchen2": {
+     "n": 30,
+     "pairs": 30,
+     "reproduced": 0,
+     "labels": {},
+     "hidden": 0,
+     "mean_U": 2.47,
+     "mean_U_in": 0.87
+    },
+    "wangchen2_a0.03": {
+     "n": 30,
+     "pairs": 30,
+     "reproduced": 0,
+     "labels": {},
+     "hidden": 0,
+     "mean_U": 1.0,
+     "mean_U_in": 0.0
+    }
+   }
+  },
+  "total": {
+   "ngrc": {
+    "n": 90,
+    "reproduced_any": 39,
+    "reproduced_pairs": 39,
+    "hidden": 27,
+    "labels": {
+     "hidden_stat": 27,
+     "excited_r": 3,
+     "self_excited": 9
+    },
+    "regimes": [
+     "chua_I",
+     "chua_II",
+     "se11",
+     "se3",
+     "wangchen2",
+     "wangchen2_a0.03"
+    ]
+   },
+   "poly": {
+    "n": 180,
+    "reproduced_any": 1,
+    "reproduced_pairs": 1,
+    "hidden": 1,
+    "labels": {
+     "not_excited": 1
+    },
+    "regimes": [
+     "chua_I",
+     "chua_II",
+     "se11",
+     "se3",
+     "wangchen2",
+     "wangchen2_a0.03"
+    ]
+   }
+  },
+  "total_all_regimes": {
+   "ngrc": {
+    "n": 90,
+    "reproduced_any": 39,
+    "reproduced_pairs": 39,
+    "hidden": 27,
+    "labels": {
+     "hidden_stat": 27,
+     "excited_r": 3,
+     "self_excited": 9
+    },
+    "regimes": [
+     "chua_I",
+     "chua_II",
+     "se11",
+     "se3",
+     "wangchen2",
+     "wangchen2_a0.03"
+    ]
+   },
+   "poly": {
+    "n": 180,
+    "reproduced_any": 1,
+    "reproduced_pairs": 1,
+    "hidden": 1,
+    "labels": {
+     "not_excited": 1
+    },
+    "regimes": [
+     "chua_I",
+     "chua_II",
+     "se11",
+     "se3",
+     "wangchen2",
+     "wangchen2_a0.03"
+    ]
+   }
+  },
+  "le1_separate": {
+   "ngrc": {
+    "n": 0,
+    "reproduced_any": 0,
+    "reproduced_pairs": 0,
+    "hidden": 0,
+    "labels": {},
+    "regimes": []
+   },
+   "poly": {
+    "n": 0,
+    "reproduced_any": 0,
+    "reproduced_pairs": 0,
+    "hidden": 0,
+    "labels": {},
+    "regimes": []
+   }
+  },
+  "pooling": "total: pooled over the six regimes se3, se11, wangchen2, wangchen2_a0.03, chua_I, chua_II; LE1 (attractor hidden only in the weak sense) is excluded and reported separately under le1_separate"
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "chua_I/HA_a": {
+  "min_dist": 0.137,
+  "attractor_within_0.1": 0.0,
+  "attractor_within_0.3": 0.312
+ },
+ "chua_I/HA_b": {
+  "min_dist": 0.045,
+  "attractor_within_0.1": 0.051,
+  "attractor_within_0.3": 0.595
+ },
+ "chua_II/HA_a": {
+  "min_dist": 1.54,
+  "attractor_within_0.1": 0.0,
+  "attractor_within_0.3": 0.0
+ },
+ "chua_II/HA_b": {
+  "min_dist": 1.843,
+  "attractor_within_0.1": 0.0,
+  "attractor_within_0.3": 0.0
+ },
+ "le1/HA": {
+  "min_dist": 0.068,
+  "attractor_within_0.1": 0.009,
+  "attractor_within_0.3": 0.306
+ },
+ "se11/HA": {
+  "min_dist": 0.114,
+  "attractor_within_0.1": 0.0,
+  "attractor_within_0.3": 0.659
+ },
+ "se3/HA": {
+  "min_dist": 0.025,
+  "attractor_within_0.1": 0.369,
+  "attractor_within_0.3": 0.585
+ },
+ "wangchen2/HA": {
+  "min_dist": 0.551,
+  "attractor_within_0.1": 0.0,
+  "attractor_within_0.3": 0.0
+ },
+ "wangchen2_a0.03/HA": {
+  "min_dist": 0.396,
+  "attractor_within_0.1": 0.0,
+  "attractor_within_0.3": 0.0
+ }
+}

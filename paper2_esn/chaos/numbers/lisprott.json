@@ -1,0 +1,494 @@
+{
+ "n_models": 32,
+ "by_case": {
+  "li_sprott_2_0.8": {
+   "n_models": 16,
+   "K": {
+    "1": 6,
+    "3": 6,
+    "7": 2,
+    "10": 1,
+    "11": 1
+   },
+   "U": {
+    "1": 6,
+    "3": 6,
+    "7": 2,
+    "10": 1,
+    "11": 1
+   },
+   "reproduced_targets": {
+    "LC_a": 15,
+    "T": 4
+   },
+   "labels": {
+    "self_excited": 15,
+    "hidden_stat": 4
+   }
+  },
+  "li_sprott_6_0.1": {
+   "n_models": 16,
+   "K": {
+    "15": 1,
+    "35": 1,
+    "21": 1,
+    "27": 1,
+    "55": 1,
+    "54": 1,
+    "53": 1,
+    "89": 1,
+    "28": 1,
+    "34": 1,
+    "29": 1,
+    "25": 1,
+    "64": 1,
+    "62": 1,
+    "78": 1,
+    "60": 1
+   },
+   "U": {
+    "15": 1,
+    "35": 1,
+    "20": 1,
+    "27": 1,
+    "55": 1,
+    "54": 1,
+    "52": 1,
+    "89": 1,
+    "28": 2,
+    "34": 1,
+    "25": 1,
+    "64": 1,
+    "61": 1,
+    "77": 1,
+    "59": 1
+   },
+   "reproduced_targets": {
+    "SA_a": 14
+   },
+   "labels": {
+    "self_excited": 14
+   }
+  }
+ },
+ "K_counts": {
+  "1": 6,
+  "3": 6,
+  "7": 2,
+  "10": 1,
+  "11": 1,
+  "15": 1,
+  "35": 1,
+  "21": 1,
+  "27": 1,
+  "55": 1,
+  "54": 1,
+  "53": 1,
+  "89": 1,
+  "28": 1,
+  "34": 1,
+  "29": 1,
+  "25": 1,
+  "64": 1,
+  "62": 1,
+  "78": 1,
+  "60": 1
+ },
+ "U_counts": {
+  "1": 6,
+  "3": 6,
+  "7": 2,
+  "10": 1,
+  "11": 1,
+  "15": 1,
+  "35": 1,
+  "20": 1,
+  "27": 1,
+  "55": 1,
+  "54": 1,
+  "52": 1,
+  "89": 1,
+  "28": 2,
+  "34": 1,
+  "25": 1,
+  "64": 1,
+  "61": 1,
+  "77": 1,
+  "59": 1
+ },
+ "reproductions": [
+  {
+   "model": "esn_li_sprott_2_0.8_rho0.9_eta0.0001_s0.json",
+   "case": "li_sprott_2_0.8",
+   "target": "LC_a",
+   "attractor": "a0",
+   "kind": "regular",
+   "K": 1,
+   "U": 1,
+   "label": "self_excited"
+  },
+  {
+   "model": "esn_li_sprott_2_0.8_rho0.9_eta0.0001_s0.json",
+   "case": "li_sprott_2_0.8",
+   "target": "T",
+   "attractor": "a2",
+   "kind": "regular",
+   "K": 1,
+   "U": 1,
+   "label": "hidden_stat"
+  },
+  {
+   "model": "esn_li_sprott_2_0.8_rho0.9_eta0.0001_s0.json",
+   "case": "li_sprott_2_0.8",
+   "target": "LC_a",
+   "attractor": "a3",
+   "kind": "regular",
+   "K": 1,
+   "U": 1,
+   "label": "self_excited"
+  },
+  {
+   "model": "esn_li_sprott_2_0.8_rho0.9_eta0.0001_s1.json",
+   "case": "li_sprott_2_0.8",
+   "target": "LC_a",
+   "attractor": "a0",
+   "kind": "regular",
+   "K": 1,
+   "U": 1,
+   "label": "self_excited"
+  },
+  {
+   "model": "esn_li_sprott_2_0.8_rho0.9_eta0.0001_s1.json",
+   "case": "li_sprott_2_0.8",
+   "target": "T",
+   "attractor": "a1",
+   "kind": "regular",
+   "K": 1,
+   "U": 1,
+   "label": "hidden_stat"
+  },
+  {
+   "model": "esn_li_sprott_2_0.8_rho0.9_eta0.0001_s2.json",
+   "case": "li_sprott_2_0.8",
+   "target": "LC_a",
+   "attractor": "a0",
+   "kind": "regular",
+   "K": 1,
+   "U": 1,
+   "label": "self_excited"
+  },
+  {
+   "model": "esn_li_sprott_2_0.8_rho0.9_eta0.0001_s3.json",
+   "case": "li_sprott_2_0.8",
+   "target": "LC_a",
+   "attractor": "a0",
+   "kind": "regular",
+   "K": 3,
+   "U": 3,
+   "label": "self_excited"
+  },
+  {
+   "model": "esn_li_sprott_2_0.8_rho0.9_eta1e-07_s0.json",
+   "case": "li_sprott_2_0.8",
+   "target": "LC_a",
+   "attractor": "a0",
+   "kind": "regular",
+   "K": 1,
+   "U": 1,
+   "label": "self_excited"
+  },
+  {
+   "model": "esn_li_sprott_2_0.8_rho0.9_eta1e-07_s0.json",
+   "case": "li_sprott_2_0.8",
+   "target": "T",
+   "attractor": "a2",
+   "kind": "regular",
+   "K": 1,
+   "U": 1,
+   "label": "hidden_stat"
+  },
+  {
+   "model": "esn_li_sprott_2_0.8_rho0.9_eta1e-07_s1.json",
+   "case": "li_sprott_2_0.8",
+   "target": "LC_a",
+   "attractor": "a0",
+   "kind": "regular",
+   "K": 1,
+   "U": 1,
+   "label": "self_excited"
+  },
+  {
+   "model": "esn_li_sprott_2_0.8_rho0.9_eta1e-07_s1.json",
+   "case": "li_sprott_2_0.8",
+   "target": "T",
+   "attractor": "a1",
+   "kind": "regular",
+   "K": 1,
+   "U": 1,
+   "label": "hidden_stat"
+  },
+  {
+   "model": "esn_li_sprott_2_0.8_rho0.9_eta1e-07_s2.json",
+   "case": "li_sprott_2_0.8",
+   "target": "LC_a",
+   "attractor": "a0",
+   "kind": "regular",
+   "K": 1,
+   "U": 1,
+   "label": "self_excited"
+  },
+  {
+   "model": "esn_li_sprott_2_0.8_rho0.9_eta1e-07_s3.json",
+   "case": "li_sprott_2_0.8",
+   "target": "LC_a",
+   "attractor": "a0",
+   "kind": "regular",
+   "K": 3,
+   "U": 3,
+   "label": "self_excited"
+  },
+  {
+   "model": "esn_li_sprott_2_0.8_rho1.2_eta0.0001_s0.json",
+   "case": "li_sprott_2_0.8",
+   "target": "LC_a",
+   "attractor": "a0",
+   "kind": "regular",
+   "K": 3,
+   "U": 3,
+   "label": "self_excited"
+  },
+  {
+   "model": "esn_li_sprott_2_0.8_rho1.2_eta0.0001_s2.json",
+   "case": "li_sprott_2_0.8",
+   "target": "LC_a",
+   "attractor": "a0",
+   "kind": "regular",
+   "K": 3,
+   "U": 3,
+   "label": "self_excited"
+  },
+  {
+   "model": "esn_li_sprott_2_0.8_rho1.2_eta0.0001_s3.json",
+   "case": "li_sprott_2_0.8",
+   "target": "LC_a",
+   "attractor": "a0",
+   "kind": "regular",
+   "K": 10,
+   "U": 10,
+   "label": "self_excited"
+  },
+  {
+   "model": "esn_li_sprott_2_0.8_rho1.2_eta1e-07_s0.json",
+   "case": "li_sprott_2_0.8",
+   "target": "LC_a",
+   "attractor": "a0",
+   "kind": "regular",
+   "K": 3,
+   "U": 3,
+   "label": "self_excited"
+  },
+  {
+   "model": "esn_li_sprott_2_0.8_rho1.2_eta1e-07_s2.json",
+   "case": "li_sprott_2_0.8",
+   "target": "LC_a",
+   "attractor": "a0",
+   "kind": "regular",
+   "K": 3,
+   "U": 3,
+   "label": "self_excited"
+  },
+  {
+   "model": "esn_li_sprott_2_0.8_rho1.2_eta1e-07_s3.json",
+   "case": "li_sprott_2_0.8",
+   "target": "LC_a",
+   "attractor": "a0",
+   "kind": "regular",
+   "K": 11,
+   "U": 11,
+   "label": "self_excited"
+  },
+  {
+   "model": "esn_li_sprott_6_0.1_rho0.9_eta0.0001_s0.json",
+   "case": "li_sprott_6_0.1",
+   "target": "SA_a",
+   "attractor": "a0",
+   "kind": "chaos",
+   "K": 15,
+   "U": 15,
+   "label": "self_excited"
+  },
+  {
+   "model": "esn_li_sprott_6_0.1_rho0.9_eta0.0001_s0.json",
+   "case": "li_sprott_6_0.1",
+   "target": "SA_a",
+   "attractor": "a1",
+   "kind": "chaos",
+   "K": 15,
+   "U": 15,
+   "label": "self_excited"
+  },
+  {
+   "model": "esn_li_sprott_6_0.1_rho0.9_eta0.0001_s3.json",
+   "case": "li_sprott_6_0.1",
+   "target": "SA_a",
+   "attractor": "a0",
+   "kind": "chaos",
+   "K": 27,
+   "U": 27,
+   "label": "self_excited"
+  },
+  {
+   "model": "esn_li_sprott_6_0.1_rho0.9_eta0.0001_s3.json",
+   "case": "li_sprott_6_0.1",
+   "target": "SA_a",
+   "attractor": "a1",
+   "kind": "chaos",
+   "K": 27,
+   "U": 27,
+   "label": "self_excited"
+  },
+  {
+   "model": "esn_li_sprott_6_0.1_rho0.9_eta1e-07_s0.json",
+   "case": "li_sprott_6_0.1",
+   "target": "SA_a",
+   "attractor": "a0",
+   "kind": "chaos",
+   "K": 55,
+   "U": 55,
+   "label": "self_excited"
+  },
+  {
+   "model": "esn_li_sprott_6_0.1_rho0.9_eta1e-07_s0.json",
+   "case": "li_sprott_6_0.1",
+   "target": "SA_a",
+   "attractor": "a2",
+   "kind": "chaos",
+   "K": 55,
+   "U": 55,
+   "label": "self_excited"
+  },
+  {
+   "model": "esn_li_sprott_6_0.1_rho0.9_eta1e-07_s2.json",
+   "case": "li_sprott_6_0.1",
+   "target": "SA_a",
+   "attractor": "a0",
+   "kind": "chaos",
+   "K": 53,
+   "U": 52,
+   "label": "self_excited"
+  },
+  {
+   "model": "esn_li_sprott_6_0.1_rho0.9_eta1e-07_s2.json",
+   "case": "li_sprott_6_0.1",
+   "target": "SA_a",
+   "attractor": "a1",
+   "kind": "chaos",
+   "K": 53,
+   "U": 52,
+   "label": "self_excited"
+  },
+  {
+   "model": "esn_li_sprott_6_0.1_rho0.9_eta1e-07_s3.json",
+   "case": "li_sprott_6_0.1",
+   "target": "SA_a",
+   "attractor": "a1",
+   "kind": "chaos",
+   "K": 89,
+   "U": 89,
+   "label": "self_excited"
+  },
+  {
+   "model": "esn_li_sprott_6_0.1_rho1.2_eta0.0001_s2.json",
+   "case": "li_sprott_6_0.1",
+   "target": "SA_a",
+   "attractor": "a0",
+   "kind": "chaos",
+   "K": 29,
+   "U": 28,
+   "label": "self_excited"
+  },
+  {
+   "model": "esn_li_sprott_6_0.1_rho1.2_eta0.0001_s2.json",
+   "case": "li_sprott_6_0.1",
+   "target": "SA_a",
+   "attractor": "a1",
+   "kind": "chaos",
+   "K": 29,
+   "U": 28,
+   "label": "self_excited"
+  },
+  {
+   "model": "esn_li_sprott_6_0.1_rho1.2_eta0.0001_s3.json",
+   "case": "li_sprott_6_0.1",
+   "target": "SA_a",
+   "attractor": "a0",
+   "kind": "chaos",
+   "K": 25,
+   "U": 25,
+   "label": "self_excited"
+  },
+  {
+   "model": "esn_li_sprott_6_0.1_rho1.2_eta0.0001_s3.json",
+   "case": "li_sprott_6_0.1",
+   "target": "SA_a",
+   "attractor": "a1",
+   "kind": "chaos",
+   "K": 25,
+   "U": 25,
+   "label": "self_excited"
+  },
+  {
+   "model": "esn_li_sprott_6_0.1_rho1.2_eta1e-07_s2.json",
+   "case": "li_sprott_6_0.1",
+   "target": "SA_a",
+   "attractor": "a0",
+   "kind": "chaos",
+   "K": 78,
+   "U": 77,
+   "label": "self_excited"
+  }
+ ],
+ "labels_of_reproduced": {
+  "self_excited": 29,
+  "hidden_stat": 4
+ },
+ "labels_by_U": {
+  "1": {
+   "self_excited": 7,
+   "hidden_stat": 4
+  },
+  "3": {
+   "self_excited": 6
+  },
+  "10": {
+   "self_excited": 1
+  },
+  "11": {
+   "self_excited": 1
+  },
+  "15": {
+   "self_excited": 2
+  },
+  "25": {
+   "self_excited": 2
+  },
+  "27": {
+   "self_excited": 2
+  },
+  "28": {
+   "self_excited": 2
+  },
+  "52": {
+   "self_excited": 2
+  },
+  "55": {
+   "self_excited": 2
+  },
+  "77": {
+   "self_excited": 1
+  },
+  "89": {
+   "self_excited": 1
+  }
+ }
+}

@@ -1,0 +1,533 @@
+{
+ "pooling": "pooled over the six regimes se3, se11, wangchen2, wangchen2_a0.03, chua_I, chua_II; LE1 (attractor hidden only in the weak sense) is excluded and reported separately under le1_separate",
+ "classes": {
+  "base": {
+   "n": 3329,
+   "log1p_U_in": [
+    -3.9377,
+    0.1452,
+    0.2398
+   ],
+   "class_mlp2": [
+    -0.3577,
+    0.1291,
+    0.2487
+   ],
+   "class_res": [
+    -0.1468,
+    0.1235,
+    0.2323
+   ],
+   "set_HE1": [
+    1.5163,
+    0.1116,
+    0.1979
+   ],
+   "set_E1": [
+    1.4031,
+    0.3189,
+    0.4549
+   ],
+   "log_width": [
+    -0.1399,
+    0.034,
+    0.0675
+   ],
+   "note": "[coef, se, cluster-robust se]"
+  },
+  "interaction": {
+   "slope_mlp": [
+    -5.8347,
+    0.3449
+   ],
+   "extra_slope_mlp2": [
+    1.7497,
+    0.4094
+   ],
+   "extra_slope_res": [
+    2.9933,
+    0.3754
+   ],
+   "LR": 82.26,
+   "df": 2,
+   "p": 1.3712299081882713e-18
+  },
+  "U_ge_1": {
+   "n": 2371,
+   "log1p_U_in": [
+    -2.7429,
+    0.2225,
+    0.3176
+   ],
+   "LR_U": 225.6,
+   "p": 5.359792981686157e-51,
+   "share_by_U": {
+    "1": [
+     341,
+     1173
+    ],
+    "2": [
+     144,
+     570
+    ],
+    "3": [
+     42,
+     318
+    ],
+    "4": [
+     8,
+     78
+    ],
+    "5": [
+     6,
+     66
+    ],
+    "6": [
+     1,
+     24
+    ],
+    "7": [
+     1,
+     28
+    ],
+    "8": [
+     0,
+     15
+    ]
+   }
+  },
+  "fit_quality": {
+   "log1p_U_in": [
+    -3.9473,
+    0.1473,
+    0.2375
+   ],
+   "log_delta_att": [
+    -0.0863,
+    0.0639,
+    0.0803
+   ],
+   "log_d_H": [
+    -0.2455,
+    0.0915,
+    0.1236
+   ],
+   "log_train_mse": [
+    0.2017,
+    0.0633,
+    0.1248
+   ]
+  },
+  "index_sum_1_only": {
+   "n": 3327,
+   "dropped": 2,
+   "log1p_U_in": [
+    -3.9377,
+    0.1452,
+    0.2398
+   ],
+   "class_mlp2": [
+    -0.3577,
+    0.1291,
+    0.2487
+   ],
+   "class_res": [
+    -0.1468,
+    0.1235,
+    0.2323
+   ]
+  },
+  "excited_r_as_hidden": {
+   "log1p_U_in": [
+    -3.8769,
+    0.1435,
+    0.237
+   ],
+   "n_excited_r": 14,
+   "share_by_U_bin": {
+    "0": [
+     897,
+     958
+    ],
+    "1": [
+     346,
+     1173
+    ],
+    "2": [
+     147,
+     570
+    ],
+    "3-4": [
+     53,
+     396
+    ],
+    "5-8": [
+     10,
+     133
+    ],
+    "9+": [
+     1,
+     99
+    ]
+   }
+  }
+ },
+ "esn": {
+  "n": 381,
+  "log1p_U": [
+   -3.0796,
+   0.4029,
+   0.707
+  ],
+  "set_H1": [
+   -0.7307,
+   0.3893,
+   0.4356
+  ],
+  "log_N": [
+   -0.0308,
+   0.1794,
+   0.2244
+  ],
+  "log_N_effect_over_range_ci95": [
+   -1.74,
+   1.51
+  ],
+  "U_ge_1": {
+   "n": 364,
+   "log1p_U": [
+    -2.3971,
+    0.3919,
+    0.6319
+   ]
+  }
+ },
+ "joint_with_esn": {
+  "n": 3710,
+  "log1p_U": [
+   -3.4889,
+   0.1229
+  ],
+  "class_vs_esn": {
+   "mlp": [
+    -0.9453,
+    0.1847
+   ],
+   "mlp2": [
+    -1.4107,
+    0.1837
+   ],
+   "res": [
+    -1.1584,
+    0.179
+   ]
+  },
+  "interaction_LR": 97.88,
+  "df": 3,
+  "p": 4.435274111800862e-21,
+  "slope_esn": [
+   -2.1969,
+   0.2591
+  ],
+  "extra_slopes": {
+   "mlp": [
+    -3.2611,
+    0.4137
+   ],
+   "mlp2": [
+    -1.6579,
+    0.3388
+   ],
+   "res": [
+    -0.5226,
+    0.3067
+   ]
+  }
+ },
+ "single_equilibria": {
+  "note": "[excited, n] over unstable equilibria of models with a reproduced hidden attractor (one entry per (equilibrium, hidden attractor)); copy = dist_true_eq < 0.01 (1% of the half-width L of Q)",
+  "inside": [
+   4805,
+   7792
+  ],
+  "outside": [
+   475,
+   1314
+  ],
+  "inside_copy": [
+   224,
+   547
+  ],
+  "inside_spurious": [
+   4581,
+   7245
+  ],
+  "inside_dim1": [
+   1618,
+   2951
+  ],
+  "inside_dim2": [
+   2384,
+   3625
+  ],
+  "inside_dim3": [
+   803,
+   1216
+  ],
+  "inside_dim1_index_minus1_eig_gt1": [
+   1604,
+   2900
+  ],
+  "inside_dim1_index_plus1_eig_lt_minus1": [
+   14,
+   51
+  ],
+  "inside_dim2_index_minus1": [
+   142,
+   245
+  ],
+  "copy_threshold_sensitivity": {
+   "0.005": {
+    "inside_copy": [
+     105,
+     366
+    ],
+    "inside_spurious": [
+     4700,
+     7426
+    ],
+    "share_copy": 0.2869,
+    "share_spurious": 0.6329
+   },
+   "0.01": {
+    "inside_copy": [
+     224,
+     547
+    ],
+    "inside_spurious": [
+     4581,
+     7245
+    ],
+    "share_copy": 0.4095,
+    "share_spurious": 0.6323
+   },
+   "0.02": {
+    "inside_copy": [
+     481,
+     943
+    ],
+    "inside_spurious": [
+     4324,
+     6849
+    ],
+    "share_copy": 0.5101,
+    "share_spurious": 0.6313
+   }
+  },
+  "independence_by_U_in": {
+   "0": {
+    "n": 958,
+    "observed": 0.935,
+    "predicted": 1.0
+   },
+   "1": {
+    "n": 1173,
+    "observed": 0.291,
+    "predicted": 0.336
+   },
+   "2": {
+    "n": 570,
+    "observed": 0.253,
+    "predicted": 0.174
+   },
+   "3-4": {
+    "n": 396,
+    "observed": 0.126,
+    "predicted": 0.09
+   },
+   "5-8": {
+    "n": 133,
+    "observed": 0.06,
+    "predicted": 0.025
+   },
+   "9+": {
+    "n": 99,
+    "observed": 0.01,
+    "predicted": 0.0
+   }
+  }
+ },
+ "le1_separate": {
+  "single_equilibria": {
+   "note": "[excited, n] over unstable equilibria of models with a reproduced hidden attractor (one entry per (equilibrium, hidden attractor)); copy = dist_true_eq < 0.01 (1% of the half-width L of Q)",
+   "inside": [
+    1238,
+    3095
+   ],
+   "outside": [
+    30,
+    311
+   ],
+   "inside_copy": [
+    232,
+    1459
+   ],
+   "inside_spurious": [
+    1006,
+    1636
+   ],
+   "inside_dim1": [
+    265,
+    1433
+   ],
+   "inside_dim2": [
+    599,
+    1117
+   ],
+   "inside_dim3": [
+    374,
+    545
+   ],
+   "inside_dim1_index_minus1_eig_gt1": [
+    255,
+    1395
+   ],
+   "inside_dim1_index_plus1_eig_lt_minus1": [
+    10,
+    38
+   ],
+   "inside_dim2_index_minus1": [
+    81,
+    121
+   ],
+   "copy_threshold_sensitivity": {
+    "0.005": {
+     "inside_copy": [
+      98,
+      1097
+     ],
+     "inside_spurious": [
+      1140,
+      1998
+     ],
+     "share_copy": 0.0893,
+     "share_spurious": 0.5706
+    },
+    "0.01": {
+     "inside_copy": [
+      232,
+      1459
+     ],
+     "inside_spurious": [
+      1006,
+      1636
+     ],
+     "share_copy": 0.159,
+     "share_spurious": 0.6149
+    },
+    "0.02": {
+     "inside_copy": [
+      548,
+      2030
+     ],
+     "inside_spurious": [
+      690,
+      1065
+     ],
+     "share_copy": 0.27,
+     "share_spurious": 0.6479
+    }
+   },
+   "independence_by_U_in": {
+    "0": {
+     "n": 43,
+     "observed": 0.977,
+     "predicted": 1.0
+    },
+    "1": {
+     "n": 81,
+     "observed": 0.63,
+     "predicted": 0.612
+    },
+    "2": {
+     "n": 75,
+     "observed": 0.52,
+     "predicted": 0.397
+    },
+    "3-4": {
+     "n": 133,
+     "observed": 0.474,
+     "predicted": 0.206
+    },
+    "5-8": {
+     "n": 74,
+     "observed": 0.351,
+     "predicted": 0.066
+    },
+    "9+": {
+     "n": 43,
+     "observed": 0.372,
+     "predicted": 0.004
+    }
+   }
+  },
+  "note": "LE1: copies = model equilibria within 0.01 L of the line x = y = 0"
+ },
+ "sensitivity_with_le1": {
+  "classes_log1p_U_in": [
+   -3.3615,
+   0.1198,
+   0.2795
+  ],
+  "classes_n": 3778,
+  "classes_U_ge_1_log1p_U_in": [
+   -2.057,
+   0.16,
+   0.355
+  ],
+  "esn_log1p_U": [
+   -3.2551,
+   0.3992,
+   0.6978
+  ],
+  "esn_n": 439,
+  "esn_U_ge_1_log1p_U": [
+   -2.6418,
+   0.3937,
+   0.643
+  ],
+  "independence_by_U_in": {
+   "0": {
+    "n": 1001,
+    "observed": 0.937,
+    "predicted": 1.0
+   },
+   "1": {
+    "n": 1254,
+    "observed": 0.313,
+    "predicted": 0.354
+   },
+   "2": {
+    "n": 645,
+    "observed": 0.284,
+    "predicted": 0.2
+   },
+   "3-4": {
+    "n": 529,
+    "observed": 0.214,
+    "predicted": 0.119
+   },
+   "5-8": {
+    "n": 207,
+    "observed": 0.164,
+    "predicted": 0.04
+   },
+   "9+": {
+    "n": 142,
+    "observed": 0.12,
+    "predicted": 0.001
+   }
+  },
+  "note": "[coef, se, cluster-robust se]"
+ }
+}

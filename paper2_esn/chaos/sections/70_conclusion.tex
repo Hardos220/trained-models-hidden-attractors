@@ -1,0 +1,14 @@
+\section{Conclusion}
+\label{sec:conclusion}
+
+Trained models of dynamics often reproduce hidden attractors but rarely their hiddenness. Degree theory fixes the bookkeeping
+of a model's equilibria. When the true equilibria have an index sum different from one, a bounded model must either miss a
+true equilibrium or add spurious ones; in an equilibrium-free system every bounded model has an equilibrium, and in all
+our reproductions it made the training attractor self-excited. Otherwise
+training decides how many unstable equilibria a model has, and an attractor is excited exactly through their unstable
+manifolds. Across about $10^4$ models of four classes trained on six regimes, the probability that a reproduced hidden
+attractor stays hidden is set mainly by the number of unstable equilibria in the region of the true system, with the class, the
+reservoir size and the depth acting mainly through this number. Data from the basin of the visible attractor help; removing unstable equilibria during training keeps the attractor hidden but also removes true
+ones; and generic models do not infer a hidden attractor that the data do not touch. Counting and testing the unstable
+equilibria of a trained model is therefore a necessary step before its global predictions, and in particular its account of
+hidden regimes, can be trusted.

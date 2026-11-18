@@ -1,0 +1,39 @@
+{
+  "title": "trained-models-hidden-attractors: code and per-model records for \"Do trained models keep attractors hidden? Forced spurious equilibria and a survival law for hiddenness\"",
+  "upload_type": "dataset",
+  "description": "Code, per-model records and analysis scripts for the article \"Do trained models keep attractors hidden? Forced spurious equilibria and a survival law for hiddenness\" (manuscript, 2026). The archive contains the code that generates the test regimes and training sets, trains echo state networks, next-generation reservoir computers, perceptrons and residual networks, finds their equilibria and labels the reproduced attractors as hidden or excited; one JSON record per trained model (file trained-models-hidden-attractors-records-v1.0.0.zip, 4.4 GB unpacked, with a SHA-256 manifest); and the scripts that compute every number, table and figure of the article from these records, with the manuscript sources (file trained-models-hidden-attractors-v1.0.0.zip, a snapshot of the GitHub repository).",
+  "creators": [
+    {
+      "name": "Elisov, Maksim",
+      "affiliation": "Samara National Research University, Samara, Russia",
+      "orcid": "0009-0001-3097-2703"
+    }
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "keywords": [
+    "hidden attractors",
+    "reservoir computing",
+    "echo state networks",
+    "spurious equilibria",
+    "degree theory",
+    "multistability",
+    "data-driven modeling",
+    "neural networks"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Hardos220/trained-models-hidden-attractors",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.5281/zenodo.23348470",
+      "relation": "isDerivedFrom",
+      "resource_type": "software",
+      "scheme": "doi"
+    }
+  ],
+  "version": "1.0.0"
+}

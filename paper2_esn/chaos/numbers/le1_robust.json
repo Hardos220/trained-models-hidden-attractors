@@ -1,0 +1,163 @@
+{
+ "note": "six_regimes = pooled statistics of the paper (LE1 excluded); with_le1 = seven regimes, comparison only",
+ "esn_size_sweep": {
+  "six_regimes": {
+   "n": 381,
+   "share_not_excited": 0.297,
+   "coef_U": [
+    -3.079,
+    0.403
+   ],
+   "LR_U": [
+    123.0,
+    1.3752292582448012e-28
+   ]
+  },
+  "with_le1": {
+   "n": 439,
+   "share_not_excited": 0.301,
+   "coef_U": [
+    -3.253,
+    0.399
+   ],
+   "LR_U": [
+    141.9,
+    9.977188843201499e-33
+   ]
+  },
+  "le1_rows": 58
+ },
+ "model_classes": {
+  "six_regimes": {
+   "n": 3329,
+   "share_not_excited": 0.433,
+   "coef_U": [
+    -3.938,
+    0.145
+   ],
+   "LR_U": [
+    1406.8,
+    7.119227364847767e-308
+   ]
+  },
+  "with_le1": {
+   "n": 3778,
+   "share_not_excited": 0.444,
+   "coef_U": [
+    -3.361,
+    0.12
+   ],
+   "LR_U": [
+    1394.0,
+    4.1405056315937124e-305
+   ]
+  },
+  "le1_rows": 449,
+  "survival_six_regimes": [
+   {
+    "bin": "0-0",
+    "n": 958,
+    "share": 0.935
+   },
+   {
+    "bin": "1-1",
+    "n": 1173,
+    "share": 0.291
+   },
+   {
+    "bin": "2-2",
+    "n": 570,
+    "share": 0.253
+   },
+   {
+    "bin": "3-4",
+    "n": 396,
+    "share": 0.126
+   },
+   {
+    "bin": "5-8",
+    "n": 133,
+    "share": 0.06
+   },
+   {
+    "bin": "9-inf",
+    "n": 99,
+    "share": 0.01
+   }
+  ],
+  "survival_le1": [
+   {
+    "bin": "0-0",
+    "n": 43,
+    "share": 0.977
+   },
+   {
+    "bin": "1-1",
+    "n": 81,
+    "share": 0.63
+   },
+   {
+    "bin": "2-2",
+    "n": 75,
+    "share": 0.52
+   },
+   {
+    "bin": "3-4",
+    "n": 133,
+    "share": 0.474
+   },
+   {
+    "bin": "5-8",
+    "n": 74,
+    "share": 0.351
+   },
+   {
+    "bin": "9-inf",
+    "n": 43,
+    "share": 0.372
+   }
+  ],
+  "survival_with_le1": [
+   {
+    "bin": "0-0",
+    "n": 1001,
+    "share": 0.937
+   },
+   {
+    "bin": "1-1",
+    "n": 1254,
+    "share": 0.313
+   },
+   {
+    "bin": "2-2",
+    "n": 645,
+    "share": 0.284
+   },
+   {
+    "bin": "3-4",
+    "n": 529,
+    "share": 0.214
+   },
+   {
+    "bin": "5-8",
+    "n": 207,
+    "share": 0.164
+   },
+   {
+    "bin": "9-inf",
+    "n": 142,
+    "share": 0.12
+   }
+  ]
+ },
+ "le1_equilibria": {
+  "copies_of_line": {
+   "n": 1459,
+   "excite": 232
+  },
+  "spurious": {
+   "n": 1636,
+   "excite": 1006
+  }
+ }
+}

@@ -1,0 +1,214 @@
+\appendix
+
+\section{Proofs}
+\label{app:proofs}
+
+\subsection{Theorem~\ref{thm:degree}, Lemma~\ref{lem:parity} and Corollary~\ref{cor:counts}}
+
+\begin{proof}[Proof of Theorem~\ref{thm:degree}]
+Let $K_c=[-c,c]^N$ with $c>R$ and $H(t,r)=r-tF(r)$ for $t\in[0,1]$. If $r\in\partial K_c$, then
+$\|r\|_\infty=c>R\ge\|tF(r)\|_\infty$, so $H(t,r)\neq0$ on $\partial K_c$ for all $t$. By homotopy invariance of the
+Brouwer degree,\cite{Deimling1985NFA} $\deg(\mathrm{id}-F,\operatorname{int}K_c,0)=\deg(\mathrm{id},\operatorname{int}K_c,0)=1$.
+All fixed points lie in $F(\mathbb{R}^N)\subset[-R,R]^N$, a compact subset of $\operatorname{int}K_c$. A nondegenerate fixed
+point $r^*$ is isolated: with $J=DF(r^*)$ and $\kappa=\|(I-J)^{-1}\|^{-1}>0$,
+$\|r-F(r)\|\ge\kappa\|r-r^*\|-o(\|r-r^*\|)>0$ for $r\neq r^*$ near $r^*$. The fixed-point set is closed and bounded, and its
+points are isolated, so it is finite. The degree is the sum of the local indices. The local index at $r^*$ equals
+$\operatorname{sign}\det(I-J)$: on a small sphere around $r^*$ the homotopy $(I-J)(r-r^*)+(1-t)\omega(r)$, with
+$\omega(r)=r-F(r)-(I-J)(r-r^*)=o(\|r-r^*\|)$, has no zero, and it connects $\mathrm{id}-F$ to the linear map
+$I-J$.\cite{Deimling1985NFA,GranasDugundji2003Fixed} This gives Eq.~\eqref{eq:indexsum}.
+
+If instead $F$ maps a compact convex set $K$ with $0\in\operatorname{int}K$ into $\operatorname{int}K$, then for
+$r\in\partial K$ the point $tF(r)$ lies on the segment between $0$ and $F(r)$, hence in $\operatorname{int}K$, and again
+$H(t,r)\neq0$ on $\partial K$; the indices of the fixed points in $K$ sum to $1$.
+\end{proof}
+
+\begin{proof}[Proof of Lemma~\ref{lem:parity}]
+$\det(I-J)=\prod_\lambda(1-\lambda)$ over the eigenvalues of $J=DF(r^*)$ with algebraic multiplicity. A complex-conjugate pair
+contributes $|1-\lambda|^2>0$, a real $\lambda<1$ a positive factor and a real $\lambda>1$ a negative one; $\lambda=1$ is
+excluded by nondegeneracy.
+\end{proof}
+
+\begin{proof}[Proof of Corollary~\ref{cor:counts}]
+(i) A sum of $K$ numbers $\pm1$ equal to $1$ has $K$ odd. (ii) If $n_\pm$ fixed points have index $\pm1$, then
+$n_++n_-=K$ and $n_+-n_-=1$, so $n_-=(K-1)/2$. By Lemma~\ref{lem:parity} a point of index $-1$ has an odd, hence positive,
+number of real eigenvalues greater than $1$ and is unstable. (iii) If $\hat E$ contained all fixed points, its index sum
+would be $1$ by Eq.~\eqref{eq:indexsum}.
+\end{proof}
+
+\subsection{Proposition~\ref{prop:forced} and the remark on $s$}
+
+\begin{proof}[Proof of Proposition~\ref{prop:forced}]
+By Theorem~\ref{thm:degree} the indices of all fixed points of $F$ sum to $1$; the copies contribute $s$, so the remaining
+fixed points sum to $1-s$, and since each contributes $\pm1$ there are at least $|1-s|$ of them. For the sufficient
+condition, let $M_j$ be the $C^1$ invariant manifold through $r_j$ and $\psi_j$ a $C^1$ diffeomorphism conjugating
+$F|_{M_j}$ with $\varphi_h$ near $x_j$. Then $T_{r_j}M_j$ is invariant under $DF(r_j)$ and $DF(r_j)|_{T_{r_j}M_j}$ is similar
+to $D\varphi_h(x_j)$. In a basis that extends a basis of $T_{r_j}M_j$, $DF(r_j)$ is block upper triangular with diagonal
+blocks similar to $D\varphi_h(x_j)$ and the transversal block $T_j$. Hence
+$\det\bigl(I-DF(r_j)\bigr)=\det\bigl(I-D\varphi_h(x_j)\bigr)\det(I-T_j)$, and $\det(I-T_j)>0$ by the argument of
+Lemma~\ref{lem:parity}, because $T_j$ has no real eigenvalue greater than $1$ (and none equal to $1$, by nondegeneracy of
+$r_j$). Thus $\ind_F(r_j)=\iota_j$.
+\end{proof}
+
+For the remark after Proposition~\ref{prop:forced}: $\det\bigl(-Df(x_j)\bigr)=\prod(-\lambda)$ has the sign $(-1)^{\ell_j}$, so
+$\iota_j$ is the index of the zero $x_j$ of $-f$ and, for a ball $\mathcal{B}$ containing exactly $x_1,\dots,x_m$,
+$s=\deg(-f,\mathcal{B},0)$. If $f$ points into $\mathcal{B}$ on $\partial\mathcal{B}$, then $-f$ points outward and is
+homotopic to the identity field through fields without zeros on $\partial\mathcal{B}$, so the degree is $1$
+(Poincar\'e--Hopf).
+
+\subsection{Proposition~\ref{prop:manifold} and Corollary~\ref{cor:criterion}}
+
+\begin{proof}[Proof of Proposition~\ref{prop:manifold}]
+(i) Let $y\in W^u(e)\cap B$ with backward orbit $y_{-n}\to e$. Since $F^n(y_{-n})=y\in B$ and $x\in B$ if and only if
+$F(x)\in B$, every $y_{-n}$ lies in $B$, and $B$ meets every neighborhood of $e$.
+
+(ii) By the Hartman--Grobman theorem\cite{Hartman1960Lemma,Grobman1959Homeo,KatokHasselblatt1995Intro} there is a
+homeomorphism $\Phi$ near $e$ conjugating $F$ to its linearization $L=\operatorname{diag}(L_s,L_u)$ in coordinates
+$x=(x_s,x_u)$, with a norm in which $\|L_s\|\le\lambda<1$ and $\|L_u^{-1}\|\le\mu^{-1}<1$. Choose $\delta>0$ so small that the
+ball of radius $\|L_u\|\delta$ lies in the domain of the conjugacy, and let $A_\delta=\{(0,x_u):\delta\le\|x_u\|\le\|L_u\|\delta\}$.
+Its image $\Phi^{-1}(A_\delta)$ is a compact subset of $W^u_{\mathrm{loc}}(e)\setminus\{e\}$, disjoint from the closed set
+$\bar B$ by assumption, so it has a neighborhood $V$ with $V\cap B=\varnothing$. Take a point $x$ with $\|x\|<\varepsilon$ in the
+linear coordinates. If $x_u\neq0$, let $n$ be the first iterate with $\|L_u^nx_u\|\ge\delta$; then $L^nx$ lies within
+$\lambda^n\varepsilon$ of $A_\delta$, and $n\ge\log(\delta/\varepsilon)/\log\|L_u\|\to\infty$ as $\varepsilon\to0$. For
+$\varepsilon$ small enough $F^n(x)\in V$, so $F^n(x)\notin B$ and hence $x\notin B$. If $x_u=0$, then $F^n(x)\to e\notin\mathcal{A}$,
+so again $x\notin B$. Hence the $\varepsilon$-neighborhood of $e$ does not meet $B$.
+
+If $DF(e)$ is singular but $F$ is affine near $e$, $F(x)=e+DF(e)(x-e)$, as for a fixed point of a hard-tanh network inside a
+linear region, the same estimate applies directly to $DF(e)$ with the stable part including the zero eigenvalues.
+\end{proof}
+
+\begin{proof}[Proof of Corollary~\ref{cor:criterion}]
+If $W^u_{\mathrm{loc}}(e)\setminus\{e\}$ does not meet $\bar B$, part (ii) shows that $\mathcal{A}$ is not excited from $e$.
+Conversely, let $y\in(W^u_{\mathrm{loc}}(e)\setminus\{e\})\cap\bar B$ with $y_k\in B$, $y_k\to y$. Near the backward orbit of
+$y$, which stays near $e$ where $DF$ is invertible, $F$ has a local inverse $F^{-1}_{\mathrm{loc}}$; the points
+$F^{-1}_{\mathrm{loc}}(y_k)$ lie in $B$ and converge to $y_{-1}$, so $y_{-1}\in\bar B$, and by induction $y_{-n}\in\bar B$ for all
+$n$. Since $y_{-n}\to e$, every neighborhood of $e$ contains points of $\bar B$ and hence of $B$. If $W^u(e)$ does not meet
+$\partial B$, then $W^u_{\mathrm{loc}}(e)\setminus\{e\}$ meets $\bar B$ only inside $B$, and by part (i) and the invariance of
+$B$ this happens exactly when $W^u(e)\cap B\neq\varnothing$. An asymptotically stable equilibrium $e\notin\mathcal{A}$ attracts a
+neighborhood whose points converge to $e$ and therefore are not in~$B$.
+\end{proof}
+
+\section{Systems and data}
+\label{app:systems}
+
+The test systems are\cite{Molaie2013,JafariSprott2013,WangChen2012,Leonov2011PLA,Stankevich2017}
+\begin{align*}
+\text{SE3:}\ \ &\dot x=y,\ \ \dot y=z,\ \ \dot z=-3.4x-y-4z+y^2+xy;\\
+\text{SE11:}\ \ &\dot x=y,\ \ \dot y=-x+yz,\\
+&\dot z=-y-12z+x^2+9xz-1;\\
+\text{LE1:}\ \ &\dot x=y,\ \ \dot y=-x+yz,\ \ \dot z=-x-axy-bxz;\\
+\text{WC:}\ \ &\dot x=yz+a,\ \ \dot y=x^2-y,\ \ \dot z=1-4x;\\
+\text{Chua:}\ \ &\dot x=\alpha\bigl(y-x-f(x)\bigr),\ \ \dot y=x-y+z,\\
+&\dot z=-(\beta y+\gamma z),\\
+&f(x)=m_1x+\tfrac12(m_0-m_1)\bigl(|x+1|-|x-1|\bigr),
+\end{align*}
+with $a=15$, $b=1$ for LE1 and $a=0.006$ or $0.03$ for the Wang--Chen system (WC), and
+$(\alpha,\beta,\gamma,m_0,m_1)=(8.4562,12.0732,0.0052,-0.1768,-1.1468)$ in regime~I of Chua's circuit and
+$(8.4,12,-0.005,-1.2,-0.05)$ in regime~II. The region $Q$ is $[-10,10]^3$, for Chua's circuit
+$[-10,10]\times[-10,10]\times[-15,15]$; trajectories leaving a ball of radius $100$ are counted as escaping. Integration uses
+the fourth-order Runge--Kutta method with step $0.01$ ($0.0025$ for Chua's circuit, whose piecewise-linear nonlinearity
+produces spurious transient chaos at larger steps). The training series carry dynamical noise: after each step
+$x\mapsto x+\sqrt{\delta t}\,\sigma_\xi\xi$ with standard normal $\xi$ and $\sigma_\xi$ equal to a fraction $3\times10^{-4}$ (SE3),
+$10^{-3}$ (SE11, LE1) or $3\times10^{-3}$ (Wang--Chen, Chua) of the standard deviation of the attractor per coordinate.
+Samples are taken at the intervals $\Delta t$ of Table~\ref{tab:systems}. H1 is one trajectory of $10^4$ samples on the
+hidden attractor after a washout of $500$; E1 consists of $20$ trajectories of $500$ samples after a washout of $50$,
+started at random points of the basin of the visible attractor (for LE1, of the stable part of the line of equilibria);
+HE1 is their union. The basin fractions $p_B$ of Table~\ref{tab:systems} come from a census of uniform initial conditions in
+$Q$ integrated until they settle.
+
+For the line of equilibria of LE1 we start $24$ trajectories in random directions at distances $10^{-8}$ and $10^{-4}$ from
+each of $140$ points $(0,0,z_0)$, $z_0\in[-3,4]$, integrate them with step $0.005$ for $600$ time units and count those that
+end on the attractor (within $0.05$ of a reference orbit at $90\%$ of the checks in the last $20$ time units). None of
+the trajectories from the stable half-line reaches the attractor. From the unstable half-line, $170$ of the $1920$ trajectories at distance $10^{-8}$
+do, all of them from $0.35\le z_0\le2.2$, and the counts at distance $10^{-4}$ are the same within a few percent; the others
+escape or return to the stable half-line, except $24$ that have done neither by $T=600$.
+
+The equilibrium-free control is the Li--Sprott system\cite{LiSprott2014} $\dot x=y-x$, $\dot y=-xz+w$, $\dot z=xy-a$,
+$\dot w=-by$, which has no equilibria for $a>0$, in the two cases of R\"ohm \textit{et al.}:\cite{Rohm2021} $(a,b)=(2,0.8)$,
+where two symmetric limit cycles coexist with a torus, and $(a,b)=(6,0.1)$, where two symmetric chaotic attractors coexist
+with a torus. As in that work, the training series is one noisy trajectory ($11\,000$ samples, Euler integration with step
+$10^{-3}$ and noise amplitude $0.2$) on one of the symmetric attractors; the networks have $N=300$, $\rho\in\{0.9,1.2\}$, two
+ridge parameters and four seeds per case.
+
+\section{Training of the models}
+\label{app:training}
+
+\emph{Echo state networks.} The reservoir matrix $W$ has normal entries with density $0.05$, rescaled to spectral radius
+$\rho$; $W_{\mathrm{in}}$ is uniform in $[-0.5,0.5]$ (the input scale), $b$ uniform in $[-0.2,0.2]$, and the input is the
+state divided by its standard deviation over the training series. Each training series drives the reservoir from $r=0$;
+the first states are discarded as washout, and the readout is fitted by ridge regression with parameter $\eta$ on pairs
+$(r_k,u_{k+1})$ within each series. The size sweep uses $\rho=0.9$, $\eta\in\{10^{-7},10^{-4}\}$ and several seeds per
+$N\in\{50,100,150,200,300,500,700,1000,1400,2000\}$; the full-protocol ensemble uses $\rho\in\{0.6,0.9,1.2\}$, the same two
+values of $\eta$ and $N\in\{300,500,700,1000\}$; the settings sweep and the intervention ensemble use $N=300$ and
+$\rho=0.9$.
+
+\emph{Next-generation reservoir computers} follow Gauthier \textit{et al.}\cite{Gauthier2021NGRC} with two time delays:
+$x_{n+1}=x_n+W\Phi(x_n,x_{n-1})$, where $\Phi$ contains a constant, the six linear terms and all quadratic monomials of the
+normalized $(x_n,x_{n-1})$; $W$ is fitted by ridge regression with $\eta\in\{10^{-3},10^{-1},10\}$.
+
+\emph{Sparse quadratic maps} have the form $u_{n+1}=u_n+\Xi^{\top}\theta(u_n)$ on the normalized state, where $\theta$ contains
+a constant, the three linear terms and the six quadratic monomials. $\Xi$ is fitted by sequentially thresholded least
+squares, a discrete form of SINDy,\cite{Brunton2016SINDy} with thresholds $0.003$, $0.01$ and $0.03$; for SE3, SE11, LE1 and
+Wang--Chen the explicit Euler step of the true vector field belongs to this class. In the controls of
+Sec.~\ref{sec:e1} each realization of either class is trained on a random subset of $15$ of the $20$ transients of E1,
+with $10$ subsets per parameter value. For the positive controls on H1 and HE1 a realization uses a random window of
+three quarters of the hidden trajectory, plus, for HE1, a random subset of $15$ transients; there are $10$ realizations
+per threshold for the quadratic maps and $5$ per ridge parameter for the reservoir computers, in the six regimes.
+
+\emph{Perceptrons and residual networks} act on the normalized state. For each regime, training set, class and width the
+$20$ seeds are trained together on the GPU with Adam, a cosine learning-rate schedule from $3\times10^{-3}$ to $3\times10^{-5}$
+and $2\times10^4$ steps; the first $30\%$ of the steps use the one-step error and the rest a rollout error over four steps.
+All computations with trained models are in double precision.
+
+\emph{Penalty on unstable equilibria.} In the experiment of Sec.~\ref{sec:penalty} two-hidden-layer perceptrons with $H=256$
+are trained as above with one more term in the loss during the rollout phase. Every $50$ steps the equilibria of each model
+are located by Newton's method from $768$ fixed starts ($576$ uniform points of $Q$ and $192$ training states). For the
+equilibria $u^*$ found inside $Q$ the term $\lambda_{\mathrm{P}}\,\langle\max(0,\rho(DF(u^*))-0.98)^2\rangle$, averaged over the starts,
+is added to the loss; $u^*$ is held fixed between searches and the gradient is taken with respect to the weights, ignoring
+the implicit dependence of $u^*$ on them. The term pushes the spectral radius of unstable equilibria below one, and it acts
+only on equilibria inside $Q$, so an equilibrium can also leave the penalty by moving out of $Q$. An unstable equilibrium of index $+1$ can become stable
+this way, while one of index $-1$ can only disappear together with a partner of index $+1$. A tuning run on SE3 (four seeds,
+$5\times10^3$ steps, $\lambda_{\mathrm{P}}\in\{0,0.1,1,10\}$) removed all unstable equilibria in $Q$ at $\lambda_{\mathrm{P}}=0.1$ and $1$ without
+increasing the median one-step error, while $\lambda_{\mathrm{P}}=10$ increased the error sixtyfold. The experiment uses $\lambda_{\mathrm{P}}\in\{0,0.1,1\}$,
+training sets H1 and HE1 and $20$ seeds per regime. The three arms share the seeds and the minibatches, so the comparison
+with $\lambda_{\mathrm{P}}=0$ is paired.
+
+\section{Labeling protocol and statistical hiddenness}
+\label{app:protocol}
+
+\emph{Reproduction.} For a model attractor with output samples $X$ and a true attractor $Y$,
+\begin{equation*}
+\Delta_{\mathrm{att}}^2=\sum_{i=1}^3\Bigl[\Bigl(\frac{\langle X_i\rangle-\langle Y_i\rangle}{\langle|Y_i|\rangle}\Bigr)^2
++\Bigl(\frac{\langle|X_i|\rangle-\langle|Y_i|\rangle}{\langle|Y_i|\rangle}\Bigr)^2\Bigr],
+\end{equation*}
+and $d_H$ is the Hausdorff distance between the sample sets divided by the diameter of $Y$. An attractor is chaotic if its
+largest Lyapunov exponent per unit time exceeds $0.02$.
+
+\emph{Light protocol.} Every unstable equilibrium is perturbed along each eigenvector with $|\lambda|>1$ (both signs, real and
+imaginary parts) and at $50$ (echo state networks) or $64$ (other classes) random points of the ball, at radii $10^{-6}$,
+$10^{-4}$ and $10^{-3}$; the labels are those of Sec.~\ref{sec:protocol}.
+
+\emph{Full protocol.} Following the definition of statistical
+hiddenness,\cite{Good1953,McAllesterOrtiz2003,BerendKontorovich2013,BenHamou2017MissingMass} each unstable equilibrium is
+probed at radii $10^{-6},10^{-5},\dots,10^{-1}$ with $200$ points per radius in the ball and along up to $20$ unstable
+directions. An attractor not reached at any radius up to $10^{-3}$ is a candidate. For a candidate, $10^3$ points within
+$10^{-3}$ of its basin boundary are obtained by bisection between basin points and points with other outcomes, and
+$2\times10^4$ Newton runs are started near them without deflation. With $f_1$ equilibria found exactly once in $n$ runs, the
+probability $M$ that a further run finds a new equilibrium satisfies, with probability at least $1-\alpha$,
+\begin{equation*}
+M\le\frac{f_1}{n}+\bigl(1+\sqrt2\bigr)\sqrt{\frac{\ln(2/\alpha)}{n}},
+\end{equation*}
+by the bias of the Good--Turing estimator and the concentration of the missing mass. New equilibria are probed in turn. The
+candidate is labeled statistically hidden if the bound at $\alpha=0.025$ is at most $0.05$ and undetermined otherwise. The
+bound controls the probability of missing an equilibrium under the search procedure, not under the geometric measure; an
+equilibrium with a tiny Newton basin near the basin boundary can remain undetected.
+
+\emph{Excitation test in the unstable subspace} (benchmark networks). For each unstable equilibrium, $32$ (and in the
+check of Sec.~\ref{sec:theory_checks} also $256$ and $2048$) random unit directions in $E^u$ are drawn, and points at two
+radii along them are integrated; the test is positive if one of them reaches the attractor.
+
+\section{Additional tables}
+\label{app:tables}
+
+\input{tables/tab_UN}
+
+\input{tables/tab_regressions}

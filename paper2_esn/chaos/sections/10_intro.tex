@@ -1,0 +1,72 @@
+\section{Introduction}
+\label{sec:intro}
+
+An attractor is hidden if its basin does not intersect small neighborhoods of the equilibria, so that it cannot be found
+by starting trajectories near an equilibrium; otherwise it is self-excited.\cite{LeonovKuznetsov2013,Dudkowski2016} Hidden
+attractors were first located in Chua's circuit\cite{Leonov2011PLA} and are now known in systems without equilibria, with
+lines of equilibria and with a single stable equilibrium.\cite{Dudkowski2016,Molaie2013,JafariSprott2013,WangChen2012} The
+distinction matters in practice because the standard analysis of a system starts at its equilibria: their stability and
+the unstable manifolds of the saddles reveal the self-excited regimes, while a hidden regime stays invisible. In control
+systems, phase-locked loops and drilling rigs, such regimes coexist with a stable operating point and appear only after a
+large perturbation.\cite{Kuznetsov2020JCSSI}
+
+Models trained from data increasingly stand in for equations. Reservoir computers running in closed loop reproduce chaotic
+attractors and their Lyapunov spectra\cite{JaegerHaas2004,Pathak2017Chaos,LuHuntOtt2018} and forecast large spatiotemporal
+systems;\cite{Pathak2018PRL} next-generation reservoir computers,\cite{Gauthier2021NGRC} recurrent networks trained by
+backpropagation,\cite{Vlachas2020Backprop} sparse regression\cite{Brunton2016SINDy} and neural ordinary differential
+equations\cite{Chen2018NeuralODE} serve the same purpose. Beyond forecasting, such models are asked for global information:
+the coexisting attractors of a multistable system and their basins,\cite{Roy2022Multistability,Liu2025HiddenDynamics} and
+even attractors absent from the training data. A reservoir trained on one attractor of the Li--Sprott system, which has no
+equilibria, reproduces its unseen coexisting attractors,\cite{Rohm2021,Rohm2022Unseen} and a reservoir trained on the
+trajectories of one basin reproduces other basins and chaotic attractors.\cite{Norton2025Unseen}
+
+A trained model is, however, a dynamical system of its own, often of dimension in the hundreds, and its behavior away from
+the data is not controlled by training. Reservoirs acquire mirror attractors from the symmetry of their
+equations,\cite{HerteuxRath2020} extra saddles that organize their dynamics,\cite{Kabayama2025PseudoLorenz} untrained
+attractors and fixed points,\cite{Flynn2021,Hart2024CLE,Norton2025Unseen} and spurious slow modes that pull trajectories to
+fixed points;\cite{Oishi2026FastSlow} untrained attractors have been argued to be intrinsic to learning systems with a
+bounded state space.\cite{OHagan2025Confabulation} Generalization across basins is impossible in general without prior
+structure.\cite{Goring2024OOD} Most of this literature treats spurious behavior as a symptom of imperfect training, and it
+studies attractors that are either visible in the data or have no equilibria nearby.
+
+A hidden attractor of a system with equilibria is the hardest case of this kind. Reproducing it requires the model to get
+right not only the attractor but also the neighborhoods of all equilibria, including equilibria that the true system does
+not have. A model can reproduce the attractor faithfully and still place an unstable equilibrium whose neighborhood leads to
+it; the attractor then becomes self-excited in the model, and the model gives the wrong answer for states near its
+equilibria. Reservoir computers have been trained on systems with hidden attractors,\cite{Xu2024SelfESN,Mahata2025Extreme}
+and one study predicted the basin of the stable equilibrium of the Wang--Chen system next to what is, at its parameters, a
+hidden cycle,\cite{Liu2025HiddenDynamics} but to our knowledge no work has checked whether a reproduced attractor stays
+hidden with respect to the equilibria of the model; the closest works are those just cited and the index-theoretic
+results for threshold-linear and Hopfield networks discussed in Sec.~\ref{sec:degree}.
+
+This paper asks whether trained models keep hidden attractors hidden, and answers it for about $10^4$ models of four
+classes trained on six regimes of four systems with hidden attractors, plus one weakly hidden control; the survival curves
+rest on $3710$ reproductions of a hidden attractor, and a full-protocol ensemble of echo state networks adds $581$. The answer is mostly
+no. Topology fixes the bookkeeping of a model's
+equilibria and, in some systems, forces spurious ones on models that copy the true equilibria; training decides how many unstable equilibria the model has; and
+their number in the region of the true system largely decides whether hiddenness survives. We make four contributions.
+\begin{enumerate}
+\item We adapt classical degree theory to trained models (Theorem~\ref{thm:degree}): a bounded model has an odd number of
+equilibria, at least $(K-1)/2$ of them unstable, and an index sum different from $1$ certifies that a numerically found set
+of equilibria is incomplete, a check we use throughout.
+\item A bounded model that reproduces the true equilibria with their indices must have spurious equilibria of total index
+$1-s$, where $s$ is the index sum of the true equilibria (Proposition~\ref{prop:forced}). For Chua's circuit in regime~I,
+$s=-1$, and no bounded model in our ensembles reproduces all three equilibria; for the equilibrium-free system of R\"ohm
+\textit{et al.},\cite{Rohm2021} $s=0$, every model has a spurious equilibrium, and the reproduced training attractor becomes
+self-excited.
+\item An attractor of the model is excited from an equilibrium exactly when the local unstable manifold of the equilibrium
+reaches the closure of its basin (Proposition~\ref{prop:manifold}), which reduces the excitation test to the unstable
+subspace.
+\item The probability that a reproduced hidden attractor stays hidden falls with the number of unstable equilibria of the
+model inside the region of the true system, similarly for echo state networks, one- and two-layer perceptrons and residual
+networks; model class, reservoir size and depth act mainly through this number. Data from the basin of the visible
+attractor raise survival. A penalty on unstable equilibria during training, which removes
+them at fixed data, raises survival from $0.27$ to $0.994$ at an unchanged one-step error. Generic models do not reproduce a
+hidden attractor that the data do not touch; a model whose function class contains the Euler step of the true vector
+field sometimes does.
+\end{enumerate}
+
+Section~\ref{sec:setting} defines the models, the notion of hiddenness for a model and the test systems.
+Section~\ref{sec:theory} states the theory, and Sec.~\ref{sec:methods} describes the ensembles and the labeling protocol.
+Section~\ref{sec:results} tests the theory, measures the survival law and the effect of the data, and
+Sec.~\ref{sec:discussion} discusses what this means for the use of trained models.
