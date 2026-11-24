@@ -72803,7 +72803,7 @@
   }
  },
  "figures": [
-  "paper2_esn/chaos/figures/sm_fid_basins.pdf",
-  "paper2_esn/chaos/figures/sm_fid_mechanism.pdf"
+  "paper2_esn/results/figures/sm_fid_basins.pdf",
+  "paper2_esn/results/figures/sm_fid_mechanism.pdf"
  ]
 }

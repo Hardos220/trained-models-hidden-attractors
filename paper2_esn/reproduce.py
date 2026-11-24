@@ -1,4 +1,4 @@
-"""Recompute every number, table and figure of the ESN paper from the per-model records.
+"""Recompute every number of the ESN article from the per-model records.
 
     python -X utf8 paper2_esn/reproduce.py              # all steps, in order
     python -X utf8 paper2_esn/reproduce.py --from paper_hetero
@@ -7,8 +7,8 @@ Data: the per-model records (folders data, gpuq-results, local_results, node_res
 or from the folder named by the environment variable ESN_DATA. Steps that use several processes take their number
 from RMQ_CPU (default 1).
 
-Output: chaos/numbers/*.json|csv (every number of the paper), chaos/tables/*.tex, chaos/figures/*.pdf,
-chaos/supplementary.tex. The PDFs of the manuscript and the supplement are built from these by LaTeX.
+Output: results/numbers/*.json|csv (every number of the article) and the diagnostic figures results/figures/*.pdf
+written by some of the analysis scripts.
 """
 import subprocess
 import sys
@@ -34,9 +34,7 @@ STEPS = [
     ("gpu/paper_robustness.py", []),     # sensitivity of the main fits
     ("gpu/paper_v_logit.py", []),        # logistic fit of survival on U
     ("gpu/paper_le1_robust.py", []),     # LE1 sensitivity
-    ("chaos/make_tables.py", []),
-    ("chaos/make_figures.py", []),
-    ("chaos/make_supplement.py", ["--no-pdf"]),
+    ("gpu/paper_law_checks.py", []),     # out-of-sample tests and mechanism of the survival law -> law_checks.json
 ]
 
 

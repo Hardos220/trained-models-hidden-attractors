@@ -1,4 +1,4 @@
-"""Theory checks for the ESN paper (Chaos): Theorem 1, Lemma 1, the U >= (K-1)/2 bound, the incompleteness witness,
+"""Theory checks for the ESN paper: Theorem 1, Lemma 1, the U >= (K-1)/2 bound, the incompleteness witness,
 Proposition 1 (index of model equilibria near true ones) and Proposition 2 (unstable-subspace excitation test).
 
 Inputs (read only), under ROOT = $ESN_DATA (default local/esn-gpu):
@@ -10,7 +10,7 @@ Inputs (read only), under ROOT = $ESN_DATA (default local/esn-gpu):
                                    stage C records (nearest_true_eq of each equilibrium; same order as in stage I)
   data/<regime>.json               true equilibria and their eigenvalues
 
-Outputs: paper2_esn/chaos/numbers/theory.json (all numbers) and theory_points.csv (one row per net / model).
+Outputs: paper2_esn/results/numbers/theory.json (all numbers) and theory_points.csv (one row per net / model).
 Run: python -X utf8 paper2_esn/gpu/paper_theory.py   (numpy only; a few seconds)
 """
 import csv
@@ -23,7 +23,7 @@ from pathlib import Path
 import numpy as np
 
 ROOT = Path(os.environ.get("ESN_DATA", Path(__file__).resolve().parents[2] / "local" / "esn-gpu"))
-OUT = Path(__file__).resolve().parents[1] / "chaos" / "numbers"
+OUT = Path(__file__).resolve().parents[1] / "results" / "numbers"
 RESULT_DIRS = ("gpuq-results", "local_results", "node_results")   # precedence used by gpu/make_bundles.py
 EXACT_TOL = 1e-9        # stage X: a net is "exactly reproduced" if the retrained net keeps every point of E (residual)
 TRUE_TOL = 0.01         # model equilibrium is "true-like" (a copy) if dist_true_eq < 0.01, i.e. its output is within 1% of

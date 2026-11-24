@@ -27,7 +27,7 @@ Pooled statistics (shares by variant, regressions, within-model pairs, pooled es
 totals) use the six main regimes of paper_common.MAIN_REGIMES; LE1, whose attractor is hidden only in the weak sense, is
 reported under "le1_separate"; per-regime tables keep LE1. v_rows.csv and escape_rows.csv keep all seven regimes.
 
-Outputs: paper2_esn/chaos/numbers/data_effects.json, v_rows.csv, escape_rows.csv; the report goes to stdout.
+Outputs: paper2_esn/results/numbers/data_effects.json, v_rows.csv, escape_rows.csv; the report goes to stdout.
 Run: python -X utf8 paper2_esn/gpu/paper_data_effects.py [--workers K]
 (stage M is ~4.7 GB of JSON; K worker processes parse it, default $RMQ_CPU or 1).
 """
@@ -50,7 +50,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from paper_common import COPY_TOL, POOL_NOTE, SEPARATE, main_only, only  # noqa: E402
 
 ROOT = Path(os.environ.get("ESN_DATA", Path(__file__).resolve().parents[2] / "local" / "esn-gpu"))
-OUT = Path(__file__).resolve().parents[1] / "chaos" / "numbers"
+OUT = Path(__file__).resolve().parents[1] / "results" / "numbers"
 RES_DIRS = ("gpuq-results", "local_results", "node_results")
 EXCLUDE_PARTS = {"N_old_cpu_bug"}
 ARMS = ["H1", "eqc", "E5", "E10", "E20", "L", "E20+L"]

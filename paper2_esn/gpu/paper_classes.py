@@ -1,7 +1,7 @@
 """Paper numbers for the model classes of stage M (mlp, mlp2, res on H1, HE1, E1; 7 regimes; widths 8-1024; 20 seeds).
 
 Same data and definitions as analyze_m2.py (U_in = unstable equilibria inside the true region box_lo..box_hi; a row is a
-(model, hidden attractor) pair; "not excited" = label not_excited), written to paper2_esn/chaos/numbers/classes.json:
+(model, hidden attractor) pair; "not excited" = label not_excited), written to paper2_esn/results/numbers/classes.json:
   counts, index sums per class and set, survival by U_in bins with Wilson 95% intervals, mean U and U_in by class, set and
   width, logistic regression (log(1+U_in), class, set, log width, regime fixed effects) with likelihood-ratio tests,
   per-class slopes, E1 reproductions per regime and class; and classes_rows.csv (one row per pair) for the figures.
@@ -28,7 +28,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from paper_common import COPY_TOL, MAIN_REGIMES, POOL_NOTE, main_only, only  # noqa: E402
 
 ROOT = Path(os.environ.get("ESN_DATA", Path(__file__).resolve().parents[2] / "local" / "esn-gpu"))
-OUT = Path(__file__).resolve().parents[1] / "chaos" / "numbers"
+OUT = Path(__file__).resolve().parents[1] / "results" / "numbers"
 CLS, SETS = ("mlp", "mlp2", "res"), ("H1", "HE1", "E1")
 BINS = [(0, 0), (1, 1), (2, 2), (3, 4), (5, 8), (9, 10 ** 6)]
 R_MAX = 1e3   # physical units; the true regions are within |x| <= 15

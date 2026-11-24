@@ -2,7 +2,7 @@
 
 Distances are measured in units of the attractor's standard deviation per coordinate: the smallest distance from an E1
 sample to the attractor, and the fractions of the attractor within 0.1 and 0.3 of the E1 data. Data:
-local/esn-gpu/data/<regime>.json and .npz (train_E1, att_<name>). Output: paper2_esn/chaos/numbers/e1_distance.json.
+local/esn-gpu/data/<regime>.json and .npz (train_E1, att_<name>). Output: paper2_esn/results/numbers/e1_distance.json.
 
     python -X utf8 paper2_esn/gpu/paper_e1_distance.py
 """
@@ -14,7 +14,7 @@ import numpy as np
 from scipy.spatial import cKDTree
 
 DATA = Path(os.environ.get("ESN_DATA", Path(__file__).resolve().parents[2] / "local" / "esn-gpu")) / "data"
-OUT = Path(__file__).resolve().parents[1] / "chaos" / "numbers" / "e1_distance.json"
+OUT = Path(__file__).resolve().parents[1] / "results" / "numbers" / "e1_distance.json"
 REGIMES = ["chua_I", "chua_II", "le1", "se11", "se3", "wangchen2", "wangchen2_a0.03"]
 
 

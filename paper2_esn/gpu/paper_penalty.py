@@ -6,7 +6,7 @@ fix of 2026-11-10; other classes and widths in the result folders are skipped); 
 paired. Definitions as in paper_classes.py: U_in = unstable equilibria inside the true region box_lo..box_hi (Newton
 runaways |x| > 1e3 dropped), a row is a (model, hidden attractor) pair, "not excited" = light-protocol label not_excited.
 
-Written to paper2_esn/chaos/numbers/penalty.json and penalty_rows.csv:
+Written to paper2_esn/results/numbers/penalty.json and penalty_rows.csv:
   per lam and class: mean U_in and U, share with U_in = 0, median training error, index sums, reproduction, survival
   (not excited | reproduced) with Wilson intervals; paired changes (U_in, training error, McNemar for survival);
   calibration: survival predicted by the stage M law (logistic fit on classes_rows.csv with the same covariates) from the
@@ -31,7 +31,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from paper_common import POOL_NOTE, SEPARATE, main_only, only  # noqa: E402
 
 ROOT = Path(os.environ.get("ESN_DATA", Path(__file__).resolve().parents[2] / "local" / "esn-gpu"))
-OUT = Path(__file__).resolve().parents[1] / "chaos" / "numbers"
+OUT = Path(__file__).resolve().parents[1] / "results" / "numbers"
 R_MAX = 1e3
 BINS = [(0, 0), (1, 1), (2, 2), (3, 4), (5, 8), (9, 10 ** 6)]
 DESIGN = {("mlp2", 256)}

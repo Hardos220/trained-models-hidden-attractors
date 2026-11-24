@@ -3,7 +3,7 @@ constraint eqc), first hidden attractor of each model, rows with the attractor r
 
 Logistic regression of "not excited" on regime fixed effects, log N and variant dummies (vs H1), without and with
 log(1 + U). Pooled over the six main regimes (paper_common.MAIN_REGIMES); LE1 separately (one regime: the regime dummy
-is the intercept) and the seven-regime fit for comparison. Input: paper2_esn/chaos/numbers/v_rows.csv (written by
+is the intercept) and the seven-regime fit for comparison. Input: paper2_esn/results/numbers/v_rows.csv (written by
 paper_data_effects.py); output: numbers/v_logit.json.
 
     python -X utf8 paper2_esn/gpu/paper_v_logit.py
@@ -19,7 +19,7 @@ from scipy import optimize, stats
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from paper_common import POOL_NOTE, SEPARATE  # noqa: E402
 
-NUM = Path(__file__).resolve().parents[1] / "chaos" / "numbers"
+NUM = Path(__file__).resolve().parents[1] / "results" / "numbers"
 ARMS = ["H1", "eqc", "E5", "E10", "E20"]
 FIRST = {"HA", "HA_a"}
 

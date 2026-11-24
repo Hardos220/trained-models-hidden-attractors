@@ -380,7 +380,7 @@ def run_one(args):
         if res_start:
             c, r = (ulo + uhi) / 2, (uhi - ulo)
             domains.append(("start_box", c - r, c + r))
-    rec = {"file": str(path), "class": cls, "H": model.H, "name": stem, "domains": {}}
+    rec = {"file": f"{path.parent.parent.name}/{path.parent.name}/{path.name}", "class": cls, "H": model.H, "name": stem, "domains": {}}
     newton_eq = classify(model, E[np.isfinite(E).all(1)], sig, mu, qlo, qhi) if len(E) else []
     for dn, lo, hi in domains:
         r = model.enumerate(lo, hi)

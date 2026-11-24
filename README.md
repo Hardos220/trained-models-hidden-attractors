@@ -2,22 +2,21 @@
 
 Code, per-model records and analysis scripts for the article
 
-> M. Elisov, *Do trained models keep attractors hidden? Forced spurious equilibria and a survival law for hiddenness*
-> (manuscript, 2026).
+> M. Elisov, *Do trained models keep attractors hidden? Forced spurious equilibria and a survival law for hiddenness*.
 
-Archive: Zenodo, DOI [10.5281/zenodo.24353893](https://doi.org/10.5281/zenodo.24353893). The record holds this repository (code, manuscript sources and
+Archive: Zenodo, DOI [10.5281/zenodo.24513258](https://doi.org/10.5281/zenodo.24513258) (version 1.1.0). The record holds this repository (code and
 every number of the article) and the per-model records, `trained-models-hidden-attractors-records-v1.0.0.zip`
-(about 1 GB; 4.4 GB unpacked).
+(about 1 GB; 4.4 GB unpacked; unchanged since version 1.0.0).
 
 ## Contents
 
 | Path | Contents |
 |---|---|
-| `src/hsearch/` | Library: test systems, integration, identification of attractors, echo state networks (`esn_pilot.py`, `reservoir_analysis.py`, `systems/reservoir.py`). Apart from the echo state network modules it is the library of the code archive of an earlier article (Zenodo, DOI [10.5281/zenodo.23348470](https://doi.org/10.5281/zenodo.23348470)). |
+| `src/hsearch/` | Library: test systems, integration, identification of attractors, echo state networks (`esn_pilot.py`, `reservoir_analysis.py`, `systems/reservoir.py`). |
 | `paper2_esn/experiments/` | Test regimes and training sets (`e70_esn_pilot_data.py`, `e72_esn_gpu_inputs.py`); early CPU studies of echo state networks (`e30`–`e36`). |
 | `paper2_esn/gpu/` | Training and labeling of the models by stage (`stage_*.py`; GPU code in `esngpu.py`, `ngrc_gpu.py`), the job chains with the arguments of every run (`*.sh`), and the analysis scripts `paper_*.py`. |
-| `paper2_esn/chaos/` | Manuscript (`manuscript.tex`, `sections/`, `supplementary.tex`, PDFs); `numbers/`, every number of the article as JSON with the row tables (CSV) behind it; `tables/`, `figures/` and the scripts that write them. |
-| `paper2_esn/reproduce.py` | Recomputes `numbers/`, `tables/`, `figures/` and `supplementary.tex` from the per-model records. |
+| `paper2_esn/results/numbers/` | Every number of the article as JSON, with the row tables (CSV) behind them. |
+| `paper2_esn/reproduce.py` | Recomputes `results/numbers/` from the per-model records. |
 
 ## Stages
 
@@ -40,7 +39,7 @@ for some stages an `.npz` with arrays) per model.
 
 Many docstrings and comments in `paper2_esn/gpu` and `paper2_esn/experiments` are in Russian.
 
-## Reproducing the numbers, tables and figures
+## Reproducing the numbers
 
 ```
 pip install -r requirements.txt
@@ -48,14 +47,17 @@ pip install -r requirements.txt
 python -X utf8 paper2_esn/reproduce.py
 ```
 
-The run takes about 10 minutes and 2 GB of memory; steps that use several processes take their number from the
+The run takes about 20 minutes and 2 GB of memory; steps that use several processes take their number from the
 environment variable `RMQ_CPU` (default 1). The records can also be kept elsewhere: set `ESN_DATA` to the folder that
-holds `data/`, `gpuq-results/`, `local_results/` and `node_results/`. `numbers/<name>.json` is written by
+holds `data/`, `gpuq-results/`, `local_results/` and `node_results/`. `results/numbers/<name>.json` is written by
 `gpu/paper_<name>.py`; the docstring of each script states its inputs, the selection of records and the rule for
-models that appear in several jobs. A rerun reproduces the generated tables byte for byte (`tab_ensembles.tex` is
-written by hand); in `numbers/` only time stamps, run times, local paths, counts of skipped duplicate records and the last
-digits of iterative fits change. The PDFs are built from `chaos/manuscript.tex` and
-`chaos/supplementary.tex` with any LaTeX distribution that has REVTeX 4.2.
+models that appear in several jobs. In a rerun only time stamps, run times, local paths, counts of skipped duplicate
+records and the last digits of iterative fits change. Some analysis scripts also draw diagnostic figures into
+`results/figures/`.
+
+Version 1.1.0 adds `gpu/paper_law_checks.py` (`results/numbers/law_checks.json`): out-of-sample tests of the survival
+law, its beta-binomial mechanism fitted to the models that lost hiddenness, and the comparison of the two forms of the
+law.
 
 The records keep the layout in which they were produced: `gpuq-results/<job>/out/<stage>/<regime>/` (runs on an
 NVIDIA A100), `node_results/<stage>/` and `local_results/` (runs on CPUs); `data/` holds the regimes and training sets.

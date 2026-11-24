@@ -2,7 +2,7 @@
 
 The true system has no equilibria, so all its attractors are hidden and s = 0; by Theorem 1 every bounded model has an
 odd number K >= 1 of equilibria, all of them spurious. For each network: K, U, the attractors it reproduces (delta_att and
-d_H below 0.2 against a true attractor) and their full-protocol labels. Output: paper2_esn/chaos/numbers/lisprott.json.
+d_H below 0.2 against a true attractor) and their full-protocol labels. Output: paper2_esn/results/numbers/lisprott.json.
 
     python -X utf8 paper2_esn/gpu/paper_lisprott.py
 """
@@ -12,7 +12,7 @@ import os
 from pathlib import Path
 
 ROOT = Path(os.environ.get("ESN_DATA", Path(__file__).resolve().parents[2] / "local" / "esn-gpu"))
-OUT = Path(__file__).resolve().parents[1] / "chaos" / "numbers" / "lisprott.json"
+OUT = Path(__file__).resolve().parents[1] / "results" / "numbers" / "lisprott.json"
 
 
 def main():

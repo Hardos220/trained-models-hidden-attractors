@@ -5,7 +5,7 @@
 
 Per kind, parameter and regime: realizations, reproductions of each hidden attractor (same match rules as stages M and C),
 labels among reproductions, mean number of unstable equilibria, share of escaping trajectories from the uniform census.
-Written to paper2_esn/chaos/numbers/e1_controls.json.
+Written to paper2_esn/results/numbers/e1_controls.json.
 
     python -X utf8 paper2_esn/gpu/paper_e1_controls.py
 """
@@ -22,7 +22,7 @@ import paper_data_effects as PD  # noqa: E402
 from paper_common import POOL_NOTE, SEPARATE  # noqa: E402
 
 ROOT = Path(os.environ.get("ESN_DATA", Path(__file__).resolve().parents[2] / "local" / "esn-gpu"))
-OUT = Path(__file__).resolve().parents[1] / "chaos" / "numbers"
+OUT = Path(__file__).resolve().parents[1] / "results" / "numbers"
 
 
 def fate(lab):

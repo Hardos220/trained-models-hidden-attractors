@@ -8,10 +8,10 @@ authors:
     email: maksimelisov2003@gmail.com
     orcid: "https://orcid.org/0009-0001-3097-2703"
 repository-code: "https://github.com/Hardos220/trained-models-hidden-attractors"
-doi: 10.5281/zenodo.24353893
-version: 1.0.0
+doi: 10.5281/zenodo.24513258
+version: 1.1.0
 license: MIT
-date-released: "2026-11-19"
+date-released: "2026-11-24"
 preferred-citation:
   type: article
   title: "Do trained models keep attractors hidden? Forced spurious equilibria and a survival law for hiddenness"
@@ -19,4 +19,3 @@ preferred-citation:
     - family-names: Elisov
       given-names: Maksim
   year: 2026
-  notes: "Manuscript."

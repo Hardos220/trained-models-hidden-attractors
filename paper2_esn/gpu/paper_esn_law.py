@@ -1,4 +1,4 @@
-"""Survival law of hiddenness in closed-loop echo state networks: all numbers for the Chaos manuscript.
+"""Survival law of hiddenness in closed-loop echo state networks: numbers of the article.
 
 Reproduces, on the CURRENT data, the numbers of theory_index.md §4, §4a and §4v:
   1. stage C (full protocol): hidden share by U among models that reproduce the hidden attractor, and where the
@@ -20,7 +20,7 @@ ensemble by U_in (unstable equilibria whose physical image lies in Q), with the 
 bounds for the size sweep (stage N records do not store the coordinates of the equilibria); the U = 1 vs U = 2
 comparison by regime; the sensitivity of the loss origin to the copy threshold.
 
-Outputs (paper2_esn/chaos/numbers/):
+Outputs (paper2_esn/results/numbers/):
   esn_law.json  - all numbers with Wilson 95% intervals per U bin;
   esn_rows.csv  - one row per (model, hidden attractor) of the N sweep and of the robustness runs (all seven regimes);
   esn_UN.csv    - mean U by (regime, set, N) of the N sweep, for a U(N) figure;
@@ -45,7 +45,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from paper_common import COPY_TOL, MAIN_REGIMES, POOL_NOTE, SEPARATE, main_only, only  # noqa: E402
 
 ROOT = Path(os.environ.get("ESN_DATA", Path(__file__).resolve().parents[2] / "local" / "esn-gpu"))
-OUT = Path(__file__).resolve().parents[1] / "chaos" / "numbers"
+OUT = Path(__file__).resolve().parents[1] / "results" / "numbers"
 SOURCES = ("gpuq-results", "local_results", "node_results")   # priority order for duplicate model names
 EXCLUDED_DIRS = {"N_old_cpu_bug"}
 # CPU stage N results at N = 150 were computed before the CPU Newton-solver fix (22.10.2026) and never recomputed

@@ -5,10 +5,5 @@ __pycache__/
 # per-model records from the Zenodo archive, unpacked here
 local/
 
-# build products of the manuscript
-*.aux
-*.bbl
-*.blg
-*.out
-*Notes.bib
-paper2_esn/chaos/figures/*.png
+# diagnostic figures drawn by the analysis scripts
+paper2_esn/results/figures/

@@ -4,7 +4,7 @@ Hiddenness is measured relative to the model's own equilibria; this script asks 
 hidden attractor hidden is also faithful to the true system, with measures that do not depend on the model's equilibria.
 Everything is computed from the stored records; no model is re-run.
 
-Sections of paper2_esn/chaos/numbers/fidelity.json:
+Sections of paper2_esn/results/numbers/fidelity.json:
   true_systems        per regime: census fractions, p_B of Table I, attractor diameter, rotation axis, rotation core,
                       winding numbers and distances of the true equilibria.
   1_basin_fidelity    (i) basin agreement on Q, recall/precision of the hidden basin, model p_B vs true p_B, by stage,
@@ -95,8 +95,8 @@ import paper_data_effects as PD  # noqa: E402   (collect, best_match_for, van_el
 import paper_esn_law as PE  # noqa: E402        (load_dedup, logit_fit, mantel_haenszel, SUFFIX_PAT)
 
 ROOT = Path(os.environ.get("ESN_DATA", Path(__file__).resolve().parents[2] / "local" / "esn-gpu"))
-OUT = HERE.parent / "chaos" / "numbers"
-FIG = HERE.parent / "chaos" / "figures"
+OUT = HERE.parent / "results" / "numbers"
+FIG = HERE.parent / "results" / "figures"
 R_MAX = 1e3                      # Newton runaways of residual networks dropped (as paper_classes.py)
 EXACT_TOL = 1e-6                 # imposed copies of the eqc arm sit at dist_true_eq ~ 1e-16
 R_LIGHT = 1e-3                   # largest radius of the light protocol
@@ -1235,7 +1235,7 @@ def figures(rows_by_class, mech_M, mech_C, eqM, eqC):
     made.append(str(FIG / "sm_fid_basins.pdf"))
     # ---- sm_fid_mechanism: (a) excitation vs distance with matched null; (b) by winding and type (rotation regimes)
     fig, (a, b) = plt.subplots(1, 2, figsize=(6.69, 2.6))
-    for nm, mech, col, mk in (("perceptrons, residual nets (M)", mech_M, "#009E73", "^"), ("ESN (C)", mech_C, "#0072B2", "o")):
+    for nm, mech, col, mk in (("M", mech_M, "#009E73", "^"), ("ESN", mech_C, "#0072B2", "o")):   # names as in (b)
         if not mech:
             continue
         tab = mech["inside_Q"]["by_distance_bin"]
@@ -1256,7 +1256,7 @@ def figures(rows_by_class, mech_M, mech_C, eqM, eqC):
     a.set_xlabel("distance to the true attractor / diameter")
     a.set_ylabel("probability")
     a.set_ylim(-0.03, 1.03)
-    a.legend(fontsize=6.5, loc="upper right", framealpha=0.9)
+    a.legend(fontsize=6.5, loc="lower left", framealpha=0.9)
     a.text(-0.14, 1.03, "(a)", transform=a.transAxes, fontsize=9, fontweight="bold")
     cats = [("encircled,\nunstable focus", lambda x: x["encircled"] and x["type"] == "2u_r0"),
             ("encircled,\nother", lambda x: x["encircled"] and x["type"] != "2u_r0"),

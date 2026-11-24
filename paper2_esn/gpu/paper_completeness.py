@@ -1,4 +1,4 @@
-"""Completeness of the equilibrium sets (check): numbers for the Chaos manuscript.
+"""Completeness of the equilibrium sets (check): numbers of the article.
 
 A. Echo state networks (stage S, gpu/stage_sat.py; design data/sat_design.json from make_sat_design.py). Each network of
    a stratified subsample of the size sweep (stage N, rho = 0.9, N = 100 ... 2000) and of the full-protocol ensemble at
@@ -14,7 +14,7 @@ B. Perceptrons and residual networks (stage MW, gpu/stage_mw.py: stage M models 
    Q), undecided boxes, run time; for res in the region Q only (the residual network is unbounded). Reproduction of
    stage M by the A100 retraining (training error, K, U of the stored stage M record of the same name).
 
-Output: paper2_esn/chaos/numbers/completeness.json
+Output: paper2_esn/results/numbers/completeness.json
     python -X utf8 paper2_esn/gpu/paper_completeness.py
 """
 import json
@@ -30,7 +30,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from paper_common import MAIN_REGIMES  # noqa: E402
 
 ROOT = Path(os.environ.get("ESN_DATA", Path(__file__).resolve().parents[2] / "local" / "esn-gpu"))
-OUT = Path(__file__).resolve().parents[1] / "chaos" / "numbers"
+OUT = Path(__file__).resolve().parents[1] / "results" / "numbers"
 SOURCES = ("gpuq-results", "local_results", "node_results")
 R_MAX = 1e3
 

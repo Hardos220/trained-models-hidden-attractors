@@ -3,7 +3,7 @@ and Sprott (2013): it is reached from a segment of the unstable half-line of equ
 
 Since 2026-11-11 the main scripts (paper_esn_law.py, paper_classes.py, paper_robustness.py) already pool over the six
 regimes of paper_common.MAIN_REGIMES and report LE1 separately; this script keeps the side-by-side comparison in one
-place. From the row tables in paper2_esn/chaos/numbers: echo state networks of the size sweep (esn_rows.csv, sample
+place. From the row tables in paper2_esn/results/numbers: echo state networks of the size sweep (esn_rows.csv, sample
 n_sweep, reproduced, index sum 1; logit on log1p(U), set, log N, regime) and the model classes (classes_rows.csv,
 reproduced; logit on log1p(U_in), class, set, log width, regime, as in paper_classes.py); excitation by copies of the
 line and by spurious equilibria in LE1 (classes_eq_rows.csv). Written to numbers/le1_robust.json.
@@ -22,7 +22,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from paper_classes import fit  # noqa: E402
 from paper_common import SEPARATE  # noqa: E402
 
-NUM = Path(__file__).resolve().parents[1] / "chaos" / "numbers"
+NUM = Path(__file__).resolve().parents[1] / "results" / "numbers"
 
 
 def read(name):

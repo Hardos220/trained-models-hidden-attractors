@@ -5,7 +5,7 @@ roots of l^2 - z l + 1 = 0). Trajectories of the true system are started near po
 values, z0 = 0 excluded), at radii 1e-8 and 1e-4 in 24 random directions, integrated by RK4 (step 0.005) for T = 600 and
 classified: escape (|x| > 100), on the hidden attractor (within 0.05 of a stored attractor sample in at least 90 of the
 last 100 checks, every 0.2 time units), back to the line (distance to the line < 1e-3), other.
-Written to paper2_esn/chaos/numbers/le1_line.json.
+Written to paper2_esn/results/numbers/le1_line.json.
 
     python -X utf8 paper2_esn/gpu/paper_le1_line.py
 """
@@ -17,7 +17,7 @@ import numpy as np
 from scipy.spatial import cKDTree
 
 ROOT = Path(os.environ.get("ESN_DATA", Path(__file__).resolve().parents[2] / "local" / "esn-gpu"))
-OUT = Path(__file__).resolve().parents[1] / "chaos" / "numbers"
+OUT = Path(__file__).resolve().parents[1] / "results" / "numbers"
 A, B = 15.0, 1.0
 
 

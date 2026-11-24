@@ -2,7 +2,7 @@
 model, light-protocol labels, penalty calibration, mediation of the data intervention, size of the region Q, match
 thresholds, and spectral radius of the reservoir.
 
-Read-only on the row tables of paper2_esn/chaos/numbers (esn_rows.csv, esn_C_rows.csv, classes_rows.csv,
+Read-only on the row tables of paper2_esn/results/numbers (esn_rows.csv, esn_C_rows.csv, classes_rows.csv,
 classes_eq_rows.csv, v_rows.csv, penalty_rows.csv) and, for items 2 (basin shares), 9, 10 and 11, on the raw records in
 local/esn-gpu (stage M, N and C; loaded with the same selection and de-duplication as paper_classes.py and
 paper_esn_law.py). Pooled statistics use the six regimes of paper_common.MAIN_REGIMES; LE1 appears only in per-regime
@@ -40,7 +40,8 @@ Items (keys of numbers/hetero.json):
 
 Run (heavy: reads ~12 500 stage-M records and runs 2000 bootstrap replicates; through the resource queue):
     rmq run --cpu 2 --ram 3 --time 20m -- python -X utf8 paper2_esn/gpu/paper_hetero.py
-Options: --boot B (default 2000), --only 1,2,... (subset of items), --out PATH, --no-fig, --m-limit N (debug).
+Options: --boot B (default 2000), --only 1,2,... (subset of items), --out PATH, --no-fig, --m-limit N (debug),
+--fig-only (redraw the figures from the existing numbers/hetero.json, no computation).
 """
 import os
 
@@ -67,8 +68,8 @@ sys.path.insert(0, str(HERE))
 from paper_common import MAIN_REGIMES, POOL_NOTE, SEPARATE  # noqa: E402
 
 ROOT = Path(os.environ.get("ESN_DATA", Path(__file__).resolve().parents[2] / "local" / "esn-gpu"))
-NUM = HERE.parent / "chaos" / "numbers"
-FIG = HERE.parent / "chaos" / "figures"
+NUM = HERE.parent / "results" / "numbers"
+FIG = HERE.parent / "results" / "figures"
 INF = 10 ** 9
 ESN_BINS = [(0, 0), (1, 1), (2, 2), (3, 4), (5, 8), (9, 16), (17, INF)]
 CLS_BINS = [(0, 0), (1, 1), (2, 2), (3, 4), (5, 8), (9, INF)]
@@ -1804,7 +1805,7 @@ def figures(R):
     # ---- item 1: per-regime survival
     if "regime_survival" in R:
         rs = R["regime_survival"]
-        fig, axs = plt.subplots(2, 4, figsize=(W2, 3.9), sharex=True, sharey=True)
+        fig, axs = plt.subplots(4, 2, figsize=(W2, 7.6), sharex=True, sharey=True)
         order = ["se3", "se11", "wangchen2", "wangchen2_a0.03", "chua_I", "chua_II", "le1"]
         lines = [("esn_sweep_bins6", "ESN", -0.16, "-"), ("esn_full_U_bins6", "ESNF", -0.08, "--"),
                  ("classes_mlp", "mlp", 0.0, "-"), ("classes_mlp2", "mlp2", 0.08, "-"), ("classes_res", "res", 0.16, "-")]
@@ -1817,20 +1818,19 @@ def figures(R):
             ax.set_ylim(-0.04, 1.06)
             ax.set_xticks(x6)
             ax.set_xticklabels(labs6, fontsize=7)
-        axs[1, 3].axis("off")
+        axs[3, 1].axis("off")
         h, l_ = axs[0, 0].get_legend_handles_labels()
         hl = {}
         for ax in axs.flat[:7]:
             for hh, ll in zip(*ax.get_legend_handles_labels()):
                 hl.setdefault(ll, hh)
-        axs[1, 3].legend(list(hl.values()), list(hl.keys()), loc="center", fontsize=7.5, frameon=False,
+        axs[3, 1].legend(list(hl.values()), list(hl.keys()), loc="center", fontsize=8, frameon=False,
                          title="cells with n $\\geq$ 5;\nWilson 95% intervals", title_fontsize=7)
         for ax in axs[:, 0]:
             ax.set_ylabel("share still hidden")
-        for ax in axs[1, :3]:
+        for ax in (axs[3, 0], axs[2, 1]):        # bottom of each column (the legend takes the last slot)
             ax.set_xlabel(r"$U$ (ESN) or $U_{\mathrm{in}}$")
-        axs[0, 3].set_xlabel(r"$U$ (ESN) or $U_{\mathrm{in}}$")
-        axs[0, 3].xaxis.set_tick_params(labelbottom=True)
+            ax.xaxis.set_tick_params(labelbottom=True)
         fig.tight_layout()
         save(plt, fig, "sm_regime_survival")
     # ---- item 3 (+6): standardized pooled curves
@@ -1945,9 +1945,13 @@ def main():
     ap.add_argument("--only", default="")
     ap.add_argument("--out", default=str(NUM / "hetero.json"))
     ap.add_argument("--no-fig", action="store_true")
+    ap.add_argument("--fig-only", action="store_true")
     ap.add_argument("--m-limit", type=int, default=0)
     ap.add_argument("--seed", type=int, default=20261112)
     a = ap.parse_args()
+    if a.fig_only:
+        figures(json.loads(Path(a.out).read_text(encoding="utf-8")))
+        return
     items = {int(x) for x in a.only.split(",") if x} or set(range(1, 12))
     rng = np.random.default_rng(a.seed)
     t0 = time.time()

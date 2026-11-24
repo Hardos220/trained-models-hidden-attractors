@@ -11,7 +11,7 @@
    equilibria acted independently, against the observed survival; sensitivity of the copy/spurious shares to the copy
    threshold (0.005, 0.01, 0.02 of the half-width L of Q).
 All fits and shares use the six main regimes (paper_common.MAIN_REGIMES); LE1 is reported under "le1_separate".
-Output: paper2_esn/chaos/numbers/robustness.json.
+Output: paper2_esn/results/numbers/robustness.json.
 
     python -X utf8 paper2_esn/gpu/paper_robustness.py
 """
@@ -27,7 +27,7 @@ from scipy import optimize, stats
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from paper_common import COPY_TOL, POOL_NOTE, SEPARATE  # noqa: E402
 
-NUM = Path(__file__).resolve().parents[1] / "chaos" / "numbers"
+NUM = Path(__file__).resolve().parents[1] / "results" / "numbers"
 
 
 def rows(name, regime_key=None, keep=None):
